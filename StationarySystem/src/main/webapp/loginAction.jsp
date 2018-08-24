@@ -27,16 +27,16 @@
        
             if (!v.validateID(ID)) {
                 session.setAttribute("IDErr", "ID format is incorrect!");                
-                response.sendRedirect("login.jsp");                
+                response.sendRedirect("index.jsp");                
             } else if (!v.validatePassword(password)) {
                 session.setAttribute("passErr", "Password format is incorrect");               
-                response.sendRedirect("login.jsp");                
+                response.sendRedirect("index.jsp");                
             }else if (student != null) {
                 session.setAttribute("studentLogin", student);
                 response.sendRedirect("loginWelcome.jsp");                
             } else {                
                 session.setAttribute("existErr", "Student account does not exist!");              
-                response.sendRedirect("login.jsp");                
+                response.sendRedirect("index.jsp");                
             }                       
         %>
     </body>
