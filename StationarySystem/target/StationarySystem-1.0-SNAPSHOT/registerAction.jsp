@@ -22,6 +22,9 @@
             String dob = request.getParameter("dob");
             String password = request.getParameter("password");
             String favcol = request.getParameter("favcol");
+            String faculty = request.getParameter("faculty");
+            String products = request.getParameter("products");
+            String quantity = request.getParameter("quantity");
             int key = (new Random()).nextInt(999999);
             String ID = "" + key;
             String tos = request.getParameter("tos");
@@ -31,11 +34,12 @@
             if (!v.validateName(name)) {
                 session.setAttribute("nameErr", "Name format is incorrect!");
                 response.sendRedirect("register.jsp");
-            } else if (!v.validatePassword(password)) {
-                session.setAttribute("passErr", "Password format is incorrect");
-                response.sendRedirect("register.jsp");
             } else if (!v.validateEmail(email)) {
                 session.setAttribute("emailErr", "Email format is incorrect");
+                response.sendRedirect("register.jsp");
+            }
+                else if (!v.validateID(ID)) {
+                session.setAttribute("idErr", "ID format is incorrect");
                 response.sendRedirect("register.jsp");
             } else {
                 Student student = new Student(ID,name,email,password,dob,favcol);
