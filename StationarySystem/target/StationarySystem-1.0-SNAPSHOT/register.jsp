@@ -3,10 +3,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/style.css">
         <title>Login Page</title>
     </head>
     <body>
+        <div id="loginborder">
          <%
             String nameErr = (String) session.getAttribute("nameErr");
             String emailErr = (String) session.getAttribute("emailErr");
@@ -18,7 +19,7 @@
                 <td id="title">Stationary Management System</td>
             </tr>
         </table>
-        <h2>Enter your details to register:</h2> 
+        <h2>Fill in the form to request stationary:</h2> 
         <br>
         <form action="registerAction.jsp" method="post">
             <table>
@@ -48,5 +49,6 @@
             }          
             session.invalidate();
         %>
+        </div>
     </body>
 </html>
