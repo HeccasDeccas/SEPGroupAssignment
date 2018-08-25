@@ -4,10 +4,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <link rel="stylesheet" href="css/style.css">
-        <title>Login Page</title>
+        <title>Request Page</title>
     </head>
     <body>
-        <div id="loginborder">
+        <div id="border">
          <%
             String nameErr = (String) session.getAttribute("nameErr");
             String emailErr = (String) session.getAttribute("emailErr");
@@ -16,10 +16,10 @@
         <table>
             <tr>
                 <td><img class="UTSlogo" src="images/UTSlogo.png" alt="UTS_Logo"></td>
-                <td id="title">Stationary Management System</td>
+                <td id="title">Stationery Management System</td>
             </tr>
         </table>
-        <h2>Fill in the form to request stationary:</h2> 
+        <h2>Fill in the form to request stationery:</h2> 
         <br>
         <form action="registerAction.jsp" method="post">
             <table>

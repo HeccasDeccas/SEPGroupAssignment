@@ -35,7 +35,7 @@
                 session.setAttribute("studentLogin", student);
                 response.sendRedirect("register.jsp");                
             } else {                
-                session.setAttribute("existErr", "Student account does not exist!");              
+                session.setAttribute("existErr", "Staff account does not exist!");              
                 response.sendRedirect("index.jsp");                
             }                       
         %>

@@ -8,6 +8,7 @@ body{
     color: #000;
     font-weight: bold;
     text-align: left;
+    font-family: "NB Akademie Std", Arial, sans-serif;
 }
 
 .UTSlogo {
@@ -19,10 +20,14 @@ h2{
     color: #000;
     font-weight: bold;
     text-align: center;
-    text-decoration: underline;
+    font-family: "NB Akademie Std", Arial, sans-serif;
 }
 
-#loginborder{
+#loginerror{
+    text-align: center;
+}
+
+#border{
     background-color: #fff;    
     margin: auto;
     width: 50%;
@@ -52,11 +57,11 @@ td {
 }
 
 .error{
-    font-family: "Times New Roman", Times, serif;
+    font-family: "NB Akademie Std", Arial, sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     color:red;
-    text-shadow: 1px 1px 1px black, 0 0 10px blue, 0 0 3px cyan;
+    text-align:center;
 }
 
 .outline{

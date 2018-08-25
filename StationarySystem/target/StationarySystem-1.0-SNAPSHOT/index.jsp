@@ -10,10 +10,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="css/style.css">
-        <title>UTS Stationary Management System</title>
+        <title>UTS Stationery Management System</title>
     </head>
     <body>         
-        <div id="loginborder">
+        <div id="border">
         <%
             String exist = (String) session.getAttribute("existErr");
             String idErr = (String) session.getAttribute("IDErr");
@@ -22,11 +22,12 @@
         <table>
             <tr>
                 <td><img class="UTSlogo" src="images/UTSlogo.png" alt="UTS_Logo"></td>
-                <td id="title">Stationary Management System</td>
+                <td id="title">Stationery Management System</td>
             </tr>
         </table>
         
-        <h2>Enter your details to login: <span class="error"><%=(exist != null ? exist : "")%></span></h2>
+        <h2>Enter your details to login:</h2>
+        <p id="loginerror"><span class="error"><%=(exist != null ? exist : "")%></span></p>
 
         <form action="loginAction.jsp" method="post">
             <table>                
