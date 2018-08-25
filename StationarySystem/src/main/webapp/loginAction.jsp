@@ -33,7 +33,7 @@
                 response.sendRedirect("index.jsp");                
             }else if (student != null) {
                 session.setAttribute("studentLogin", student);
-                response.sendRedirect("loginWelcome.jsp");                
+                response.sendRedirect("register.jsp");                
             } else {                
                 session.setAttribute("existErr", "Student account does not exist!");              
                 response.sendRedirect("index.jsp");                
