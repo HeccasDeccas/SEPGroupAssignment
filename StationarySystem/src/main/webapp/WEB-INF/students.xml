@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<students xmlns="http://www.uts.edu.au/31284/wsd-students"
+<staff xmlns="http://www.uts.edu.au/31284/wsd-students"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.uts.edu.au/31284/wsd-students students.xsd">
-    <students>
+    <staff>
         <ID>123456</ID>
         <email>neuer@uts.com</email>
         <name>Ash Wan</name>
         <password>test</password>   
         <dob>1988-03-23</dob>
         <favoriteColor>#33ccff</favoriteColor>
-    </students>
-    <students>  
+    </staff>
+    <staff>  
         <ID>111222</ID>     
         <email>Oli.khan@bloggs.com</email>
         <name>Deccas Schillert</name>
         <password>test</password>     
         <dob>1990-11-28</dob>
         <favoriteColor>#42f4cb</favoriteColor>
-    </students>
-    <students>  
+    </staff>
+    <staff>  
         <ID>333444</ID>     
         <email>muller@uts.com</email>
         <name>Jam Chan</name>
         <password>test</password>     
         <dob>1990-11-28</dob>
         <favoriteColor>#dcf441</favoriteColor> 
-    </students>
-    <students>   
+    </staff>
+    <staff>   
         <ID>555666</ID>    
         <email>drexler@gmail.com</email>
         <name>Jar Watts</name>
         <password>test</password>     
         <dob>1990-11-28</dob>
         <favoriteColor>#41b2f4</favoriteColor> 
-    </students>
-    <students> 
+    </staff>
+    <staff> 
         <ID>777888</ID>      
         <email>kroos@hotmail.com</email>
         <name>Brooke Ciba</name>
         <password>test</password>     
         <dob>1990-11-28</dob>
         <favoriteColor>#41f4ee</favoriteColor> 
-    </students>
-    <students> 
+    </staff>
+    <staff> 
         <ID>777888</ID>      
         <email>kroos@hotmail.com</email>
         <name>Bec Helou</name>
         <password>test</password>     
         <dob>1990-11-28</dob>
         <favoriteColor>#41f4ee</favoriteColor> 
-    </students>
-</students>
+    </staff>
+</staff>

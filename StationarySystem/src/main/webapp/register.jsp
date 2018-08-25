@@ -16,10 +16,10 @@
         <table>
             <tr>
                 <td><img class="UTSlogo" src="images/UTSlogo.png" alt="UTS_Logo"></td>
-                <td id="title">Stationery Management System</td>
+                <td id="title">Stationary Management System</td>
             </tr>
         </table>
-        <h2>Fill in the form to request stationery:</h2> 
+        <h2>Fill in the form to request stationary:</h2> 
         <br>
         <form action="registerAction.jsp" method="post">
             <table>

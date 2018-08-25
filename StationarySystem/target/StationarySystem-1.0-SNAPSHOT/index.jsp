@@ -10,11 +10,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="css/style.css">
-        <title>UTS Stationery Management System</title>
+        <title>UTS Stationary Management System</title>
     </head>
-    <body>      
-        <div class="header">
-        </div>
+    <body>         
         <div id="loginborder">
         <%
             String exist = (String) session.getAttribute("existErr");
@@ -24,7 +22,7 @@
         <table>
             <tr>
                 <td><img class="UTSlogo" src="images/UTSlogo.png" alt="UTS_Logo"></td>
-                <td id="title">Stationery Management System</td>
+                <td id="title">Stationary Management System</td>
             </tr>
         </table>
         
