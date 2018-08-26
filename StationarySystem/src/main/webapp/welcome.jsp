@@ -8,36 +8,26 @@
     </head>
 
     <div><span class="time"> <jsp:include page="date.jsp" flush="true"/></span></div>
-    <% String studentPath = application.getRealPath("WEB-INF/students.xml");%>
-    <jsp:useBean id="studentApp" class="uts.wsd.StudentApplication" scope="application">
-        <jsp:setProperty name="studentApp" property="filePath" value="<%=studentPath%>"/>
+    <% String staffPath = application.getRealPath("WEB-INF/staffs.xml");%>
+    <jsp:useBean id="staffApp" class="uts.wsd.StaffApplication" scope="application">
+        <jsp:setProperty name="staffApp" property="filePath" value="<%=staffPath%>"/>
     </jsp:useBean>
     <%
-        Students students = studentApp.getStudents();
-        Student student = (Student) session.getAttribute("student");
+        Staffs staffs = staffApp.getStaffs();
+        Staff staff = (Staff) session.getAttribute("staff");
         String tos = (String) session.getAttribute("tos");
-
-        String color;
-
-        if (tos != null && student != null) {
-            color = student.getFavcol();
-        } else {
-            color = "#AED6F1";
-        }
     %>
-    <body style="background-color: <%=color%>">
+    <body>
 
-        <% if (tos != null && student != null) {%>
-        <h1>Hello, <%=student.getName()%></h1> 
-        <p>Your email: <%=student.getEmail()%></p>
-        <p>Your DOB: <%= student.getDob()%></p>
-        <p>Your password is: <%=student.getPassword()%></p>        
-        <p>Your Favorite color is: <%=student.getFavcol()%></p>
-        <p>Your ID is: <%=student.getID()%></p>
+        <% if (tos != null && staff != null) {%>
+        <h1>Hello, <%=staff.getName()%></h1> 
+        <p>Your email: <%=staff.getEmail()%></p>
+        <p>Your password is: <%=staff.getPassword()%></p>        
+        <p>Your ID is: <%=staff.getID()%></p>
         <%
-            students.addStudent(student);
-            studentApp.updateXML(students, studentPath);
-            session.setAttribute("student", student);
+            staffs.addStaff(staff);
+            staffApp.updateXML(staffs, staffPath);
+            session.setAttribute("staff", staff);
         %>
         <button class="button" type="button" onclick="location.href = 'main.jsp'" > Main Page </button>
         <%} else {

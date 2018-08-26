@@ -10,11 +10,12 @@ import java.io.Serializable;
 
 /**
  *
- * @author George
+ * @Created on : Aug 11, 2018, 9:34:31 PM
+   @Author     : Declan Schillert, Ash Wan, Bec Helou, Brooklyn Ciba, Jamie Chan, Jarrod Watts
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name = "student", namespace = "http://www.uts.edu.au/31284/wsd-students")
-public class Student implements Serializable {
+@XmlRootElement(name = "staff", namespace = "http://www.uts.edu.au/31284/wsd-staffs")
+public class Staff implements Serializable {
 
     @XmlElement(name = "ID")
     private String ID;
@@ -24,28 +25,20 @@ public class Student implements Serializable {
     private String name;
     @XmlElement(name = "password")
     private String password;
-    @XmlElement(name = "dob")
-    private String dob;
-    @XmlElement(name = "favoriteColor")
-    private String favcol;
 
-    public Student(String ID, String name, String email,String password,String dob,String favcol) {
+    public Staff(String ID, String name, String email,String password) {
         this.name = name;
         this.email = email;
-        this.password = password;
-        this.dob = dob;
-        this.favcol = favcol;        
+        this.password = password;     
         this.ID = ID;
     }
 
-    public Student() { }
+    public Staff() { }
     
-    public void updateDetails(String name, String email, String password, String dob, String favcol){
+    public void updateDetails(String name, String email, String password){
         this.name = name;
         this.email = email;
         this.password = password;
-        this.dob = dob;
-        this.favcol = favcol;   
     }
 
     public boolean matchID(String ID){
@@ -56,21 +49,6 @@ public class Student implements Serializable {
         return this.password.equals(password.trim());
     }
     
-    public String getDob() {
-        return dob;
-    }
-
-    public void setDob(String dob) {
-        this.dob = dob;
-    }
-
-    public String getFavcol() {
-        return favcol;
-    }
-
-    public void setFavcol(String favcol) {
-        this.favcol = favcol;
-    }
     
     public String getID() {
         return ID;

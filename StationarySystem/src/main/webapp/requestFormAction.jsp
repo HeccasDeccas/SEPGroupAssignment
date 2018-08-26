@@ -1,7 +1,7 @@
 <%--
-    Document   : registerAction
-    Created on : Aug 14, 2018, 10:13:06 PM
-    Author     : George
+    Document   : requestFormAction
+    Created on : Aug 11, 2018, 9:34:31 PM
+    Author     : Declan Schillert, Ash Wan, Bec Helou, Brooklyn Ciba, Jamie Chan, Jarrod Watts
 --%>
 
 <%@page import="java.util.*"%>
@@ -12,16 +12,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Register Action Page</title>
+        <title>RequestForm Action Page</title>
     </head>
     <body>
 
         <%
             String name = request.getParameter("name");
             String email = request.getParameter("email");
-            String dob = request.getParameter("dob");
             String password = request.getParameter("password");
-            String favcol = request.getParameter("favcol");
             String faculty = request.getParameter("faculty");
             String products = request.getParameter("products");
             String quantity = request.getParameter("quantity");
@@ -33,17 +31,17 @@
 
             if (!v.validateName(name)) {
                 session.setAttribute("nameErr", "Name format is incorrect!");
-                response.sendRedirect("register.jsp");
+                response.sendRedirect("requestForm.jsp");
             } else if (!v.validateEmail(email)) {
                 session.setAttribute("emailErr", "Email format is incorrect");
-                response.sendRedirect("register.jsp");
+                response.sendRedirect("requestForm.jsp");
             }
                 else if (!v.validateID(ID)) {
                 session.setAttribute("idErr", "ID format is incorrect");
-                response.sendRedirect("register.jsp");
+                response.sendRedirect("requestForm.jsp");
             } else {
-                Student student = new Student(ID,name,email,password,dob,favcol);
-                session.setAttribute("student", student);
+                Staff staff = new Staff(ID,name,email,password);
+                session.setAttribute("staff", staff);
                 session.setAttribute("tos", tos);
                 response.sendRedirect("welcome.jsp");
             }

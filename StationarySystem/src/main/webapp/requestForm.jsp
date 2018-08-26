@@ -21,7 +21,7 @@
         </table>
         <h2>Fill in the form to request stationery:</h2> 
         <br>
-        <form action="registerAction.jsp" method="post">
+        <form action="requestFormAction.jsp" method="post">
             <table>
                 <tr><td>Name:</td><td><input size="23" type="text" name="name" value="<%=(nameErr != null ? nameErr : "")%>"></td></tr>
                 <tr><td>Staff ID:</td><td><input size="23" type="text" name="staffID" value="<%=(idErr != null ? idErr : "")%>"></td></tr>
@@ -36,7 +36,7 @@
                 <tr><td>Agree to Terms of Service</td><td><input type="checkbox" name="tos"></td></tr>
                 <tr><td><input type="hidden" value="submitted" name="submitted"></td>
                     <td>
-                        <input class="button" type="submit" value="Register"> 
+                        <input class="button" type="submit" value="RequestForm"> 
                         &nbsp; 
                         <button class="button" type="button" onclick="location.href = 'index.jsp'" > Cancel </button>
                     </td>

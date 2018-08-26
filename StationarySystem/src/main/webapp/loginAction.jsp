@@ -1,7 +1,7 @@
 <%-- 
     Document   : loginAction
-    Created on : Aug 11, 2018, 9:34:47 PM
-    Author     : George
+    Created on : Aug 11, 2018, 9:34:31 PM
+    Author     : Declan Schillert, Ash Wan, Bec Helou, Brooklyn Ciba, Jamie Chan, Jarrod Watts
 --%>
 
 <%@page import="uts.controller.*"%>
@@ -14,15 +14,15 @@
         <title>Login Action Page</title>
     </head>
     <body>
-        <% String studentPath = application.getRealPath("WEB-INF/students.xml");%>
-        <jsp:useBean id="studentApp" class="uts.wsd.StudentApplication" scope="application">
-            <jsp:setProperty name="studentApp" property="filePath" value="<%=studentPath%>"/>
+        <% String staffPath = application.getRealPath("WEB-INF/staffs.xml");%>
+        <jsp:useBean id="staffApp" class="uts.wsd.StaffApplication" scope="application">
+            <jsp:setProperty name="staffApp" property="filePath" value="<%=staffPath%>"/>
         </jsp:useBean>
         <%
-            Students students = studentApp.getStudents();
+            Staffs staffs = staffApp.getStaffs();
             String ID = request.getParameter("ID");
             String password = request.getParameter("password");
-            Student student = students.login(ID, password);
+            Staff staff = staffs.login(ID, password);
             Validator v = new Validator();
        
             if (!v.validateID(ID)) {
@@ -31,9 +31,9 @@
             } else if (!v.validatePassword(password)) {
                 session.setAttribute("passErr", "Password format is incorrect");               
                 response.sendRedirect("index.jsp");                
-            }else if (student != null) {
-                session.setAttribute("studentLogin", student);
-                response.sendRedirect("register.jsp");                
+            }else if (staff != null) {
+                session.setAttribute("staffLogin", staff);
+                response.sendRedirect("requestForm.jsp");                
             } else {                
                 session.setAttribute("existErr", "Staff account does not exist!");              
                 response.sendRedirect("index.jsp");                

@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
     Created on : Aug 11, 2018, 9:34:31 PM
-    Author     : George
+    Author     : Declan Schillert, Ash Wan, Bec Helou, Brooklyn Ciba, Jamie Chan, Jarrod Watts
 --%>
 <%@page import="uts.controller.Validator"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
