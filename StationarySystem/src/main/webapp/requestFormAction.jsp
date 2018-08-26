@@ -15,7 +15,7 @@
         <title>RequestForm Action Page</title>
     </head>
     <body>
-
+        
         <%
             String name = request.getParameter("name");
             String email = request.getParameter("email");

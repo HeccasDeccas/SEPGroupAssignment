@@ -13,7 +13,8 @@
         <title>UTS Stationery Management System</title>
     </head>
     <body>         
-        <div id="border">
+        <div id="background">
+        <div id="box">
         <%
             String exist = (String) session.getAttribute("existErr");
             String idErr = (String) session.getAttribute("IDErr");
@@ -21,7 +22,7 @@
         %>
         <table>
             <tr>
-                <td><img class="UTSlogo" src="images/UTSlogo.png" alt="UTS_Logo"></td>
+                <td><img class="UTSlogo" src="images/UTS_Logo.png" alt="UTS_Logo"></td>
                 <td id="title">Stationery Management System</td>
             </tr>
         </table>
@@ -46,6 +47,7 @@
             }
             session.invalidate();
         %>
+        </div>
         </div>
     </body>
 </html>
