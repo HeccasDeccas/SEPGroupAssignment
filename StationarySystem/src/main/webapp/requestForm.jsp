@@ -37,7 +37,7 @@
                 <tr><td>Agree to Terms of Service</td><td><input type="checkbox" name="tos"></td></tr>
                 <tr><td><input type="hidden" value="submitted" name="submitted"></td>
                     <td>
-                        <input class="button" type="submit" value="RequestForm"> 
+                        <input class="button" type="submit" value="Request Form"> 
                         &nbsp; 
                         <button class="button" type="button" onclick="location.href = 'index.jsp'" > Cancel </button>
                     </td>
