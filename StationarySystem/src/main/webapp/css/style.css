@@ -16,6 +16,10 @@ body{
     overflow: auto;
 }
 
+#dashTable{
+    text-align: center;
+}
+
 #title{
     font-size: 33px;
     color: #000;
@@ -114,6 +118,7 @@ td {
     padding: 5px 10px;
     font-size: 15px;
     font-weight: bold;
+    width: 230px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;

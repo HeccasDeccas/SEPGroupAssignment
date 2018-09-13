@@ -37,6 +37,8 @@
                 <tr><td><input type="hidden" value="submitted" name="submitted"></td>
                     <td><input class="button" type="submit" value="Login"> 
                     </td>
+                    <!--This part below is only for test purposes-->
+                <tr><td><input type="button" class="button" value="Stock" onclick="window.location.href='stockroomDashboard.jsp'"> </td></tr>
                 </tr>
             </table>
         </form>  
