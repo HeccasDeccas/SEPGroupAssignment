@@ -17,6 +17,7 @@
         </table>
         <h2>Welcome to the UTS Stationery Management System</h2>
         <h3>Please choose from the following options:</h3>
+            <p>Note: you cannot return to the dashboard after selecting the "Request Form" button.</p>
             <table class="dashboardButtons">
                 <tr><td><input type="submit" class="button" onclick="window.location.href='requestForm.jsp'" value="Request Form"></td></tr>
                 <tr><td><input type="button" class="button" onclick="window.location.href='receptionistViewOrders.jsp'" value="View All Stationery Requests"></td></tr>

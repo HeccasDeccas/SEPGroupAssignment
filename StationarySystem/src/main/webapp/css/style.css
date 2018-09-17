@@ -139,6 +139,12 @@ h4.databaseSubheading{
     text-align: left;
 }
 
+p {
+    font-size: 11px;
+    text-align: center;
+    color: #909090;
+}
+
 .submitAnotherForm {
     text-align: center;
 }
