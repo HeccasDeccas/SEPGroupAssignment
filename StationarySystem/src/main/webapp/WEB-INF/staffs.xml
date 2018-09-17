@@ -6,7 +6,7 @@
         <ID>123456</ID>
         <email>neuer@uts.com</email>
         <name>Manuel Nueur</name>
-        <password>blahblah123</password>   
+        <password>1234</password>   
     </staff>
     <staff>  
         <ID>111222</ID>     
