@@ -332,11 +332,40 @@ input[type=text] {
 }
 
 input[type=date] {
-    font-family: "NB Akademie Std", Arial, sans-serif;;
+    font-family: "NB Akademie Std", Arial, sans-serif;
     font-size: 12px;
 }
 
 select {
     font-size: 12px;
+    font-family: "NB Akademie Std", Arial, sans-serif;
+}
+
+.viewTable{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: "NB Akademie Std", Arial, sans-serif;
+}
+
+#tableHeader {
+    background-color: #253e96;
+    color: #ffffff;
+    opacity: 78%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: "NB Akademie Std", Arial, sans-serif;
+}
+
+.headerRow {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: "NB Akademie Std", Arial, sans-serif;
+    padding: 10px;
+}
+
+.requestInfo {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
     font-family: "NB Akademie Std", Arial, sans-serif;
 }
