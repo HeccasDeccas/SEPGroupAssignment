@@ -7,19 +7,20 @@
         <title>Request Page</title>
     </head>
     <body>
-        <div id="background">
-        <div id="box">
+            <div class="container">
+            <header>
+                <img class="UTSLogoWhite" src="images/UTS_Logo_White.png" alt="UTS_Logo"> 
+                    <h1>Stationery Management System</h1>   
+            </header>
+                 <div class="navbuttons">
+                    <a href="logoutPage.jsp">Logout</a>
+                </div>               
+        <div class="maincontent">
          <%
             String nameErr = (String) session.getAttribute("nameErr");
             String emailErr = (String) session.getAttribute("emailErr");
             String idErr = (String) session.getAttribute("idErr");
         %>
-        <table>
-            <tr>
-                <td><img class="UTSlogo" src="images/UTS_Logo.png" alt="UTS_Logo"></td>
-                <td id="title">Stationery Management System</td>
-            </tr>
-        </table>
         <h2>Fill in the form to request stationery:</h2> 
         <br>
         <form action="requestFormAction.jsp" method="post">
@@ -37,9 +38,9 @@
                 <tr><td>Agree to Terms of Service</td><td><input type="checkbox" name="tos"></td></tr>
                 <tr><td><input type="hidden" value="submitted" name="submitted"></td>
                     <td>
-                        <input class="button" type="submit" value="RequestForm"> 
+                        <input class="button" type="submit" value="Submit"> 
                         &nbsp; 
-                        <button class="button" type="button" onclick="location.href = 'index.jsp'" > Cancel </button>
+                        <button class="button" type="button" onclick="location.href = 'requestForm.jsp'" > Cancel </button>
                     </td>
                 </tr>
             </table>
@@ -50,6 +51,10 @@
             }          
             session.invalidate();
         %>
+        </div>
+        <footer>
+            <p>Copyright UTS 2018 | All rights reserved.</p>
+        </footer>
         </div>
         </div>
     </body>

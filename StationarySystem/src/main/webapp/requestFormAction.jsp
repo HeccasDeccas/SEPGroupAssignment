@@ -12,7 +12,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>RequestForm Action Page</title>
+        <title>Request Form Action Page</title>
     </head>
     <body>
         
@@ -43,7 +43,7 @@
                 Staff staff = new Staff(ID,name,email,password);
                 session.setAttribute("staff", staff);
                 session.setAttribute("tos", tos);
-                response.sendRedirect("welcome.jsp");
+                response.sendRedirect("formSubmitted.jsp");
             }
         %>
     </body>
