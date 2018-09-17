@@ -35,7 +35,6 @@
                     <option value="pens">Pens</option>
                         </select></td></tr>
                 <tr><td>Quantity:</td><td><input size = "23" type="number" name="quantity"></td></tr>
-                <tr><td>Agree to Terms of Service</td><td><input type="checkbox" name="tos"></td></tr>
                 <tr><td><input type="hidden" value="submitted" name="submitted"></td>
                     <td>
                         <input class="button" type="submit" value="Submit"> 

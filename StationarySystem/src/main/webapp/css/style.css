@@ -325,3 +325,18 @@ td {
     text-align: left;
     width: fit-content;
 }
+
+input[type=text] {
+    font-family: "NB Akademie Std", Arial, sans-serif;
+    font-size: 12px;
+}
+
+input[type=date] {
+    font-family: "NB Akademie Std", Arial, sans-serif;;
+    font-size: 12px;
+}
+
+select {
+    font-size: 12px;
+    font-family: "NB Akademie Std", Arial, sans-serif;
+}
