@@ -40,6 +40,9 @@
                 </tr>
             </table>
         </form> 
+       
+        <!--This part below is only for test purposes-->
+        
         <div class="tempLoginButtons">
             <a href="stockManagementDashboard.jsp">Stockroom Dashboard</a>
             <br>
