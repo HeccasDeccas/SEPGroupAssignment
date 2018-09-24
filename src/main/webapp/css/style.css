@@ -1,0 +1,372 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/stationaryimage2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-family: "NB Akademie Std", Arial, sans-serif;
+    overflow: auto;
+    margin: 0;
+}
+
+.tempLoginButtons a{
+    font-size: 15px;
+    color: #909090;
+    text-decoration: none;
+}
+
+.tempLoginButtons a:hover {
+    text-decoration: underline;
+}
+
+.container {
+ width: 50%;
+ border: none;
+ margin: auto;
+}
+
+.databaseContainer {
+ width: 75%;
+ border: none;
+ margin: auto;
+}
+
+.navbuttons {
+    margin: auto;
+    padding: 8px;
+    text-align: right;
+    background-color: #f2f2f2; 
+    opacity: 0.9;    
+}
+
+.navbuttons a {
+    font-size: 15px;
+    text-align: right;
+    color: #909090;
+    text-decoration: none;
+}
+
+.navbuttons a:hover {
+    text-decoration: underline;
+}
+
+header, footer {
+ padding: 1em;
+ background-color: #111;
+ opacity: 0.75;
+ clear: left;
+ text-align: center;
+ color: #fff;
+}
+
+.maincontent {
+    background-color: #f2f2f2; 
+    opacity: 0.9;
+    margin: auto;
+    padding: 1em;   
+}
+
+#loginboxpadding{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.boxLogoutButton a{
+    color: #909090;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;   
+}
+
+.boxLogoutButton a:hover {
+    text-decoration: underline;
+}
+
+#title{
+    font-size: 33px;
+    color: #000;
+    font-weight: bold;
+    text-align: left;
+}
+
+.UTSLogoBlack {
+    width: 240px;
+    height: 105px;
+    }
+    
+.UTSLogoWhite {
+    width: 200px;
+    height: 75px;
+    }
+    
+#tickIcon {
+    width: 65px;
+    height: 60px;
+    padding:10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+        
+h2{
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    font-family: "NB Akademie Std", Arial, sans-serif;
+}
+
+h2.databaseHeading {
+   text-align: left; 
+}
+
+h3{
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    font-family: "NB Akademie Std", Arial, sans-serif;
+}
+
+h4{
+    text-align: center;
+    font-family: "NB Akademie Std", Arial, sans-serif;
+}
+
+h4.databaseSubheading{
+    text-align: left;
+}
+
+p {
+    font-size: 11px;
+    text-align: center;
+    color: #909090;
+}
+
+.submitAnotherForm {
+    text-align: center;
+}
+
+.submitAnotherForm a {
+    text-align: center;
+    color: #909090;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 1px;
+    text-align: center;
+}
+
+.submitAnotherForm a:hover {
+    text-decoration: underline;
+}
+
+.navbar a {
+    color: #909090;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar a.active {
+    color: white;
+}
+
+#loginerror{
+    text-align: center;
+}
+
+#loginbox{   
+    background-color: #f2f2f2; 
+    opacity: 0.9;
+    box-shadow: 5px;
+    margin: auto;
+    width: 50%;
+    border: 10px black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+table.dashboardButtons {
+    text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 50px 0;
+  font-family: "NB Akademie Std", Arial, sans-serif;
+}
+
+td {
+  padding: 10px 0;
+}
+
+.time{    
+    color: #E67E22;
+    font-weight: bold;
+    font-size: 20px;
+    position:absolute;
+    top:0;
+    right: 0;
+}
+
+.error{
+    font-family: "NB Akademie Std", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color:red;
+    text-align:center;
+}
+
+.outline{
+    color: #933680;
+    font-weight: bold;
+}
+
+.link{
+    color: #0066cc;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 10px; 
+}
+
+.button:hover {background-color: #4ca5ff}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* I don't know what these are used for yet */
+
+.account_table{                
+    border-collapse: collapse;
+    border: 1px solid black;
+    background-color: #E67E22;
+    width: fit-content;
+}
+.account_table thead{
+    text-align: center;
+    font-weight: bold;
+}
+.account_table td{
+    width: fit-content;
+    border: 1px solid black;     
+    padding: 2px;
+    width:10%;
+}
+
+.div_search, .results_table{
+    vertical-align: top;
+}
+
+.div_search{
+    display: block;          
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: large;
+    color: #10802c;    
+    color: white;  
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    /*
+    top: -50%;
+    left: 60%;
+    transform: translate(70%, -50%)
+    */
+}
+.results_table{
+    display: block; 
+    width: auto;    
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: large;
+    color:#ffff00;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    position: absolute;
+    top: 22%;
+    right: 8%;
+    border: 2px solid #17b755;
+    padding: 5px;
+}
+.results_table th{
+    color: white;
+    text-align: center;
+}
+.results_table thead{
+    background-color:#4CAF50;
+}
+.results_table td{
+    text-align: left;
+    width: fit-content;
+}
+
+input[type=text] {
+    font-family: "NB Akademie Std", Arial, sans-serif;
+    font-size: 12px;
+}
+
+input[type=date] {
+    font-family: "NB Akademie Std", Arial, sans-serif;
+    font-size: 12px;
+}
+
+select {
+    font-size: 12px;
+    font-family: "NB Akademie Std", Arial, sans-serif;
+}
+
+.viewTable{
+    margin: auto 0;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: "NB Akademie Std", Arial, sans-serif;
+}
+
+#tableHeader {
+    background-color: #253e96;
+    color: #ffffff;
+    opacity: 78%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: "NB Akademie Std", Arial, sans-serif;
+}
+
+.headerRow {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: "NB Akademie Std", Arial, sans-serif;
+    padding: 10px;
+}
+
+.requestInfo {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    font-family: "NB Akademie Std", Arial, sans-serif;
+}
