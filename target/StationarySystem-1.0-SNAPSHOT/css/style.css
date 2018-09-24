@@ -342,6 +342,7 @@ select {
 }
 
 .viewTable{
+    margin: auto 0;
     border: 1px solid black;
     border-collapse: collapse;
     font-family: "NB Akademie Std", Arial, sans-serif;

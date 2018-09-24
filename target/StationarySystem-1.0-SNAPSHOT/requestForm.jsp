@@ -33,13 +33,14 @@
                 <tr><td>Products: </td><td><select name="products">
                     <option value="pencils">Pencils</option>
                     <option value="pens">Pens</option>
+                    <option value="pens">Notebooks</option>
                         </select></td></tr>
                 <tr><td>Quantity:</td><td><input size = "23" type="number" name="quantity"></td></tr>
                 <tr><td><input type="hidden" value="submitted" name="submitted"></td>
                     <td>
                         <input class="button" type="submit" value="Submit"> 
                         &nbsp; 
-                        <button class="button" type="button" onclick="location.href = 'requestForm.jsp'" > Cancel </button>
+                        <button class="button" type="button" onclick="location.href = 'requestForm.jsp'" > Clear </button>
                     </td>
                 </tr>
             </table>
