@@ -26,19 +26,36 @@
                 </div>
                 
         <div class="maincontent">
-        <h2 class="databaseHeading">Stationery Inventory</h2> 
-        <br>
-        <p>PLACEHOLDER FOR STATIONERY INVENTORY TABLE. This should include Stationery ID, Name, Price, Description and Quantity.</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <h2 class="databaseHeading">Stationery Inventory</h2>
+         <table class="viewTable">
+            <tr id="tableHeader">    
+                <th class="headerRow">Stationery ID</th>
+                <th class="headerRow">Name</th>
+                <th class="headerRow">Price</th>
+                <th class="headerRow">Description</th>
+                <th class="headerRow">Quantity</th>
+            </tr>
+            <tr>
+                <td class="requestInfo">100</td>
+                <td class="requestInfo">Pencil</td>
+                <td class="requestInfo">$2.00</td>
+                <td class="requestInfo">HB and 2B pencils provided.</td>
+                <td class="requestInfo">10000</td>
+            <tr>
+                <td class="requestInfo">101</td>
+                <td class="requestInfo">Pens</td>
+                <td class="requestInfo">$3.00</td>
+                <td class="requestInfo">Ink, gel and ballpoint options available.</td>
+                <td class="requestInfo">5000</td>
+            </tr>
+            <tr>
+                <td class="requestInfo">102</td>
+                <td class="requestInfo">Notebook</td>
+                <td class="requestInfo">$4.00</td>
+                <td class="requestInfo">Assorted colours.</td>
+                <td class="requestInfo">5000</td>
+            </tr>
+        </table>
         <br>
         </div>
         <footer>

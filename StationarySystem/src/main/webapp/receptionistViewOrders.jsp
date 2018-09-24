@@ -25,22 +25,70 @@
                 <th class="headerRow">Date of Request</th>
                 <th class="headerRow">Product</th>
                 <th class="headerRow">Quantity</th>
+                <th class="headerRow">Order Status</th>
             </tr>
             <tr>
                 <td class="requestInfo">12345</td>
                 <td class="requestInfo">Kevin Woo</td>
                 <td class="requestInfo">woothepoo@gmail.com</td>
                 <td class="requestInfo">Design</td>
-                <td class="requestInfo">15/3/2018</td>
+                <td class="requestInfo">15/03/2018</td>
                 <td class="requestInfo">Pencils</td>
                 <td class="requestInfo">69</td>
+                <td class="requestInfo">Completed</td>
+            </tr>
+            <tr>
+                <td class="requestInfo">12346</td>
+                <td class="requestInfo">Bob Graham</td>
+                <td class="requestInfo">bobbybooze@gmail.com</td>
+                <td class="requestInfo">FEIT</td>
+                <td class="requestInfo">24/09/2018</td>
+                <td class="requestInfo">Pencils</td>
+                <td class="requestInfo">10</td>
+                <td class="requestInfo">In Progress</td>
+            </tr>
+            <tr>
+                <td class="requestInfo">12347</td>
+                <td class="requestInfo">Barbara Stein</td>
+                <td class="requestInfo">bahbahra@outlook.com</td>
+                <td class="requestInfo">Business</td>
+                <td class="requestInfo">25/09/2018</td>
+                <td class="requestInfo">Pencils</td>
+                <td class="requestInfo">65</td>
+                <td class="requestInfo">In Progress</td>
+            </tr>
+            <tr>
+                <td class="requestInfo">12348</td>
+                <td class="requestInfo">Peter Bark</td>
+                <td class="requestInfo">barker109@yahoo.com.au</td>
+                <td class="requestInfo">FEIT</td>
+                <td class="requestInfo">25/09/2018</td>
+                <td class="requestInfo">Pencils</td>
+                <td class="requestInfo">10</td>
+                <td class="requestInfo">In Progress</td>
+            </tr>
+            <tr>
+                <td class="requestInfo">12349</td>
+                <td class="requestInfo">Angel Fu</td>
+                <td class="requestInfo">halogirl@outlook.com</td>
+                <td class="requestInfo">Arts</td>
+                <td class="requestInfo">19/09/2018</td>
+                <td class="requestInfo">Pencils</td>
+                <td class="requestInfo">39</td>
+                <td class="requestInfo">Completed</td>
+            </tr>
+            <tr>
+                <td class="requestInfo">12340</td>
+                <td class="requestInfo">James Carter</td>
+                <td class="requestInfo">carter654@outlook.com</td>
+                <td class="requestInfo">Business</td>
+                <td class="requestInfo">05/08/2018</td>
+                <td class="requestInfo">Pencils</td>
+                <td class="requestInfo">25</td>
+                <td class="requestInfo">Completed</td>
             </tr>
         </table>
         <br>
-        <p>PLACEHOLDER FOR ORDERS TABLE. This should include Employee ID, First Name, Surname, Contact Number, Email, Role, Order ID, Order Date, Order Status and Order Received. Receptionist should be able to edit only "Order Received" column to confirm whether the order has been delivered to the faculty.</p>
-        <br>
-        <h4 class="databaseSubheading">Order Stationery Items</h4>
-        <p>PLACEHOLDER FOR DISPLAY OF STATIONERY ITEMS. When a record is clicked in the above table, it should display the list of stationery items and their requested quantity in a table format.</p>
         </div>
         <footer>
             <p>Copyright UTS 2018 | All rights reserved.</p>
