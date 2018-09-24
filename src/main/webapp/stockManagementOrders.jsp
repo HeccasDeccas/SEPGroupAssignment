@@ -22,8 +22,6 @@
         <div class="maincontent">
         <h2 class="databaseHeading">FEIT Stationery Orders</h2> 
         <br>
-        <p>PLACEHOLDER FOR ORDERS TABLE. This should include Employee ID, First Name, Surname, Contact Number, Email, Role, Department Name, Order ID, Order Date, Order Status and Order Received. Stock management employees should be able to edit only "Order Status" column to confirm whether the order has been packed and ready to send to the faculty.</p>
-        <br>
         <table class="viewTable">
             <tr id="tableHeader">
                 <th class="headerRow">Staff ID</th>
@@ -33,6 +31,7 @@
                 <th class="headerRow">Date of Request</th>
                 <th class="headerRow">Product</th>
                 <th class="headerRow">Quantity</th>
+                <th class="headerRow">Order Status</th>
             </tr>
             <tr>
                 <td class="requestInfo">12345</td>
@@ -42,10 +41,39 @@
                 <td class="requestInfo">15/3/2018</td>
                 <td class="requestInfo">Pencils</td>
                 <td class="requestInfo">69</td>
+                <td class="requestInfo">Completed</td>
+            </tr>
+            <tr>
+                <td class="requestInfo">12348</td>
+                <td class="requestInfo">Peter Bark</td>
+                <td class="requestInfo">barker109@yahoo.com.au</td>
+                <td class="requestInfo">FEIT</td>
+                <td class="requestInfo">25/09/2018</td>
+                <td class="requestInfo">Pencils</td>
+                <td class="requestInfo">10</td>
+                <td class="requestInfo">In Progress</td>
+            </tr>
+            <tr>
+                <td class="requestInfo">12349</td>
+                <td class="requestInfo">Angel Fu</td>
+                <td class="requestInfo">halogirl@outlook.com</td>
+                <td class="requestInfo">Arts</td>
+                <td class="requestInfo">19/09/2018</td>
+                <td class="requestInfo">Pencils</td>
+                <td class="requestInfo">39</td>
+                <td class="requestInfo">Completed</td>
+            </tr>
+            <tr>
+                <td class="requestInfo">12340</td>
+                <td class="requestInfo">James Carter</td>
+                <td class="requestInfo">carter654@outlook.com</td>
+                <td class="requestInfo">Business</td>
+                <td class="requestInfo">05/08/2018</td>
+                <td class="requestInfo">Pencils</td>
+                <td class="requestInfo">25</td>
+                <td class="requestInfo">Completed</td>
             </tr>
         </table>
-        <h4 class="databaseSubheading">Order Stationery Items</h4>
-        <p>PLACEHOLDER FOR DISPLAY OF STATIONERY ITEMS. When a record is clicked in the above table, it should display the list of stationery items and their requested quantity in a table format.</p>
         </div>
         <footer>
             <p>Copyright UTS 2018 | All rights reserved.</p>
