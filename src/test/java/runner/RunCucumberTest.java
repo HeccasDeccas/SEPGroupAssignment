@@ -5,31 +5,23 @@
  */
 package runner;
 
-/*import org.junit.After;
+import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;*/
+import static org.junit.Assert.*;
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 /**
  *
- * @author declan Schillert & Ashleigh Wan
+ * @author declan Schillert
  */
-@RunWith(Cucumber.class)
+/*@RunWith(Cucumber.class)
 @CucumberOptions(
-features = "src/test/java/features/test",
-glue = {"runner"},
-plugin = { "pretty", "html:target/cucumber"})
-/*package cucumberJava;
-
-import org.junit.runner.RunWith; 
-import cucumber.junit.Cucumber; 
-
-@RunWith(Cucumber.class) 
-@Cucumber.Options(format = {"pretty", "html:target/cucumber"}) 
-"json:StationarySystem/cucumber.json"*/
+features = "src/test/javaFeatures",
+        glue = {"seleniumgluecode"},
+plugin = { "pretty", "json:StationarySystem/cucumber.json" })*/
 public class RunCucumberTest { }
