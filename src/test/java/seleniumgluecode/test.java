@@ -18,17 +18,10 @@ import org.junit.Assert;
  * @author decla
  */
 public class test {
-<<<<<<< HEAD
     public static WebDriver driver;
     @Given("^user is on Login Page$")
     public void user_is_on_loginpage() throws Throwable {     
     	System.setProperty("webdriver.gecko.driver","/Users/Documents/geckodriver");
-=======
-    /*public static WebDriver driver;
-    @Given("^user is on Login Page$")
-    public void user_is_on_loginpage() throws Throwable {     
-    	System.setProperty("webdriver.chrome.driver","/Users/Documents/chromedriver");
->>>>>>> parent of e17911b... Testing Testing
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://automationpractice.com/index.php");
@@ -36,27 +29,15 @@ public class test {
         
     @When("^user enters Username and Password$")
     public void user_enters_Username_and_Password() throws Throwable {
-<<<<<<< HEAD
     	driver.findElement(By.id("email")).sendKeys("blog.cucumber@gmail.com");
         driver.findElement(By.id("passwd")).sendKeys("Cucumber@blog");
-=======
-    	driver.findElement(By.id("ID")).sendKeys("123456");
-        driver.findElement(By.id("password")).sendKeys("blahblah123");
->>>>>>> parent of e17911b... Testing Testing
         driver.findElement(By.id("SubmitLogin")).click();   
     }
     
     @Then("^user dashboard is displayed$")
     public void user_dashboard_is_displayed() throws Throwable {
-<<<<<<< HEAD
     	
       
         driver.quit(); 
     }
 }
-=======
-    	driver.findElement(By.id("FillIn"));
-        driver.quit(); 
-    }*/
-}
->>>>>>> parent of e17911b... Testing Testing
