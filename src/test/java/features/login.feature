@@ -1,0 +1,8 @@
+@testing
+Feature: Test open StationarySystem URL
+
+
+Scenario: User opens Login page
+    Given user opens browser
+    When login page is loaded
+    Then login button is active
