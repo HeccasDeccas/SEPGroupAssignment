@@ -19,8 +19,14 @@ import cucumber.api.junit.Cucumber;
  *
  * @author declan Schillert
  */
-@RunWith(Cucumber.class)
+/*@RunWith(Cucumber.class)
 @CucumberOptions(
 features = "src/test/javaFeatures",
+<<<<<<< HEAD:src/test/java/runner/testrunner.java
         glue = {"seleniumgluecode"})
 public class testrunner { }
+=======
+        glue = {"seleniumgluecode"},
+plugin = { "pretty", "json:StationarySystem/cucumber.json" })*/
+public class RunCucumberTest { }
+>>>>>>> parent of e17911b... Testing Testing:src/test/java/runner/RunCucumberTest.java
