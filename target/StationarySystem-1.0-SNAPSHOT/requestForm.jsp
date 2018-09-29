@@ -21,7 +21,7 @@
             String emailErr = (String) session.getAttribute("emailErr");
             String idErr = (String) session.getAttribute("idErr");
         %>
-        <h2 id="FillIn">Fill in the form to request stationery:</h2> 
+        <h2>Fill in the form to request stationery:</h2> 
         <br>
         <form action="requestFormAction.jsp" method="post">
             <table>
