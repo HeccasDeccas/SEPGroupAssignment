@@ -20,8 +20,8 @@ import org.junit.Assert;
  */
 public class test {
     WebDriver driver;
-    @Given("^user is on Login Page$")
-    public void user_is_on_loginpage() throws Throwable {     
+    @Given("^user opens browser$")
+    public void user_opens_browser() throws Throwable {     
     	//System.setProperty("webdriver.chrome.driver","/Users/Documents/chromedriver");
         Class<? extends WebDriver> driverClass = ChromeDriver.class;
         WebDriverManager.getInstance(driverClass).setup();
@@ -32,16 +32,16 @@ public class test {
         //driver.get("http://automationpractice.com/index.php");
     }
         
-    @When("^user enters Username and Password$")
-    public void user_enters_Username_and_Password() throws Throwable {
+    @When("^login page is loaded$")
+    public void login_page_is_loaded() throws Throwable {
     	//driver.findElement(By.id("ID")).sendKeys("123456");
         //driver.findElement(By.id("password")).sendKeys("blahblah123");
         //driver.findElement(By.id("SubmitLogin")).click(); 
         driver.navigate().to(driver.getCurrentUrl());
     }
     
-    @Then("^user dashboard is displayed$")
-    public void user_dashboard_is_displayed() throws Throwable {
+    @Then("^login button is active$")
+    public void login_button_is_active() throws Throwable {
     	if(driver.findElement(By.id("Login")).isEnabled()) {
             System.out.println("Login button enabled");
         } else {
