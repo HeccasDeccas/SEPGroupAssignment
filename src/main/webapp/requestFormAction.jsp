@@ -20,6 +20,7 @@
             String name = request.getParameter("name");
             String email = request.getParameter("email");
             String password = request.getParameter("password");
+            String role = request.getParameter("role");
             String faculty = request.getParameter("faculty");
             String products = request.getParameter("products");
             String quantity = request.getParameter("quantity");
@@ -40,7 +41,7 @@
                 session.setAttribute("idErr", "ID format is incorrect");
                 response.sendRedirect("requestForm.jsp");
             } else {
-                Staff staff = new Staff(ID,name,email,password);
+                Staff staff = new Staff(ID,name,email,password,role);
                 session.setAttribute("staff", staff);
                 session.setAttribute("tos", tos);
                 response.sendRedirect("formSubmitted.jsp");
