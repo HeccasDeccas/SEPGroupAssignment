@@ -65,9 +65,9 @@ public class StaffApplication implements Serializable {
         this.staffs = staffs;
     }
     
-    public void editStaff(Staff staff, String name, String email, String password) throws Exception{
+    public void editStaff(Staff staff, String name, String email, String password, String role) throws Exception{
         staffs.remove(staff);
-        staff.updateDetails(name, email, password);
+        staff.updateDetails(name, email, password, role);
         staffs.addStaff(staff);
         updateXML(staffs,filePath);
     }

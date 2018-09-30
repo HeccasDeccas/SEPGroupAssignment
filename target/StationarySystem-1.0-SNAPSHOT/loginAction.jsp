@@ -24,20 +24,26 @@
             String password = request.getParameter("password");
             Staff staff = staffs.login(ID, password);
             Validator v = new Validator();
-       
+
             if (!v.validateID(ID)) {
-                session.setAttribute("IDErr", "ID format is incorrect!");                
-                response.sendRedirect("index.jsp");                
+                session.setAttribute("IDErr", "ID format is incorrect!");
+                response.sendRedirect("index.jsp");
             } else if (!v.validatePassword(password)) {
-                session.setAttribute("passErr", "Password format is incorrect");               
-                response.sendRedirect("index.jsp");                
-            }else if (staff != null) {
+                session.setAttribute("passErr", "Password format is incorrect");
+                response.sendRedirect("index.jsp");
+            } else if (staff != null && staff.getRole().equals("staff")) {
                 session.setAttribute("staffLogin", staff);
-                response.sendRedirect("requestForm.jsp");                
-            } else {                
-                session.setAttribute("existErr", "Staff account does not exist!");              
-                response.sendRedirect("index.jsp");                
-            }                       
+                response.sendRedirect("requestForm.jsp");
+            } else if (staff != null && staff.getRole().equals("receptionist")) {
+                session.setAttribute("staffLogin", staff);
+                response.sendRedirect("receptionistDashboard.jsp");
+            } else if (staff != null && staff.getRole().equals("stockroom")) {
+                session.setAttribute("staffLogin", staff);
+                response.sendRedirect("stockManagementDashboard.jsp");
+            } else {
+                session.setAttribute("existErr", "Staff account does not exist!");
+                response.sendRedirect("index.jsp");
+            }
         %>
     </body>
 </html>

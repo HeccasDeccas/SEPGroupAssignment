@@ -25,20 +25,24 @@ public class Staff implements Serializable {
     private String name;
     @XmlElement(name = "password")
     private String password;
+    @XmlElement(name = "role")
+    private String role;
 
-    public Staff(String ID, String name, String email,String password) {
+    public Staff(String ID, String name, String email,String password, String role) {
         this.name = name;
         this.email = email;
         this.password = password;     
         this.ID = ID;
+        this.role = role;
     }
 
     public Staff() { }
     
-    public void updateDetails(String name, String email, String password){
+    public void updateDetails(String name, String email, String password, String role){
         this.name = name;
         this.email = email;
         this.password = password;
+        this.role = role;
     }
 
     public boolean matchID(String ID){
@@ -80,5 +84,13 @@ public class Staff implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+    
+    public String getRole() {
+        return role;
+    }
+    
+    public void setRole(String role) {
+        this.role = role;
     }
 }//end class

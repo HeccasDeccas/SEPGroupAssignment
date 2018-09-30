@@ -6,30 +6,35 @@
         <ID>123456</ID>
         <email>neuer@uts.com</email>
         <name>Manuel Nueur</name>
-        <password>blahblah123</password>   
+        <password>blahblah123</password>
+        <role>staff</role>   
     </staff>
     <staff>  
         <ID>111222</ID>     
         <email>Oli.khan@bloggs.com</email>
         <name>Oliver Khan</name>
-        <password>football555</password>     
+        <password>football555</password> 
+        <role>receptionist</role>    
     </staff>
     <staff>  
         <ID>333444</ID>     
         <email>muller@uts.com</email>
         <name>Thomas Muller</name>
-        <password>allstars123</password>     
+        <password>allstars123</password> 
+        <role>stockroom</role>    
     </staff>
     <staff>   
         <ID>555666</ID>    
         <email>drexler@gmail.com</email>
         <name>Julian Drexler</name>
-        <password>worldbest777</password>     
+        <password>worldbest777</password> 
+        <role>staff</role>    
     </staff>
     <staff> 
         <ID>777888</ID>      
         <email>kroos@hotmail.com</email>
         <name>Tony Kroos</name>
-        <password>happyfeet888</password>    
+        <password>happyfeet888</password>  
+        <role>staff</role>  
     </staff>
 </staffs>
