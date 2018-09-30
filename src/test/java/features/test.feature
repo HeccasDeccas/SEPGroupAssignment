@@ -1,9 +1,9 @@
-Feature: Login Feature 
+Feature: Test open StationarySystemURL
 Verify if the log in interface is functioning 
 
 
 @testing
-Scenario: Login as a authenticated user
-    Given user is on Login Page
-    When user enters Username and Password
-    Then user dashboard is displayed 
+Scenario: User opens Login page
+    Given user opens browser
+    When login page is loaded
+    Then login button is active

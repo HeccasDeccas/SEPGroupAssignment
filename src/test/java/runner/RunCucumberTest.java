@@ -5,12 +5,6 @@
  */
 package runner;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -19,9 +13,10 @@ import cucumber.api.junit.Cucumber;
  *
  * @author declan Schillert
  */
-/*@RunWith(Cucumber.class)
+@RunWith(Cucumber.class)
 @CucumberOptions(
-features = "src/test/javaFeatures",
+        features = "src/test/java/features",
         glue = {"seleniumgluecode"},
-plugin = { "pretty", "json:StationarySystem/cucumber.json" })*/
-public class RunCucumberTest { }
+        plugin = {"pretty", "json:StationarySystem/cucumber.json"})
+public class RunCucumberTest {
+}
