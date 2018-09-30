@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: runner.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.334 sec <<< FAILURE! - in runner.RunCucumberTest
-initializationError(runner.RunCucumberTest)  Time elapsed: 0.007 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.177 sec <<< FAILURE! - in runner.RunCucumberTest
+initializationError(runner.RunCucumberTest)  Time elapsed: 0.01 sec  <<< ERROR!
 java.lang.IncompatibleClassChangeError: Implementing class
 
