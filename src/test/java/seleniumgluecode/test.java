@@ -16,20 +16,16 @@ import org.junit.Assert;
 
 /**
  *
- * @author decla
+ * @author declan and ash
  */
 public class test {
     WebDriver driver;
     @Given("^user opens browser$")
     public void user_opens_browser() throws Throwable {     
-    	//System.setProperty("webdriver.chrome.driver","/Users/Documents/chromedriver");
         Class<? extends WebDriver> driverClass = ChromeDriver.class;
         WebDriverManager.getInstance(driverClass).setup();
         driver = driverClass.newInstance();
         driver.get("https://sep-project-216707.appspot.com/");
-        //driver = new ChromeDriver();
-        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //driver.get("http://automationpractice.com/index.php");
     }
         
     @When("^login page is loaded$")

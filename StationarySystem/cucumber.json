@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 6,
+        "line": 5,
         "name": "User opens Login page",
         "description": "",
         "id": "test-open-stationarysystemurl;user-opens-login-page",
@@ -12,10 +12,10 @@
         "steps": [
           {
             "result": {
-              "duration": 5903406532,
+              "duration": 8197588975,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "user opens browser",
             "match": {
               "location": "test.user_opens_browser()"
@@ -24,10 +24,10 @@
           },
           {
             "result": {
-              "duration": 596293992,
+              "duration": 392735466,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "login page is loaded",
             "match": {
               "location": "test.login_page_is_loaded()"
@@ -36,10 +36,10 @@
           },
           {
             "result": {
-              "duration": 244086566,
+              "duration": 257394478,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "login button is active",
             "match": {
               "location": "test.login_button_is_active()"
@@ -49,7 +49,7 @@
         ],
         "tags": [
           {
-            "line": 5,
+            "line": 4,
             "name": "@testing"
           }
         ]

@@ -15,47 +15,25 @@
     <body>         
         <div id="loginboxpadding">
         <div id="loginbox">
-        <%
-            String exist = (String) session.getAttribute("existErr");
-            String idErr = (String) session.getAttribute("IDErr");
-            String passError = (String) session.getAttribute("passErr");
-        %>
-        <table>
+            <table>
             <tr>
                 <td><img class="UTSLogoBlack" src="images/UTS_Logo_Black.png" alt="UTS_Logo"></td>
                 <td id="title">Stationery Management System</td>
             </tr>
         </table>
-        
-        <h2>Enter your details to login:</h2>
-        <p id="loginerror"><span class="error"><%=(exist != null ? exist : "")%></span></p>
-
-        <form action="loginAction.jsp" method="post">
-            <table>                
-                <tr><td>Staff ID:</td><td><input type="text" name="ID" value="<%=(idErr != null ? idErr : "")%>"/></td></tr>
-                <tr><td>Password:</td><td><input type="password" name="password" value="<%=(passError != null ? passError : "")%>"></td></tr>                
-                <tr><td><input type="hidden" value="submitted" name="submitted"></td>
-                    <td><input class="button" type="submit" id="Login" value="Login"> 
-                    </td>
-                </tr>
+        <h2>Welcome to the UTS Stationery Management System</h2>
+        <h3>Please choose from the following options:</h3>
+        <p>Note: you cannot return to the dashboard after selecting the "Request Form" button.</p>
+            <table class="dashboardButtons">
+                <tr><td><input type="submit" class="button" onclick="window.location.href='loginStaff.jsp'" value="Staff Login"></td></tr>
+                <tr><td><input type="button" class="button" onclick="window.location.href='loginRec.jsp'" value="Receptionist Login"></td></tr>
+                <tr><td><input type="button" class="button" onclick="window.location.href='loginStockroom.jsp'" value="Stockroom Login"></td></tr>
+                <tr><td>
+                        <div class="boxLogoutButton">
+                        <a id="navbar" href="logoutPage.jsp">Logout</a>
+                        </div>
+                </td></tr>
             </table>
-        </form> 
-       
-        <!--This part below is only for test purposes-->
-        
-        <div class="tempLoginButtons">
-            <a href="stockManagementDashboard.jsp">Stockroom Dashboard</a>
-            <br>
-            <a href="receptionistDashboard.jsp">Receptionist Dashboard</a>
-            <br>
-        </div>
-        <%
-            if (request.getParameter("submitted") != null) {
-                exist = idErr = passError = null;
-
-            }
-            session.invalidate();
-        %>
         </div>
         </div>
     </body>
