@@ -1,2 +1,4 @@
-runner/RunCucumberTest.class
-seleniumgluecode/test.class
+runner\RunCucumberTest.class
+JUnit\JUnitTests.class
+seleniumgluecode\test.class
+JUnit\JUnitRunner.class

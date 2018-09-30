@@ -17,6 +17,15 @@
     <body>
         
         <%
+            //Added DB Code:
+            MongoMain database = new MongoMain();
+            //Collect items
+
+            //Add Getters:
+            String staffID = request.getParameter("staffID");
+            String dateOfRequest = request.getParameter("dob");
+            String product = request.getParameter("products");
+            
             String name = request.getParameter("name");
             String email = request.getParameter("email");
             String password = request.getParameter("password");
@@ -42,6 +51,7 @@
                 response.sendRedirect("requestForm.jsp");
             } else {
                 Staff staff = new Staff(ID,name,email,password,role);
+                database.add(name, staffID, email, faculty, dateOfRequest, product, quantity);
                 session.setAttribute("staff", staff);
                 session.setAttribute("tos", tos);
                 response.sendRedirect("formSubmitted.jsp");
