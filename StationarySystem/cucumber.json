@@ -1,0 +1,55 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "User opens Login page",
+        "description": "",
+        "id": "test-open-stationarysystemurl;user-opens-login-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "user opens browser",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "login page is loaded",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "login button is active",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@testing"
+          }
+        ]
+      }
+    ],
+    "name": "Test open StationarySystemURL",
+    "description": "Verify if the log in interface is functioning",
+    "id": "test-open-stationarysystemurl",
+    "keyword": "Feature",
+    "uri": "test.feature"
+  }
+]
