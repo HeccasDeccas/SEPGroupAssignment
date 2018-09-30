@@ -19,9 +19,9 @@ import cucumber.api.junit.Cucumber;
  *
  * @author declan Schillert
  */
-/*@RunWith(Cucumber.class)
+@RunWith(Cucumber.class)
 @CucumberOptions(
 features = "src/test/javaFeatures",
         glue = {"seleniumgluecode"},
-plugin = { "pretty", "json:StationarySystem/cucumber.json" })*/
+plugin = { "pretty", "json:StationarySystem/cucumber.json" })
 public class RunCucumberTest { }
