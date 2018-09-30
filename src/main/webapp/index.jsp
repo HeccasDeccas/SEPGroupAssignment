@@ -41,14 +41,14 @@
             </table>
         </form> 
        
-        <!--This part below is only for test purposes-->
+        <!--This part below was only for test purposes but now that permissions are working it should be ok to delete. But leave it in for now.
         
         <div class="tempLoginButtons">
             <a href="stockManagementDashboard.jsp">Stockroom Dashboard</a>
             <br>
             <a href="receptionistDashboard.jsp">Receptionist Dashboard</a>
             <br>
-        </div>
+        </div>-->
         <%
             if (request.getParameter("submitted") != null) {
                 exist = idErr = passError = null;
