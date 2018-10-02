@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5301742181,
+              "duration": 5829345702,
               "status": "passed"
             },
             "line": 7,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 1702550925,
+              "duration": 698108321,
               "status": "passed"
             },
             "line": 8,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 149023505,
+              "duration": 768639584,
               "status": "passed"
             },
             "line": 9,
@@ -51,6 +51,52 @@
           {
             "line": 5,
             "name": "@testing"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "UTS Staff member completes form",
+        "description": "",
+        "id": "test-open-stationarysystemurl;uts-staff-member-completes-form",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5316692085,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "UTS Staff Member logs in",
+            "match": {
+              "location": "RequestTest.uts_Staff_Member_logs_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 148528573,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "completing order form",
+            "match": {
+              "location": "RequestTest.completing_order_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 242451189,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "system should have both drop down options and text fields",
+            "match": {
+              "location": "RequestTest.system_should_have_both_drop_down_options_and_text_fields()"
+            },
+            "keyword": "Then "
           }
         ]
       }
