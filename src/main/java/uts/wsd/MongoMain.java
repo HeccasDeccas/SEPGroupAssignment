@@ -5,6 +5,8 @@
  */
 package uts.wsd;
 
+import com.mongodb.DBCursor;
+import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
@@ -49,6 +51,5 @@ public class MongoMain {
         
         collection.insertOne(document);
     }
-    
     
 }
