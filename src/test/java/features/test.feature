@@ -12,4 +12,10 @@ Scenario: UTS Staff member completes form
     Given UTS Staff Member logs in
     When completing order form
     Then system should have both drop down options and text fields
+    When submitting an incomplete form
+    Then system should show an error message when incomplete field AND when input is invalid
 
+Scenario: Receptionist logs in to dashboard
+    Given Receptionist fills in login details
+    When selects login button
+    Then system should process login and direct to the dashboard

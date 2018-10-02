@@ -1,5 +1,5 @@
 runner/RunCucumberTest.class
-seleniumgluecode/test.class
-seleniumgluecode/RequestTest.class
-JUnit/JUnitTests.class
 JUnit/JUnitRunner.class
+seleniumgluecode/RequestTest.class
+seleniumgluecode/LoginTest.class
+JUnit/JUnitTests.class

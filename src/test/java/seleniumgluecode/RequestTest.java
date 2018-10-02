@@ -42,14 +42,19 @@ public class RequestTest {
 
     @Then("^system should have both drop down options and text fields$")
     public void system_should_have_both_drop_down_options_and_text_fields() throws Throwable {
-        if (driver.findElement(By.tagName("select")).isDisplayed() && driver.findElement(By.tagName("input")).isDisplayed())
-        {
+        if (driver.findElement(By.tagName("select")).isDisplayed() && driver.findElement(By.tagName("input")).isDisplayed()) {
             System.out.println("Both fields present");
-        }
-        else {
+        } else {
             System.out.println("One or more of the fields is not present");
         }
-        driver.close();
+    }
+
+    @When("^submitting an incomplete form$")
+    public void submitting_an_incomplete_form() throws Throwable {
+    }
+
+    @Then("^system should show an error message when incomplete field AND when input is invalid$")
+    public void system_should_show_an_error_message_when_incomplete_field_AND_when_input_is_invalid() throws Throwable {
+
     }
 }
-

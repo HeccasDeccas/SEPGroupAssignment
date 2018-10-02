@@ -12,37 +12,37 @@
         "steps": [
           {
             "result": {
-              "duration": 5829345702,
+              "duration": 8984181796,
               "status": "passed"
             },
             "line": 7,
             "name": "user opens browser",
             "match": {
-              "location": "test.user_opens_browser()"
+              "location": "LoginTest.user_opens_browser()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 698108321,
+              "duration": 409875630,
               "status": "passed"
             },
             "line": 8,
             "name": "login page is loaded",
             "match": {
-              "location": "test.login_page_is_loaded()"
+              "location": "LoginTest.login_page_is_loaded()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 768639584,
+              "duration": 172935171,
               "status": "passed"
             },
             "line": 9,
             "name": "login button is active",
             "match": {
-              "location": "test.login_button_is_active()"
+              "location": "LoginTest.login_button_is_active()"
             },
             "keyword": "Then "
           }
@@ -64,7 +64,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5316692085,
+              "duration": 4724132020,
               "status": "passed"
             },
             "line": 12,
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 148528573,
+              "duration": 122616169,
               "status": "passed"
             },
             "line": 13,
@@ -88,13 +88,83 @@
           },
           {
             "result": {
-              "duration": 242451189,
+              "duration": 61232974,
               "status": "passed"
             },
             "line": 14,
             "name": "system should have both drop down options and text fields",
             "match": {
               "location": "RequestTest.system_should_have_both_drop_down_options_and_text_fields()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 222147,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "submitting an incomplete form",
+            "match": {
+              "location": "RequestTest.submitting_an_incomplete_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18021,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "system should show an error message when incomplete field AND when input is invalid",
+            "match": {
+              "location": "RequestTest.system_should_show_an_error_message_when_incomplete_field_AND_when_input_is_invalid()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Receptionist logs in to dashboard",
+        "description": "",
+        "id": "test-open-stationarysystemurl;receptionist-logs-in-to-dashboard",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4332185198,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Receptionist fills in login details",
+            "match": {
+              "location": "ReceptionistTest.receptionist_fills_in_login_details()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 557896722,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "selects login button",
+            "match": {
+              "location": "ReceptionistTest.selects_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39022154,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "system should process login and direct to the dashboard",
+            "match": {
+              "location": "ReceptionistTest.system_should_process_login_and_direct_to_the_dashboard()"
             },
             "keyword": "Then "
           }
