@@ -75,6 +75,7 @@
                         String dateOfRequest = (String) obj.get("dateOfRequest");
                         String product = (String) obj.get("product");
                         String quantity = (String) obj.get("quantity");
+                        String orderStatus = (String) obj.get("orderStatus");
                     %> 
                         
                     <tr>
@@ -85,6 +86,7 @@
                         <td><%=dateOfRequest %></td>
                         <td><%=product %></td>
                         <td><%=quantity %></td>
+                        <td><%=orderStatus %></td>
                     </tr>
                     <%
                   } //end while loop

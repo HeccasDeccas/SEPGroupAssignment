@@ -48,6 +48,7 @@ public class MongoMain {
         document.append("dateOfRequest", dateOfRequest);
         document.append("product", product);
         document.append("quantity", quantity);
+        document.append("orderStatus", "Pending");
         
         collection.insertOne(document);
     }
