@@ -22,11 +22,19 @@ public class MongoMain {
     }
     
     public void add(String name, String staffID, String email, String faculty, String dateOfRequest, String product, String quantity) {
-        String uri = "mongodb+srv://Admin:admin@mongodb-pxsiy.mongodb.net/admin";
+        //OLD:
+        //String uri = "mongodb+srv://Admin:admin@mongodb-pxsiy.mongodb.net/admin";
+        
+        //EXAMPLE:
+        //mongodb://<dbuser>:<dbpassword>@ds121343.mlab.com:21343/mongodb_sep
+        
+        //NEW:
+        String uri = "mongodb://jarrodwatts16:Testpass123!@ds121343.mlab.com:21343/mongodb_sep";
+        
         MongoClientURI clientURI = new MongoClientURI(uri);
         MongoClient mongoClient = new MongoClient(clientURI);
         
-        MongoDatabase mongoDatabase = mongoClient.getDatabase("MongoDB");
+        MongoDatabase mongoDatabase = mongoClient.getDatabase("mongodb_sep");
         MongoCollection collection = mongoDatabase.getCollection("test");
         
         Document document = new Document("name", "Daeshan");
