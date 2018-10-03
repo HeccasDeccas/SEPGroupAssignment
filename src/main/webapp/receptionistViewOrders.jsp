@@ -1,7 +1,15 @@
+<%@page import="com.mongodb.client.MongoCursor"%>
+<%@page import="org.bson.Document"%>
+<%@page import="com.mongodb.client.MongoCollection"%>
+<%@page import="com.mongodb.client.MongoDatabase"%>
+<%@page import="com.mongodb.MongoClient"%>
+<%@page import="com.mongodb.MongoClientURI"%>
+<%@page import="uts.wsd.MongoMain"%>
 <link rel="stylesheet" href="css/style.css">
         <title>View Orders</title>
     </head>
     <body>
+        <% MongoMain database = new MongoMain(); %>
             <div class="databaseContainer">
             <header>
                 <img class="UTSLogoWhite" src="images/UTS_Logo_White.png" alt="UTS_Logo"> 
@@ -27,66 +35,51 @@
                 <th class="headerRow">Quantity</th>
                 <th class="headerRow">Order Status</th>
             </tr>
-            <tr>
-                <td class="requestInfo">12345</td>
-                <td class="requestInfo">Kevin Woo</td>
-                <td class="requestInfo">woothepoo@gmail.com</td>
-                <td class="requestInfo">Design</td>
-                <td class="requestInfo">15/03/2018</td>
-                <td class="requestInfo">Pencils</td>
-                <td class="requestInfo">69</td>
-                <td class="requestInfo">Completed</td>
-            </tr>
-            <tr>
-                <td class="requestInfo">12346</td>
-                <td class="requestInfo">Bob Graham</td>
-                <td class="requestInfo">bobbybooze@gmail.com</td>
-                <td class="requestInfo">FEIT</td>
-                <td class="requestInfo">24/09/2018</td>
-                <td class="requestInfo">Pencils</td>
-                <td class="requestInfo">10</td>
-                <td class="requestInfo">In Progress</td>
-            </tr>
-            <tr>
-                <td class="requestInfo">12347</td>
-                <td class="requestInfo">Barbara Stein</td>
-                <td class="requestInfo">bahbahra@outlook.com</td>
-                <td class="requestInfo">Business</td>
-                <td class="requestInfo">25/09/2018</td>
-                <td class="requestInfo">Pencils</td>
-                <td class="requestInfo">65</td>
-                <td class="requestInfo">In Progress</td>
-            </tr>
-            <tr>
-                <td class="requestInfo">12348</td>
-                <td class="requestInfo">Peter Bark</td>
-                <td class="requestInfo">barker109@yahoo.com.au</td>
-                <td class="requestInfo">FEIT</td>
-                <td class="requestInfo">25/09/2018</td>
-                <td class="requestInfo">Pencils</td>
-                <td class="requestInfo">10</td>
-                <td class="requestInfo">In Progress</td>
-            </tr>
-            <tr>
-                <td class="requestInfo">12349</td>
-                <td class="requestInfo">Angel Fu</td>
-                <td class="requestInfo">halogirl@outlook.com</td>
-                <td class="requestInfo">Arts</td>
-                <td class="requestInfo">19/09/2018</td>
-                <td class="requestInfo">Pencils</td>
-                <td class="requestInfo">39</td>
-                <td class="requestInfo">Completed</td>
-            </tr>
-            <tr>
-                <td class="requestInfo">12340</td>
-                <td class="requestInfo">James Carter</td>
-                <td class="requestInfo">carter654@outlook.com</td>
-                <td class="requestInfo">Business</td>
-                <td class="requestInfo">05/08/2018</td>
-                <td class="requestInfo">Pencils</td>
-                <td class="requestInfo">25</td>
-                <td class="requestInfo">Completed</td>
-            </tr>
+            
+            <%
+                
+                //initialise hardcoded
+                String uri = "mongodb://jarrodwatts16:Testpass123!@ds121343.mlab.com:21343/mongodb_sep";
+        
+                MongoClientURI clientURI = new MongoClientURI(uri);
+                MongoClient mongoClient = new MongoClient(clientURI);
+
+                MongoDatabase mongoDatabase = mongoClient.getDatabase("mongodb_sep");
+                MongoCollection<Document> collection = mongoDatabase.getCollection("test");
+                
+                  //Get count of items
+                  //Performing a read operation on the collection
+                 MongoCursor<Document> cursor = collection.find().iterator();
+                  
+                  while (cursor.hasNext()) {
+                    Document obj = cursor.next();
+                    //create a row %>
+                    <%
+                        //create one td per attribute
+                        String name = (String) obj.get("name");
+                        String staffID = (String) obj.get("staffID");
+                        String email = (String) obj.get("email");
+                        String faculty = (String) obj.get("faculty");
+                        String dateOfRequest = (String) obj.get("dateOfRequest");
+                        String product = (String) obj.get("product");
+                        String quantity = (String) obj.get("quantity");
+                        String orderStatus = (String) obj.get("orderStatus");
+                    %> 
+                        
+                    <tr>
+                        <td><%= name%></td>
+                        <td><%=staffID %></td>
+                        <td><%=email %></td>
+                        <td><%=faculty %></td>
+                        <td><%=dateOfRequest %></td>
+                        <td><%=product %></td>
+                        <td><%=quantity %></td>
+                        <td><%=orderStatus %></td>
+                    </tr>
+                    <%
+                  } //end while loop
+                %>
+            
         </table>
         <br>
         </div>

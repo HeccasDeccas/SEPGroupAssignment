@@ -53,4 +53,16 @@ public class MongoMain {
         collection.insertOne(document);
     }
     
+    public void displayStock() {
+        //NEW:
+        String uri = "mongodb://jarrodwatts16:Testpass123!@ds119503.mlab.com:19503/mongodb_sep_stock";
+        
+        MongoClientURI clientURI = new MongoClientURI(uri);
+        MongoClient mongoClient = new MongoClient(clientURI);
+        
+        MongoDatabase mongoDatabase = mongoClient.getDatabase("mongodb_sep_stock");
+        MongoCollection collection = mongoDatabase.getCollection("test");
+        
+        
+    }
 }

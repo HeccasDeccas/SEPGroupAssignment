@@ -4,6 +4,13 @@
     Author     : jamie
 --%>
 
+<%@page import="com.mongodb.client.MongoCursor"%>
+<%@page import="org.bson.Document"%>
+<%@page import="com.mongodb.client.MongoCollection"%>
+<%@page import="com.mongodb.client.MongoDatabase"%>
+<%@page import="com.mongodb.MongoClient"%>
+<%@page import="com.mongodb.MongoClientURI"%>
+<%@page import="uts.wsd.MongoMain"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,6 +20,7 @@
         <title>Stationery Inventory</title>
     </head>
     <body>
+        <% MongoMain database = new MongoMain(); %>
             <div class="databaseContainer">
             <header>
                 <img class="UTSLogoWhite" src="images/UTS_Logo_White.png" alt="UTS_Logo"> 
@@ -27,7 +35,8 @@
                 
         <div class="maincontent">
         <h2 class="databaseHeading">Stationery Inventory</h2>
-         <table class="viewTable">
+         <table class="viewTable" id="mainTable">
+             
             <tr id="tableHeader">    
                 <th class="headerRow">Stationery ID</th>
                 <th class="headerRow">Name</th>
@@ -35,26 +44,43 @@
                 <th class="headerRow">Description</th>
                 <th class="headerRow">Quantity</th>
             </tr>
-            <tr>
-                <td class="requestInfo">100</td>
-                <td class="requestInfo">Pencil</td>
-                <td class="requestInfo">$2.00</td>
-                <td class="requestInfo">HB and 2B pencils provided.</td>
-                <td class="requestInfo">10000</td>
-            <tr>
-                <td class="requestInfo">101</td>
-                <td class="requestInfo">Pens</td>
-                <td class="requestInfo">$3.00</td>
-                <td class="requestInfo">Ink, gel and ballpoint options available.</td>
-                <td class="requestInfo">5000</td>
-            </tr>
-            <tr>
-                <td class="requestInfo">102</td>
-                <td class="requestInfo">Notebook</td>
-                <td class="requestInfo">$4.00</td>
-                <td class="requestInfo">Assorted colours.</td>
-                <td class="requestInfo">5000</td>
-            </tr>
+            
+            <%
+                
+                String uri = "mongodb://jarrodwatts16:Testpass123!@ds119503.mlab.com:19503/mongodb_sep_stock";
+        
+                MongoClientURI clientURI = new MongoClientURI(uri);
+                MongoClient mongoClient = new MongoClient(clientURI);
+
+                MongoDatabase mongoDatabase = mongoClient.getDatabase("mongodb_sep_stock");
+                MongoCollection collection = mongoDatabase.getCollection("test");
+                
+                  //Get count of items
+                  //Performing a read operation on the collection
+                 MongoCursor<Document> cursor = collection.find().iterator();
+                  
+                  while (cursor.hasNext()) {
+                    Document obj = cursor.next();
+                    //create a row %>
+                    <%
+                        //create one td per attribute
+                        String stationeryID = (String) obj.get("stationeryID");
+                        String name = (String) obj.get("name");
+                        String price = (String) obj.get("price");
+                        String description = (String) obj.get("description");
+                        int quantity = Integer.parseInt(obj.get("quantity").toString());
+                    %> 
+                        
+                    <tr>
+                        <td><%= stationeryID%></td>
+                        <td><%=name %></td>
+                        <td><%=price %></td>
+                        <td><%=description %></td>
+                        <td><%=quantity%></td>
+                    </tr>
+                    <%
+                  } //end while loop
+                %>
         </table>
         <br>
         </div>
