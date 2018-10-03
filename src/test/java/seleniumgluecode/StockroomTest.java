@@ -55,12 +55,12 @@ public class StockroomTest {
 
     @Then("^the system should show a table of the orders placed on the view orders screen$")
     public void the_system_should_show_a_table_of_the_orders_placed_on_the_view_orders_screen() throws Throwable {
-        if (driver.findElement(By.tagName("table")).isDisplayed() && driver.findElement(By.xpath("Staff ID")).isDisplayed()) {
+        if (driver.findElement(By.tagName("table")).isDisplayed()) {
             System.out.println("Table displays orders");
         }
         else {
             System.out.println("Table does not exist");
         }
+        driver.quit();
     }
-
 }
