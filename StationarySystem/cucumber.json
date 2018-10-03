@@ -12,37 +12,37 @@
         "steps": [
           {
             "result": {
-              "duration": 4669466240,
+              "duration": 10282942858,
               "status": "passed"
             },
             "line": 7,
             "name": "user opens browser",
             "match": {
-              "location": "test.user_opens_browser()"
+              "location": "LoginTest.user_opens_browser()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2310890273,
+              "duration": 849625865,
               "status": "passed"
             },
             "line": 8,
             "name": "login page is loaded",
             "match": {
-              "location": "test.login_page_is_loaded()"
+              "location": "LoginTest.login_page_is_loaded()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2349488571,
+              "duration": 295500948,
               "status": "passed"
             },
             "line": 9,
             "name": "login button is active",
             "match": {
-              "location": "test.login_button_is_active()"
+              "location": "LoginTest.login_button_is_active()"
             },
             "keyword": "Then "
           }
@@ -51,6 +51,168 @@
           {
             "line": 5,
             "name": "@testing"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "UTS Staff member completes form",
+        "description": "",
+        "id": "test-open-stationarysystemurl;uts-staff-member-completes-form",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4667393665,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "UTS Staff Member logs in",
+            "match": {
+              "location": "RequestTest.uts_Staff_Member_logs_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 98795318,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "completing order form",
+            "match": {
+              "location": "RequestTest.completing_order_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54266716,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "system should have both drop down options and text fields",
+            "match": {
+              "location": "RequestTest.system_should_have_both_drop_down_options_and_text_fields()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13680,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "submitting an incomplete form",
+            "match": {
+              "location": "RequestTest.submitting_an_incomplete_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11331,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "system should show an error message when incomplete field AND when input is invalid",
+            "match": {
+              "location": "RequestTest.system_should_show_an_error_message_when_incomplete_field_AND_when_input_is_invalid()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Receptionist logs in to dashboard",
+        "description": "",
+        "id": "test-open-stationarysystemurl;receptionist-logs-in-to-dashboard",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2545854897,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Receptionist fills in login details",
+            "match": {
+              "location": "ReceptionistTest.receptionist_fills_in_login_details()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 815998388,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "selects login button",
+            "match": {
+              "location": "ReceptionistTest.selects_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5237257,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "system should process login and direct to the dashboard",
+            "match": {
+              "location": "ReceptionistTest.system_should_process_login_and_direct_to_the_dashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Stockroom logs in to dashboard",
+        "description": "",
+        "id": "test-open-stationarysystemurl;stockroom-logs-in-to-dashboard",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2611960025,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Stockroom fills in login details",
+            "match": {
+              "location": "StockroomTest.stockroom_fills_in_login_details()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 830387464,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Stockroom selects login button",
+            "match": {
+              "location": "StockroomTest.stockroom_selects_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5303957,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "system should process login and direct to the stockroom dashboard",
+            "match": {
+              "location": "StockroomTest.system_should_process_login_and_direct_to_the_dashboard()"
+            },
+            "keyword": "Then "
           }
         ]
       }
