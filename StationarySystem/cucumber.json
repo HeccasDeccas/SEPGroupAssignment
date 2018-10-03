@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8984181796,
+              "duration": 7312939989,
               "status": "passed"
             },
             "line": 7,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 409875630,
+              "duration": 663329315,
               "status": "passed"
             },
             "line": 8,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 172935171,
+              "duration": 631330752,
               "status": "passed"
             },
             "line": 9,
@@ -64,7 +64,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4724132020,
+              "duration": 5471732189,
               "status": "passed"
             },
             "line": 12,
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 122616169,
+              "duration": 101092107,
               "status": "passed"
             },
             "line": 13,
@@ -88,7 +88,7 @@
           },
           {
             "result": {
-              "duration": 61232974,
+              "duration": 66266343,
               "status": "passed"
             },
             "line": 14,
@@ -100,7 +100,7 @@
           },
           {
             "result": {
-              "duration": 222147,
+              "duration": 16087,
               "status": "passed"
             },
             "line": 15,
@@ -112,7 +112,7 @@
           },
           {
             "result": {
-              "duration": 18021,
+              "duration": 183942,
               "status": "passed"
             },
             "line": 16,
@@ -134,7 +134,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4332185198,
+              "duration": 3773594341,
               "status": "passed"
             },
             "line": 19,
@@ -146,7 +146,7 @@
           },
           {
             "result": {
-              "duration": 557896722,
+              "duration": 692964776,
               "status": "passed"
             },
             "line": 20,
@@ -158,13 +158,59 @@
           },
           {
             "result": {
-              "duration": 39022154,
+              "duration": 5850958,
               "status": "passed"
             },
             "line": 21,
             "name": "system should process login and direct to the dashboard",
             "match": {
               "location": "ReceptionistTest.system_should_process_login_and_direct_to_the_dashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Stockroom logs in to dashboard",
+        "description": "",
+        "id": "test-open-stationarysystemurl;stockroom-logs-in-to-dashboard",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4521296790,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Stockroom fills in login details",
+            "match": {
+              "location": "StockroomTest.stockroom_fills_in_login_details()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 799615646,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Stockroom selects login button",
+            "match": {
+              "location": "StockroomTest.stockroom_selects_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8990480,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "system should process login and direct to the stockroom dashboard",
+            "match": {
+              "location": "StockroomTest.system_should_process_login_and_direct_to_the_dashboard()"
             },
             "keyword": "Then "
           }

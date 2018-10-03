@@ -19,3 +19,8 @@ Scenario: Receptionist logs in to dashboard
     Given Receptionist fills in login details
     When selects login button
     Then system should process login and direct to the dashboard
+
+Scenario: Stockroom logs in to dashboard
+    Given Stockroom fills in login details
+    When Stockroom selects login button
+    Then system should process login and direct to the stockroom dashboard
