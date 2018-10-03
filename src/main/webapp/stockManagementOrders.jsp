@@ -45,6 +45,7 @@
                 <th class="headerRow">Product</th>
                 <th class="headerRow">Quantity</th>
                 <th class="headerRow">Order Status</th>
+                <th class="headerRow">Change Status</th>
             </tr>
             
             <%
@@ -86,9 +87,52 @@
                         <td><%=product %></td>
                         <td><%=quantity %></td>
                         <td><%=orderStatus %></td>
+                        <td>
+                            <% 
+                                String nonSelectedOne = "";
+                                String nonSelectedTwo = "";
+                                String nonSelectedThree = "";
+                                //get orderstatus for default dropdown selected item
+                                 if (orderStatus.equals("Pending")) {   
+                                    nonSelectedOne = "Delivered";
+                                    nonSelectedTwo = "Canceled";
+                                    nonSelectedThree = "Shipped";
+                                 }
+                                 if (orderStatus.equals("Delivered")) {   
+                                    nonSelectedOne = "Pending";
+                                    nonSelectedTwo = "Canceled";
+                                    nonSelectedThree = "Shipped";
+                                 } 
+                                 if (orderStatus.equals("Canceled")) {   
+                                    nonSelectedOne = "Pending";
+                                    nonSelectedTwo = "Delivered";
+                                    nonSelectedThree = "Shipped";
+                                 }
+                                 if (orderStatus.equals("Shipped")) {   
+                                    nonSelectedOne = "Pending";
+                                    nonSelectedTwo = "Delivered";
+                                    nonSelectedThree = "Canceled";
+                                 }
+                                %>
+                                <select name="changeStatus" onchange=<%
+                                    //onStatusChange
+                                    
+                                    %>
+                                        >
+                                <option value=<%=orderStatus %>><%=orderStatus %></option>
+                                <option value=<%=nonSelectedOne %>><%=nonSelectedOne %></option>
+                                <option value=<%=nonSelectedTwo %>><%=nonSelectedTwo %></option>
+                                <option value=<%=nonSelectedThree %>><%=nonSelectedThree %></option>
+                            </select>
+                        </td>
                     </tr>
                     <%
                   } //end while loop
+
+                   //HERE: Collect each row's changeStatus
+                   //String approvername = (String)request.getParameter("changeStatus");
+                   
+
                 %>
 
         </table>
