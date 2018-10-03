@@ -55,6 +55,6 @@ public class RequestTest {
 
     @Then("^system should show an error message when incomplete field AND when input is invalid$")
     public void system_should_show_an_error_message_when_incomplete_field_AND_when_input_is_invalid() throws Throwable {
-
+        driver.quit();
     }
 }

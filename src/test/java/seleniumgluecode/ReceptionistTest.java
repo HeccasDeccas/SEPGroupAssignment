@@ -46,6 +46,7 @@ public class ReceptionistTest {
         } else {
             System.out.println("Dashboard is not present");
         }
+        driver.quit();
     }
 
 }

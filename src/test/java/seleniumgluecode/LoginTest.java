@@ -50,7 +50,7 @@ public class LoginTest {
         } else {
             System.out.println("Login button disabled");
         }
-        driver.close();
+        driver.quit();
     }
 
 }

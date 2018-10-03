@@ -1,0 +1,8 @@
+runner/RunCucumberTest.class
+JUnit/JUnitRunner.class
+seleniumgluecode/StockroomTest.class
+seleniumgluecode/RequestTest.class
+Model/UserTest.class
+seleniumgluecode/ReceptionistTest.class
+seleniumgluecode/LoginTest.class
+JUnit/JUnitTests.class
