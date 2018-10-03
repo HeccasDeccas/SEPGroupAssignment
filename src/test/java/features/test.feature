@@ -14,6 +14,8 @@ Scenario: UTS Staff member completes form
     Then system should have both drop down options and text fields
     When submitting an incomplete form
     Then system should show an error message when incomplete field AND when input is invalid
+    When submitting form
+    Then system should show a successful submission screen
 
 Scenario: Receptionist logs in to dashboard
     Given Receptionist fills in login details

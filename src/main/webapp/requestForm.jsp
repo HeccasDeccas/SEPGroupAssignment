@@ -38,7 +38,7 @@
                 <tr><td>Quantity:</td><td><input size = "23" type="number" name="quantity"></td></tr>
                 <tr><td><input type="hidden" value="submitted" name="submitted"></td>
                     <td>
-                        <input class="button" type="submit" value="Submit"> 
+                        <input class="button" type="submit" id="submit" value="Submit"> 
                         &nbsp; 
                         <button class="button" type="button" onclick="location.href = 'requestForm.jsp'" > Clear </button>
                     </td>

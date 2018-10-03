@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9560896212,
+              "duration": 5428274459,
               "status": "passed"
             },
             "line": 7,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 383802858,
+              "duration": 735310180,
               "status": "passed"
             },
             "line": 8,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 132369006,
+              "duration": 476286876,
               "status": "passed"
             },
             "line": 9,
@@ -64,7 +64,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4350594877,
+              "duration": 4386788380,
               "status": "passed"
             },
             "line": 12,
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 76712088,
+              "duration": 190706543,
               "status": "passed"
             },
             "line": 13,
@@ -88,7 +88,7 @@
           },
           {
             "result": {
-              "duration": 56149963,
+              "duration": 92050535,
               "status": "passed"
             },
             "line": 14,
@@ -100,7 +100,7 @@
           },
           {
             "result": {
-              "duration": 12220,
+              "duration": 63622,
               "status": "passed"
             },
             "line": 15,
@@ -112,7 +112,7 @@
           },
           {
             "result": {
-              "duration": 83807632,
+              "duration": 73126,
               "status": "passed"
             },
             "line": 16,
@@ -121,11 +121,35 @@
               "location": "RequestTest.system_should_show_an_error_message_when_incomplete_field_AND_when_input_is_invalid()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 965454749,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"id\",\"selector\":\"submit\"}\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform\u003dMac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027Ashleighs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:7e:c489:eb26:a26c%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_161\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/vb/wntw8slx4yb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62690}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}\nSession ID: 4a3c1d3fd6fac6e8fad12c8b5b6434b5\n*** Element info: {Using\u003did, value\u003dsubmit}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat seleniumgluecode.RequestTest.submitting_form(RequestTest.java:69)\n\tat ✽.When submitting form(test.feature:17)\n",
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "submitting form",
+            "match": {
+              "location": "RequestTest.submitting_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "system should show a successful submission screen",
+            "match": {
+              "location": "RequestTest.system_should_show_a_successful_submission_screen()"
+            },
+            "keyword": "Then "
           }
         ]
       },
       {
-        "line": 18,
+        "line": 20,
         "name": "Receptionist logs in to dashboard",
         "description": "",
         "id": "test-open-stationarysystemurl;receptionist-logs-in-to-dashboard",
@@ -134,10 +158,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2668470940,
+              "duration": 5156743981,
               "status": "passed"
             },
-            "line": 19,
+            "line": 21,
             "name": "Receptionist fills in login details",
             "match": {
               "location": "ReceptionistTest.receptionist_fills_in_login_details()"
@@ -146,10 +170,10 @@
           },
           {
             "result": {
-              "duration": 622443605,
+              "duration": 988312200,
               "status": "passed"
             },
-            "line": 20,
+            "line": 22,
             "name": "selects login button",
             "match": {
               "location": "ReceptionistTest.selects_login_button()"
@@ -158,10 +182,10 @@
           },
           {
             "result": {
-              "duration": 86552221,
+              "duration": 137801672,
               "status": "passed"
             },
-            "line": 21,
+            "line": 23,
             "name": "system should process login and direct to the dashboard",
             "match": {
               "location": "ReceptionistTest.system_should_process_login_and_direct_to_the_dashboard()"
@@ -171,7 +195,7 @@
         ]
       },
       {
-        "line": 23,
+        "line": 25,
         "name": "Stockroom logs in to dashboard",
         "description": "",
         "id": "test-open-stationarysystemurl;stockroom-logs-in-to-dashboard",
@@ -180,10 +204,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2077265295,
+              "duration": 4940904975,
               "status": "passed"
             },
-            "line": 24,
+            "line": 26,
             "name": "Stockroom fills in login details",
             "match": {
               "location": "StockroomTest.stockroom_fills_in_login_details()"
@@ -192,10 +216,10 @@
           },
           {
             "result": {
-              "duration": 609585585,
+              "duration": 823578125,
               "status": "passed"
             },
-            "line": 25,
+            "line": 27,
             "name": "Stockroom selects login button",
             "match": {
               "location": "StockroomTest.stockroom_selects_login_button()"
@@ -204,10 +228,10 @@
           },
           {
             "result": {
-              "duration": 87949177,
+              "duration": 201996446,
               "status": "passed"
             },
-            "line": 26,
+            "line": 28,
             "name": "system should process login and direct to the stockroom dashboard",
             "match": {
               "location": "StockroomTest.system_should_process_login_and_direct_to_the_dashboard()"

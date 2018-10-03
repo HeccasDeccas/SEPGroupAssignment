@@ -55,6 +55,27 @@ public class RequestTest {
 
     @Then("^system should show an error message when incomplete field AND when input is invalid$")
     public void system_should_show_an_error_message_when_incomplete_field_AND_when_input_is_invalid() throws Throwable {
+        
+    }
+
+    @When("^submitting form$")
+    public void submitting_form() throws Throwable {
+        driver.findElement(By.name("name")).sendKeys("Test One");
+        driver.findElement(By.name("staffID")).sendKeys("12345678");
+        driver.findElement(By.name("email")).sendKeys("test@test.com");
+        driver.findElement(By.name("faculty")).sendKeys("Test");
+        driver.findElement(By.name("dob")).sendKeys("03/10/2018");
+        driver.findElement(By.name("quantity")).sendKeys("10");
+        driver.findElement(By.id("submit")).click();
+    }
+
+    @Then("^system should show a successful submission screen$")
+    public void system_should_show_a_successful_submission_screen() throws Throwable {
+        if (driver.getCurrentUrl().equals("https://sep-project-216707.appspot.com/formSubmitted.jsp")) {
+            System.out.println("Submission screen successful");
+        } else {
+            System.out.println("Submission screen not present");
+        }
         driver.quit();
     }
 }
