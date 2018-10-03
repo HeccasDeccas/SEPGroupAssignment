@@ -20,7 +20,7 @@
         <p>Note: you cannot return to the dashboard after selecting the "Request Form" button.</p>
             <table class="dashboardButtons">
                 <tr><td><input type="submit" class="button" onclick="window.location.href='requestForm.jsp'" value="Request Form"></td></tr>
-                <tr><td><input type="button" class="button" onclick="window.location.href='stockManagementOrders.jsp'" value="View All Stationery Requests"></td></tr>
+                <tr><td><input type="button" class="button" id="viewAll" onclick="window.location.href='stockManagementOrders.jsp'" value="View All Stationery Requests"></td></tr>
                 <tr><td><input type="button" class="button" onclick="window.location.href='stationeryInventory.jsp'" value="View Stationery Inventory"></td></tr>
                 <tr><td>
                         <div class="boxLogoutButton">

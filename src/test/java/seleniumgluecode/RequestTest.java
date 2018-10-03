@@ -66,7 +66,7 @@ public class RequestTest {
         driver.findElement(By.name("faculty")).sendKeys("Test");
         driver.findElement(By.name("dob")).sendKeys("03/10/2018");
         driver.findElement(By.name("quantity")).sendKeys("10");
-        driver.findElement(By.id("submit")).click();
+        driver.findElement(By.id("submit")).submit();
     }
 
     @Then("^system should show a successful submission screen$")
