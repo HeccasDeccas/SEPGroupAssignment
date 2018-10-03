@@ -5,13 +5,14 @@
  */
 package uts.wsd;
 
-import com.mongodb.DBCursor;
-import com.mongodb.DBObject;
+
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
+import org.bson.conversions.Bson;
 
 /**
  *
@@ -51,18 +52,29 @@ public class MongoMain {
         document.append("orderStatus", "Pending");
         
         collection.insertOne(document);
-    }
+
+    } //end add()
     
-    public void displayStock() {
-        //NEW:
-        String uri = "mongodb://jarrodwatts16:Testpass123!@ds119503.mlab.com:19503/mongodb_sep_stock";
+    public void subtract(String productName, String quantity) {
         
+        int quantityIntValue = Integer.parseInt(quantity);
+        
+        String uri = "mongodb://jarrodwatts16:Testpass123!@ds119503.mlab.com:19503/mongodb_sep_stock";
+
         MongoClientURI clientURI = new MongoClientURI(uri);
         MongoClient mongoClient = new MongoClient(clientURI);
-        
+
         MongoDatabase mongoDatabase = mongoClient.getDatabase("mongodb_sep_stock");
         MongoCollection collection = mongoDatabase.getCollection("test");
-        
-        
+
+            Document found = (Document) collection.find(new Document("name", productName)).first();
+           
+                int originalQuantity = Integer.parseInt(found.get("quantity").toString()); //this is the quantity to begin with
+                int calculatedNewQuantity = originalQuantity - quantityIntValue; //old minus new = calculatedNewQuantity
+                
+                Bson updatedvalue = new Document("quantity", calculatedNewQuantity);
+                Bson updateoperation = new Document("$set", updatedvalue);
+                collection.updateOne(found,updateoperation);
+
     }
 }

@@ -33,7 +33,7 @@
                 <tr><td>Products: </td><td><select name="products">
                     <option value="pencils">Pencils</option>
                     <option value="pens">Pens</option>
-                    <option value="pens">Notebooks</option>
+                    <option value="notebooks">Notebooks</option>
                         </select></td></tr>
                 <tr><td>Quantity:</td><td><input size = "23" type="number" name="quantity"></td></tr>
                 <tr><td><input type="hidden" value="submitted" name="submitted"></td>

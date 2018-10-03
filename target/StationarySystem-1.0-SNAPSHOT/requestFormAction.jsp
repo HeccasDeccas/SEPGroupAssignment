@@ -52,6 +52,7 @@
             } else {
                 Staff staff = new Staff(ID,name,email,password,role);
                 database.add(name, staffID, email, faculty, dateOfRequest, product, quantity);
+                database.subtract(product, quantity);
                 session.setAttribute("staff", staff);
                 session.setAttribute("tos", tos);
                 response.sendRedirect("formSubmitted.jsp");
