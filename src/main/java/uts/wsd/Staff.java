@@ -28,7 +28,7 @@ public class Staff implements Serializable {
     @XmlElement(name = "role")
     private String role;
 
-    public Staff(String ID, String name, String email,String password, String role) {
+    public Staff(String ID, String name, String email, String password, String role) {
         this.name = name;
         this.email = email;
         this.password = password;     

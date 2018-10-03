@@ -1,4 +1,5 @@
 runner\RunCucumberTest.class
+Model\UserTest.class
 JUnit\JUnitTests.class
 seleniumgluecode\test.class
 JUnit\JUnitRunner.class
