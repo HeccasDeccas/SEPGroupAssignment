@@ -1,3 +1,5 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="org.bson.conversions.Bson"%>
 <%@page import="com.mongodb.client.MongoCursor"%>
 <%@page import="com.mongodb.client.FindIterable"%>
 <%@page import="org.bson.Document"%>
@@ -18,7 +20,6 @@
         <title>View Orders</title>
     </head>
     <body>
-        <% MongoMain database = new MongoMain(); %>
             <div class="databaseContainer">
             <header>
                 <img class="UTSLogoWhite" src="images/UTS_Logo_White.png" alt="UTS_Logo"> 
@@ -34,6 +35,7 @@
         <div class="maincontent">
         <h2 class="databaseHeading">FEIT Stationery Orders</h2> 
         <br>
+        <form action="statusChangeAction.jsp" method="post">
         <table class="viewTable" id="mainTable">
             
             <tr id="tableHeader">
@@ -49,7 +51,7 @@
             </tr>
             
             <%
-                
+                ArrayList<String> listOfChangeIds = new ArrayList<String>();
                 //initialise hardcoded
                 String uri = "mongodb://jarrodwatts16:Testpass123!@ds121343.mlab.com:21343/mongodb_sep";
         
@@ -76,6 +78,8 @@
                         String product = (String) obj.get("product");
                         String quantity = (String) obj.get("quantity");
                         String orderStatus = (String) obj.get("orderStatus");
+                        String id = (String) obj.get("_id").toString();
+                        //String objectId = (String) obj.get("_id.$oid").toString();
                     %> 
                         
                     <tr>
@@ -95,48 +99,34 @@
                                 //get orderstatus for default dropdown selected item
                                  if (orderStatus.equals("Pending")) {   
                                     nonSelectedOne = "Delivered";
-                                    nonSelectedTwo = "Canceled";
-                                    nonSelectedThree = "Shipped";
                                  }
                                  if (orderStatus.equals("Delivered")) {   
                                     nonSelectedOne = "Pending";
-                                    nonSelectedTwo = "Canceled";
-                                    nonSelectedThree = "Shipped";
                                  } 
-                                 if (orderStatus.equals("Canceled")) {   
-                                    nonSelectedOne = "Pending";
-                                    nonSelectedTwo = "Delivered";
-                                    nonSelectedThree = "Shipped";
-                                 }
-                                 if (orderStatus.equals("Shipped")) {   
-                                    nonSelectedOne = "Pending";
-                                    nonSelectedTwo = "Delivered";
-                                    nonSelectedThree = "Canceled";
-                                 }
                                 %>
-                                <select name="changeStatus" onchange=<%
+                                <select name=<%=id%> onchange=<%
                                     //onStatusChange
+                                    listOfChangeIds.add(id.toString());
                                     
                                     %>
                                         >
                                 <option value=<%=orderStatus %>><%=orderStatus %></option>
                                 <option value=<%=nonSelectedOne %>><%=nonSelectedOne %></option>
-                                <option value=<%=nonSelectedTwo %>><%=nonSelectedTwo %></option>
-                                <option value=<%=nonSelectedThree %>><%=nonSelectedThree %></option>
                             </select>
                         </td>
                     </tr>
                     <%
                   } //end while loop
 
-                   //HERE: Collect each row's changeStatus
-                   //String approvername = (String)request.getParameter("changeStatus");
-                   
 
                 %>
 
         </table>
+                <input class="button" type="submit" value="Submit"> 
+                        &nbsp; 
+                </form>           
         </div>
+                
         <footer>
             <p>Copyright UTS 2018 | All rights reserved.</p>
         </footer>

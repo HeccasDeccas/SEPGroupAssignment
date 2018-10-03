@@ -77,4 +77,34 @@ public class MongoMain {
                 collection.updateOne(found,updateoperation);
 
     }
+    
+    public void changeStatus(String objectId, String status) {
+        String uri = "mongodb://jarrodwatts16:Testpass123!@ds121343.mlab.com:21343/mongodb_sep";
+        
+        MongoClientURI clientURI = new MongoClientURI(uri);
+        MongoClient mongoClient = new MongoClient(clientURI);
+        
+        MongoDatabase mongoDatabase = mongoClient.getDatabase("mongodb_sep");
+        MongoCollection collection = mongoDatabase.getCollection("test");
+
+        Document found = (Document) collection.find(new Document("_id", objectId)).first();
+
+        Bson updatedvalue = new Document("orderStatus", status);
+        Bson updateoperation = new Document("$set", updatedvalue);
+        collection.updateOne(found, updateoperation);
+    }
+    
+    public String getCurrentStatus(String id) {
+        String uri = "mongodb://jarrodwatts16:Testpass123!@ds121343.mlab.com:21343/mongodb_sep";
+        
+        MongoClientURI clientURI = new MongoClientURI(uri);
+        MongoClient mongoClient = new MongoClient(clientURI);
+        
+        MongoDatabase mongoDatabase = mongoClient.getDatabase("mongodb_sep");
+        MongoCollection collection = mongoDatabase.getCollection("test");
+
+        Document found = (Document) collection.find(new Document("_id", id)).first();
+
+        return found.get("orderStatus").toString();
+    }
 }

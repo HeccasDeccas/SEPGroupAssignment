@@ -35,6 +35,7 @@
                 
         <div class="maincontent">
         <h2 class="databaseHeading">Stationery Inventory</h2>
+        
          <table class="viewTable" id="mainTable">
              
             <tr id="tableHeader">    
@@ -81,6 +82,7 @@
                     <%
                   } //end while loop
                 %>
+                
         </table>
         <br>
         </div>
