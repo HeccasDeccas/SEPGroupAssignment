@@ -38,7 +38,7 @@
         
          <table class="viewTable" id="mainTable">
              
-            <tr id="tableHeader">    
+            <tr class="tableHeader">    
                 <th class="headerRow">Stationery ID</th>
                 <th class="headerRow">Name</th>
                 <th class="headerRow">Price</th>

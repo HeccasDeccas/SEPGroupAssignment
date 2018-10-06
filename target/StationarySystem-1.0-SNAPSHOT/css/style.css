@@ -13,16 +13,6 @@ body{
     margin: 0;
 }
 
-.tempLoginButtons a{
-    font-size: 15px;
-    color: #909090;
-    text-decoration: none;
-}
-
-.tempLoginButtons a:hover {
-    text-decoration: underline;
-}
-
 .container {
  width: 50%;
  border: none;
@@ -30,7 +20,8 @@ body{
 }
 
 .databaseContainer {
- width: 75%;
+ width: 80%;
+ height: 100%;
  border: none;
  margin: auto;
 }
@@ -63,11 +54,20 @@ header, footer {
  color: #fff;
 }
 
+header {
+    height: 30%
+}
+
+footer {
+    height: 5%;
+}
+
 .maincontent {
     background-color: #f2f2f2; 
     opacity: 0.9;
     margin: auto;
-    padding: 1em;   
+    padding: 1em;  
+    height: 45%;
 }
 
 #loginboxpadding{
@@ -345,10 +345,11 @@ select {
     margin: auto 0;
     border: 1px solid black;
     border-collapse: collapse;
+    text-align: center;
     font-family: "NB Akademie Std", Arial, sans-serif;
 }
 
-#tableHeader {
+.tableHeader {
     background-color: #253e96;
     color: #ffffff;
     opacity: 78%;

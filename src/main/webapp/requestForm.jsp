@@ -18,11 +18,10 @@
         <div class="maincontent">
          <%
             String nameErr = (String) session.getAttribute("nameErr");
-            String emailErr = (String) session.getAttribute("emailErr");
             String idErr = (String) session.getAttribute("idErr");
+            String emailErr = (String) session.getAttribute("emailErr");
         %>
         <h2 id="FillIn">Fill in the form to request stationery:</h2> 
-        <br>
         <form action="requestFormAction.jsp" method="post">
             <table>
                 <tr><td>Name:</td><td><input size="23" type="text" name="name" value="<%=(nameErr != null ? nameErr : "")%>"></td></tr>
@@ -35,7 +34,7 @@
                     <option value="pens">Pens</option>
                     <option value="notebooks">Notebooks</option>
                         </select></td></tr>
-                <tr><td>Quantity:</td><td><input size = "23" type="number" name="quantity"></td></tr>
+                <tr><td>Quantity:</td><td><input size = "23" type="text" name="quantity"></td></tr>
                 <tr><td><input type="hidden" value="submitted" name="submitted"></td>
                     <td>
                         <input class="button" type="submit" id="submit" value="Submit"> 
@@ -47,10 +46,11 @@
         </form>
         <%
             if (request.getParameter("submitted") != null) {
-                nameErr = emailErr  = null;                
+                nameErr = idErr = emailErr = null;                
             }          
             session.invalidate();
         %>
+        
         </div>
         <footer>
             <p>Copyright UTS 2018 | All rights reserved.</p>

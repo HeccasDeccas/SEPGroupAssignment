@@ -19,14 +19,16 @@
                     <h1>Stationery Management System</h1>   
             </header>
                  <div class="navbuttons">
+                    <a href="stockManagementDashboard.jsp">Return to Dashboard</a>
+                    |
                     <a href="logoutPage.jsp">Logout</a>
-                </div>               
+                </div>            
         <div class="maincontent">
             <img id="tickIcon" src="images/tick.png" alt="tick">
-            <h2>Your status update has been successfully submitted.</h2>
+            <h2>The order status fields have been updated successfully.</h2>
             <br>
             <div class="submitAnotherForm">
-            <a href="stockManagementOrders.jsp">Go back to Request Forms</a>
+            <a href="stockManagementOrders.jsp">Go back to Stationery Orders</a>
             </div>
             <br>
         </div>
