@@ -13,7 +13,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Assert;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 /**
  *
@@ -57,10 +58,22 @@ public class StockroomTest {
     public void the_system_should_show_a_table_of_the_orders_placed_on_the_view_orders_screen() throws Throwable {
         if (driver.findElement(By.tagName("table")).isDisplayed()) {
             System.out.println("Table displays orders");
-        }
-        else {
+        } else {
             System.out.println("Table does not exist");
         }
+    }
+
+    @When("^try to change the status of an order, the system should provide me with a drop-down menu of options$")
+    public void try_to_change_the_status_of_an_order_the_system_should_provide_me_with_a_drop_down_menu_of_options() throws Throwable {
+        driver.findElement(By.tagName("select")).click();
+    }
+
+    @Then("^These options should include 'pending', ‘in progress’, ‘in transit’ and ‘complete’$")
+    public void these_options_should_include_pending_in_progress_in_transit_and_complete() throws Throwable {
+        WebElement status = driver.findElement(By.tagName("select"));
+        /*Select status = new Select(driver.findElement(By.id("selected")));
+        status.selectByVisibleText("Pending");
+        driver.findElement(By.id("selected")).selectByVisibleText("Pending");*/
         driver.quit();
     }
 }

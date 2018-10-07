@@ -110,8 +110,8 @@
                                     
                                     %>
                                         >
-                                <option value=<%=orderStatus %>><%=orderStatus %></option>
-                                <option value=<%=nonSelectedOne %>><%=nonSelectedOne %></option>
+                                <option id="selected" value=<%=orderStatus %>><%=orderStatus %></option>
+                                <option id="notSelected" value=<%=nonSelectedOne %>><%=nonSelectedOne %></option>
                             </select>
                         </td>
                     </tr>

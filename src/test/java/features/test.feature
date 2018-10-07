@@ -27,3 +27,5 @@ Feature: Test open StationarySystemURL
     Then system should process login and direct to the stockroom dashboard
     When tries to view all the orders placed
     Then the system should show a table of the orders placed on the view orders screen
+    When try to change the status of an order, the system should provide me with a drop-down menu of options
+    Then These options should include 'pending', ‘in progress’, ‘in transit’ and ‘complete’
