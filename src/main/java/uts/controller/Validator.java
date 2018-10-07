@@ -31,5 +31,5 @@ public class Validator implements Serializable{
     }    
     public boolean validatePassword(String password){        
         return validate(passwordPattern,password);
-    }     
+    }  
 }

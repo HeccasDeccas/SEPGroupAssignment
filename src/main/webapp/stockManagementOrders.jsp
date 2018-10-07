@@ -34,11 +34,10 @@
                 
         <div class="maincontent">
         <h2 class="databaseHeading">FEIT Stationery Orders</h2> 
-        <br>
         <form action="statusChangeAction.jsp" method="post">
-        <table class="viewTable" id="mainTable">
+        <table class="viewTable">
             
-            <tr id="tableHeader">
+            <tr class="tableHeader">
                 <th class="headerRow">Staff ID</th>
                 <th class="headerRow">Name</th>
                 <th class="headerRow">Email</th>
@@ -122,7 +121,8 @@
                 %>
 
         </table>
-                <input class="button" type="submit" value="Submit"> 
+                <br>
+                <input class="button" type="submit" value="Update Database"> 
                         &nbsp; 
                 </form>           
         </div>
