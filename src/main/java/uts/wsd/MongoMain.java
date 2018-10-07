@@ -24,7 +24,7 @@ public class MongoMain {
         
     }
     
-    public void add(String name, String staffID, String email, String faculty, String dateOfRequest, String product, String quantity) {
+    public void add(String name, String ID, String email, String faculty, String dateOfRequest, String product, String quantity) {
         //OLD:
         //String uri = "mongodb+srv://Admin:admin@mongodb-pxsiy.mongodb.net/admin";
         
@@ -43,7 +43,7 @@ public class MongoMain {
         Document document = new Document("name", "Daeshan");
         
         document.append("name", name);
-        document.append("staffID", staffID);
+        document.append("ID", ID);
         document.append("email", email);
         document.append("faculty", faculty);
         document.append("dateOfRequest", dateOfRequest);

@@ -28,7 +28,7 @@
         </table>
         
         <h2>Enter your details to login:</h2>
-        <p id="loginerror"><span class="error"><%=(exist != null ? exist : "")%></span></p>
+        <p id="fieldError"><span class="error"><%=(exist != null ? exist : "")%></span></p>
 
         <form action="loginAction.jsp" method="post">
             <table>                

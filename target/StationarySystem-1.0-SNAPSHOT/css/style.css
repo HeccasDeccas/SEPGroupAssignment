@@ -67,7 +67,6 @@ footer {
     opacity: 0.9;
     margin: auto;
     padding: 1em;  
-    height: 45%;
 }
 
 #loginboxpadding{
@@ -178,8 +177,9 @@ p {
     color: white;
 }
 
-#loginerror{
+#fieldError{
     text-align: center;
+    
 }
 
 #loginbox{   

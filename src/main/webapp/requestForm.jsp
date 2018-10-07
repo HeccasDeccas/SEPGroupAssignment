@@ -1,3 +1,5 @@
+<%@page import="java.util.Date" %>
+<%@page import="java.text.SimpleDateFormat" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -17,24 +19,43 @@
                 </div>               
         <div class="maincontent">
          <%
+            String fieldErr = (String) session.getAttribute("fieldErr");
             String nameErr = (String) session.getAttribute("nameErr");
             String idErr = (String) session.getAttribute("idErr");
             String emailErr = (String) session.getAttribute("emailErr");
+            String quantityErr = (String) session.getAttribute("quantityErr");
+        %>
+        <% 
+            Date today = new Date();
+            SimpleDateFormat DATE_FORMAT = new SimpleDateFormat ("dd/MM/yyyy");
+            String DDMMYYYYToday = DATE_FORMAT.format(today);
+                    
         %>
         <h2 id="FillIn">Fill in the form to request stationery:</h2> 
+        <p id="fieldError"><span class="error"><%=(fieldErr != null ? fieldErr  : "")%></span></p>     
         <form action="requestFormAction.jsp" method="post">
             <table>
                 <tr><td>Name:</td><td><input size="23" type="text" name="name" value="<%=(nameErr != null ? nameErr : "")%>"></td></tr>
-                <tr><td>Staff ID:</td><td><input size="23" type="text" name="staffID" value="<%=(idErr != null ? idErr : "")%>"></td></tr>
+                <tr><td>Staff ID:</td><td><input size="23" type="text" name="ID" value="<%=(idErr != null ? idErr : "")%>"></td></tr>
                 <tr><td>Email:</td><td><input size="23" type="text" name="email" value="<%=(emailErr != null ? emailErr : "")%>"></td></tr>         
-                <tr><td>Faculty:</td><td><input size="23" type="text" name="faculty"></td></tr>
-                <tr><td>Date of Request:</td><td><input type="date" name="dob"></td></tr>
-                <tr><td>Products: </td><td><select name="products">
-                    <option value="pencils">Pencils</option>
-                    <option value="pens">Pens</option>
-                    <option value="notebooks">Notebooks</option>
+                <tr><td>Faculty:</td><td><select name="faculty">
+                    <option value="Faculty of Transdisciplinary Innovation">Faculty of Transdisciplinary Innovation</option>
+                    <option value="Graduate School of Health">Graduate School of Health</option>
+                    <option value="Faculty of Health">Faculty of Health</option>
+                    <option value="UTS Business School">UTS Business School</option>
+                    <option value="Faculty of Law">Faculty of Law</option>
+                    <option value="Faculty of Science">Faculty of Science</option>
+                    <option value="Faculty of Arts and Social Science">FASS</option>
+                    <option value="Faculty of Design, Architecture and Building">FDAB</option>
+                    <option value="Faculty of Engineering and Information Technology">FEIT</option>
                         </select></td></tr>
-                <tr><td>Quantity:</td><td><input size = "23" type="text" name="quantity"></td></tr>
+                <tr><td>Date of Request:</td><td><input size="23" type="text" name="dob" value="<%= DDMMYYYYToday %>"</td></tr>       
+                <tr><td>Products: </td><td><select name="products">
+                    <option value="Pencils">Pencils</option>
+                    <option value="Pens">Pens</option>
+                    <option value="Notebooks">Notebooks</option>
+                        </select></td></tr>
+                <tr><td>Quantity:</td><td><input size = "23" type="text" name="quantity" value="<%=(quantityErr != null ? quantityErr : "")%>"></td></tr>
                 <tr><td><input type="hidden" value="submitted" name="submitted"></td>
                     <td>
                         <input class="button" type="submit" id="submit" value="Submit"> 
@@ -50,7 +71,6 @@
             }          
             session.invalidate();
         %>
-        
         </div>
         <footer>
             <p>Copyright UTS 2018 | All rights reserved.</p>

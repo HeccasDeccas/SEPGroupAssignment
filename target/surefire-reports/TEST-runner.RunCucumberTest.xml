@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.RunCucumberTest" time="50.544" tests="22" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.RunCucumberTest" time="38.518" tests="24" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
@@ -81,5 +81,7 @@
   <testcase name="Then system should process login and direct to the stockroom dashboard" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
   <testcase name="When tries to view all the orders placed" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
   <testcase name="Then the system should show a table of the orders placed on the view orders screen" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
-  <testcase name="Scenario: Stockroom logs in to dashboard" classname="Scenario: Stockroom logs in to dashboard" time="0.001"/>
+  <testcase name="When try to change the status of an order, the system should provide me with a drop-down menu of options" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
+  <testcase name="Then These options should include &apos;pending&apos;, ‘in progress’, ‘in transit’ and ‘complete’" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
+  <testcase name="Scenario: Stockroom logs in to dashboard" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
 </testsuite>

@@ -57,7 +57,7 @@
                     <%
                         //create one td per attribute
                         String name = (String) obj.get("name");
-                        String staffID = (String) obj.get("staffID");
+                        String ID = (String) obj.get("ID");
                         String email = (String) obj.get("email");
                         String faculty = (String) obj.get("faculty");
                         String dateOfRequest = (String) obj.get("dateOfRequest");
@@ -68,7 +68,7 @@
                         
                     <tr>
                         <td><%= name%></td>
-                        <td><%=staffID %></td>
+                        <td><%=ID %></td>
                         <td><%=email %></td>
                         <td><%=faculty %></td>
                         <td><%=dateOfRequest %></td>

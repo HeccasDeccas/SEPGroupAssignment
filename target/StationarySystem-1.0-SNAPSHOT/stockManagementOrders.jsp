@@ -70,7 +70,7 @@
                     <%
                         //create one td per attribute
                         String name = (String) obj.get("name");
-                        String staffID = (String) obj.get("staffID");
+                        String ID = (String) obj.get("ID");
                         String email = (String) obj.get("email");
                         String faculty = (String) obj.get("faculty");
                         String dateOfRequest = (String) obj.get("dateOfRequest");
@@ -82,8 +82,8 @@
                     %> 
                         
                     <tr>
-                        <td><%= name%></td>
-                        <td><%=staffID %></td>
+                        <td><%=name%></td>
+                        <td><%=ID %></td>
                         <td><%=email %></td>
                         <td><%=faculty %></td>
                         <td><%=dateOfRequest %></td>
@@ -109,8 +109,8 @@
                                     
                                     %>
                                         >
-                                <option value=<%=orderStatus %>><%=orderStatus %></option>
-                                <option value=<%=nonSelectedOne %>><%=nonSelectedOne %></option>
+                                <option id="selected" value=<%=orderStatus %>><%=orderStatus %></option>
+                                <option id="notSelected" value=<%=nonSelectedOne %>><%=nonSelectedOne %></option>
                             </select>
                         </td>
                     </tr>

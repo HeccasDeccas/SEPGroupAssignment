@@ -33,27 +33,33 @@
             String faculty = request.getParameter("faculty");
             String products = request.getParameter("products");
             String quantity = request.getParameter("quantity");
-            int key = (new Random()).nextInt(999999);
-            String ID = "" + key;
+            String ID = request.getParameter("ID");
             String tos = request.getParameter("tos");
                 
             Validator v = new Validator();
-
+            
             if (!v.validateName(name)) {
-                session.setAttribute("nameErr", "Name format is incorrect");
+                session.setAttribute("nameErr", "Name format is incorrect.");
+                session.setAttribute("fieldErr", "Invalid fields.");
                 response.sendRedirect("requestForm.jsp");
             }   else if (!v.validateID(ID)) {
-                session.setAttribute("idErr", "ID format is incorrect");
+                session.setAttribute("idErr", "ID format is incorrect.");
+                session.setAttribute("fieldErr", "Invalid fields.");
                 response.sendRedirect("requestForm.jsp");
             } else if (!v.validateEmail(email)) {
-                session.setAttribute("emailErr", "Email format is incorrect");
+                session.setAttribute("emailErr", "Email format is incorrect.");
+                session.setAttribute("fieldErr", "Invalid fields.");
                 response.sendRedirect("requestForm.jsp");
+            }  else if (!v.validateQuantity(quantity)) {
+                session.setAttribute("quantityErr", "Quantity format is incorrect.");
+                session.setAttribute("fieldErr", "Invalid fields.");
+                response.sendRedirect("requestForm.jsp");     
             } else {
                 Staff staff = new Staff(ID,name,email,password,role);
-                database.add(name, staffID, email, faculty, dateOfRequest, product, quantity);
+                database.add(name, ID, email, faculty, dateOfRequest, product, quantity);
                 database.subtract(product, quantity);
-                session.setAttribute("staff", staff);
-                session.setAttribute("tos", tos);
+                //session.setAttribute("staff", staff);
+                //session.setAttribute("tos", tos);
                 response.sendRedirect("formSubmitted.jsp");
             }
         %>

@@ -26,10 +26,10 @@
             Validator v = new Validator();
 
             if (!v.validateID(ID)) {
-                session.setAttribute("IDErr", "ID format is incorrect!");
+                session.setAttribute("IDErr", "ID format is incorrect.");
                 response.sendRedirect("index.jsp");
             } else if (!v.validatePassword(password)) {
-                session.setAttribute("passErr", "Password format is incorrect");
+                session.setAttribute("passErr", "Password format is incorrect.");
                 response.sendRedirect("index.jsp");
             } else if (staff != null && staff.getRole().equals("staff")) {
                 session.setAttribute("staffLogin", staff);
