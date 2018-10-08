@@ -20,7 +20,7 @@ body{
 }
 
 .databaseContainer {
- width: 80%;
+ width: 85%;
  height: 100%;
  border: none;
  margin: auto;
@@ -255,29 +255,12 @@ td {
 .button:hover {background-color: #4ca5ff}
 
 .button:active {
-    background-color: #3e8e41;
+    background-color: #ff65a3;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
 
 /* I don't know what these are used for yet */
-
-.account_table{                
-    border-collapse: collapse;
-    border: 1px solid black;
-    background-color: #E67E22;
-    width: fit-content;
-}
-.account_table thead{
-    text-align: center;
-    font-weight: bold;
-}
-.account_table td{
-    width: fit-content;
-    border: 1px solid black;     
-    padding: 2px;
-    width:10%;
-}
 
 .div_search, .results_table{
     vertical-align: top;
@@ -300,31 +283,6 @@ td {
     transform: translate(70%, -50%)
     */
 }
-.results_table{
-    display: block; 
-    width: auto;    
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
-    font-size: large;
-    color:#ffff00;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    position: absolute;
-    top: 22%;
-    right: 8%;
-    border: 2px solid #17b755;
-    padding: 5px;
-}
-.results_table th{
-    color: white;
-    text-align: center;
-}
-.results_table thead{
-    background-color:#4CAF50;
-}
-.results_table td{
-    text-align: left;
-    width: fit-content;
-}
 
 input[type=text] {
     font-family: "NB Akademie Std", Arial, sans-serif;
@@ -334,6 +292,15 @@ input[type=text] {
 input[type=date] {
     font-family: "NB Akademie Std", Arial, sans-serif;
     font-size: 12px;
+}
+
+input[type=number] {
+    font-family: "NB Akademie Std", Arial, sans-serif;
+    font-size: 12px;
+}
+
+.loginFields {
+    width: 80%;
 }
 
 select {
@@ -356,6 +323,15 @@ select {
     border: 1px solid black;
     border-collapse: collapse;
     font-family: "NB Akademie Std", Arial, sans-serif;
+}
+
+.viewTable td {
+    border: solid 1px black;
+    padding: 7px;
+}
+
+.viewTable th {
+    border: solid 1px black;
 }
 
 .headerRow {

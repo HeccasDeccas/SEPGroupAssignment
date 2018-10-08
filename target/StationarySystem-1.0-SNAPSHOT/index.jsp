@@ -32,8 +32,8 @@
 
         <form action="loginAction.jsp" method="post">
             <table>                
-                <tr><td>Staff ID:</td><td><input type="text" name="ID" value="<%=(idErr != null ? idErr : "")%>"/></td></tr>
-                <tr><td>Password:</td><td><input type="password" name="password" value="<%=(passError != null ? passError : "")%>"></td></tr>                
+                <tr><td>Staff ID:</td><td><input class="loginFields" type="text" name="ID" value="<%=(idErr != null ? idErr : "")%>"/></td></tr>
+                <tr><td>Password:</td><td><input class="loginFields" type="password" name="password" value="<%=(passError != null ? passError : "")%>"></td></tr>                
                 <tr><td><input type="hidden" value="submitted" name="submitted"></td>
                     <td><input class="button" type="submit" id="Login" value="Login"> 
                     </td>

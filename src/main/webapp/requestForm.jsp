@@ -25,20 +25,14 @@
             String emailErr = (String) session.getAttribute("emailErr");
             String quantityErr = (String) session.getAttribute("quantityErr");
         %>
-        <% 
-            Date today = new Date();
-            SimpleDateFormat DATE_FORMAT = new SimpleDateFormat ("dd/MM/yyyy");
-            String DDMMYYYYToday = DATE_FORMAT.format(today);
-                    
-        %>
         <h2 id="FillIn">Fill in the form to request stationery:</h2> 
         <p id="fieldError"><span class="error"><%=(fieldErr != null ? fieldErr  : "")%></span></p>     
         <form action="requestFormAction.jsp" method="post">
             <table>
-                <tr><td>Name:</td><td><input size="23" type="text" name="name" value="<%=(nameErr != null ? nameErr : "")%>"></td></tr>
-                <tr><td>Staff ID:</td><td><input size="23" type="text" name="ID" value="<%=(idErr != null ? idErr : "")%>"></td></tr>
-                <tr><td>Email:</td><td><input size="23" type="text" name="email" value="<%=(emailErr != null ? emailErr : "")%>"></td></tr>         
-                <tr><td>Faculty:</td><td><select name="faculty">
+                <tr><td>Name:</td><td><input size="23" type="text" name="name" value="<%=(nameErr != null ? nameErr : "")%>" required></td></tr>
+                <tr><td>Staff ID:</td><td><input size="23" type="text" name="ID" value="<%=(idErr != null ? idErr : "")%>" required></td></tr>
+                <tr><td>Email:</td><td><input size="23" type="text" name="email" value="<%=(emailErr != null ? emailErr : "")%>" required></td></tr>         
+                <tr><td>Faculty:</td><td><select name="faculty" required>
                     <option value="Faculty of Transdisciplinary Innovation">Faculty of Transdisciplinary Innovation</option>
                     <option value="Graduate School of Health">Graduate School of Health</option>
                     <option value="Faculty of Health">Faculty of Health</option>
@@ -49,8 +43,8 @@
                     <option value="Faculty of Design, Architecture and Building">FDAB</option>
                     <option value="Faculty of Engineering and Information Technology">FEIT</option>
                         </select></td></tr>
-                <tr><td>Date of Request:</td><td><input size="23" type="text" name="dob" value="<%= DDMMYYYYToday %>"</td></tr>       
-                <tr><td>Products: </td><td><select name="product">
+                <tr><td>Date of Request:</td><td><input size="23" type="date" name="dob" required></td></tr>       
+                <tr><td>Products: </td><td><select name="product" required>
                     <option value="HB Pencil">HB Pencil</option>
                     <option value="2B Pencil">2B Pencil</option>
                     <option value="Black Pen">Black Pen</option>
@@ -67,7 +61,7 @@
                     <option value="Display Book">Rulers</option>
                     <option value="Folder">Folder</option>                    
                         </select></td></tr>
-                <tr><td>Quantity:</td><td><input size = "23" type="number" name="quantity" value="<%=(quantityErr != null ? quantityErr : "")%>"></td></tr>
+                <tr><td>Quantity:</td><td><input size = "23" type="number" name="quantity" value="<%=(quantityErr != null ? quantityErr : "")%>" required></td></tr>
                 <tr><td><input type="hidden" value="submitted" name="submitted"></td>
                     <td>
                         <input class="button" type="submit" id="submit" value="Submit"> 
