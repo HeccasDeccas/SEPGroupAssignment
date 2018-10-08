@@ -53,6 +53,7 @@
                   
                   while (cursor.hasNext()) {
                     Document obj = cursor.next();
+                    if ()
                     //create a row %>
                     <%
                         //create one td per attribute

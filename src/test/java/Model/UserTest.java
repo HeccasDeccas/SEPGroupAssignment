@@ -4,8 +4,13 @@
  * and open the template in the editor.
  */
 package Model;
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
 import java.util.ArrayList;
 import java.util.Date;
+import javax.swing.text.Document;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -81,14 +86,38 @@ public class UserTest {
 
     }
 
-   
+   @Test
     public void testGetRole() {
         System.out.println("getRole");
         Staff instance = new Staff("123","Testname","Test@test.com","Password", "staff");
         String expResult = "staff";
-        String result = instance.getPassword();
+        String result = instance.getRole();
         assertEquals(expResult, result);
 
+    }
+    @Test
+    public void testMongo() {
+        System.out.println("Mongo Connect");
+                String uri = "mongodb://jarrodwatts16:Testpass123!@ds121343.mlab.com:21343/mongodb_sep";
+        
+                MongoClientURI clientURI = new MongoClientURI(uri);
+                MongoClient mongoClient = new MongoClient(clientURI);
+
+                MongoDatabase mongoDatabase = mongoClient.getDatabase("mongodb_sep");
+                MongoDatabase expResult; 
+               if (mongoDatabase != null)
+               {
+                   expResult = mongoDatabase;
+                   assertEquals(expResult, mongoDatabase);
+                   return;
+               }
+               assertFail();
+    }
+
+    private void assertFail() {
+        int fail = 1;
+        int Bec = 2 ; 
+        assertEquals(fail, Bec);
     }
 
 
