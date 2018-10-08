@@ -53,7 +53,7 @@
                   
                   while (cursor.hasNext()) {
                     Document obj = cursor.next();
-                    if ()
+                    if ( !obj.get("orderStatus").equals("Complete")){
                     //create a row %>
                     <%
                         //create one td per attribute
@@ -76,7 +76,7 @@
                         <td><%=product %></td>
                         <td><%=quantity %></td>
                         <td><%=orderStatus %></td>
-                    </tr>
+                    </tr>}
                     <%
                   } //end while loop
                 %>
