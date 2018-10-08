@@ -97,11 +97,30 @@
                                 String nonSelectedThree = "";
                                 //get orderstatus for default dropdown selected item
                                  if (orderStatus.equals("Pending")) {   
-                                    nonSelectedOne = "Delivered";
+                                    nonSelectedOne = "In Progress";
+                                    nonSelectedTwo = "In Transit";
+                                    nonSelectedThree = "Complete";
                                  }
-                                 if (orderStatus.equals("Delivered")) {   
+                                 
+                                 if (orderStatus.equals("In Progress")) {   
                                     nonSelectedOne = "Pending";
-                                 } 
+                                    nonSelectedTwo = "In Transit";
+                                    nonSelectedThree = "Complete";
+                                 }
+                                 
+                                 if (orderStatus.equals("In Transit")) {   
+                                    nonSelectedOne = "Pending";
+                                    nonSelectedTwo = "In Progress";
+                                    nonSelectedThree = "Complete";
+                                 }
+                                 
+                                 if (orderStatus.equals("Complete")) {   
+                                    nonSelectedOne = "Pending";
+                                    nonSelectedTwo = "In Progress";
+                                    nonSelectedThree = "In Transit";
+                                 }
+
+                                 
                                 %>
                                 <select name=<%=id%> onchange=<%
                                     //onStatusChange
@@ -110,7 +129,9 @@
                                     %>
                                         >
                                 <option id="selected" value=<%=orderStatus %>><%=orderStatus %></option>
-                                <option id="notSelected" value=<%=nonSelectedOne %>><%=nonSelectedOne %></option>
+                                <option id="noSelectedOne" value=<%=nonSelectedOne %>><%=nonSelectedOne %></option>
+                                <option id="nonSelectedTwo" value=<%=nonSelectedTwo %>><%=nonSelectedTwo %></option>
+                                <option id="nonSelectedThree" value=<%=nonSelectedThree %>><%=nonSelectedThree %></option>
                             </select>
                         </td>
                     </tr>
