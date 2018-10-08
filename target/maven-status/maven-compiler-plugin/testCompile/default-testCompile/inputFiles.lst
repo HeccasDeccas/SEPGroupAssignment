@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Jarrod\Documents\GitHub\SEPGroupAssignment\src\test\java\runner\RunCucumberTest.java
 C:\Users\Jarrod\Documents\GitHub\SEPGroupAssignment\src\test\java\JUnit\JUnitRunner.java
 C:\Users\Jarrod\Documents\GitHub\SEPGroupAssignment\src\test\java\seleniumgluecode\RequestTest.java
@@ -6,3 +7,13 @@ C:\Users\Jarrod\Documents\GitHub\SEPGroupAssignment\src\test\java\JUnit\JUnitTes
 C:\Users\Jarrod\Documents\GitHub\SEPGroupAssignment\src\test\java\seleniumgluecode\StockroomTest.java
 C:\Users\Jarrod\Documents\GitHub\SEPGroupAssignment\src\test\java\Model\UserTest.java
 C:\Users\Jarrod\Documents\GitHub\SEPGroupAssignment\src\test\java\seleniumgluecode\ReceptionistTest.java
+=======
+C:\Users\decla\Desktop\Upload\src\test\java\Model\UserTest.java
+C:\Users\decla\Desktop\Upload\src\test\java\runner\RunCucumberTest.java
+C:\Users\decla\Desktop\Upload\src\test\java\seleniumgluecode\LoginTest.java
+C:\Users\decla\Desktop\Upload\src\test\java\seleniumgluecode\StockroomTest.java
+C:\Users\decla\Desktop\Upload\src\test\java\JUnit\JUnitRunner.java
+C:\Users\decla\Desktop\Upload\src\test\java\JUnit\JUnitTests.java
+C:\Users\decla\Desktop\Upload\src\test\java\seleniumgluecode\ReceptionistTest.java
+C:\Users\decla\Desktop\Upload\src\test\java\seleniumgluecode\RequestTest.java
+>>>>>>> d176c4adfec3d90ad1d65aff39ac44f687ea1a86

@@ -72,6 +72,7 @@
                   while (cursor.hasNext()) {
                     Document obj = cursor.next();
                     
+<<<<<<< HEAD
                          %>
                                 <%
                                     //create one td per attribute
@@ -103,6 +104,9 @@
                                             <td><%=quantity %></td>
                                             <td><%=orderStatus %></td>
                                         </tr>
+=======
+                    //create a row %>
+>>>>>>> d176c4adfec3d90ad1d65aff39ac44f687ea1a86
                     <%
                         }
                         }
@@ -197,6 +201,7 @@
                         }
                         }
                         
+<<<<<<< HEAD
                         //BEGIN FASS
                           if(queryParam.equals("Faculty of Arts and Social Science")) {
                                     if (obj.get("faculty").equals("Faculty of Arts and Social Science")) {
@@ -247,6 +252,18 @@
                                             <td><%=quantity %></td>
                                             <td><%=orderStatus %></td>
                                         </tr>
+=======
+                    <tr>
+                        <td><%= name%></td>
+                        <td><%=ID %></td>
+                        <td><%=email %></td>
+                        <td><%=faculty %></td>
+                        <td><%=dateOfRequest %></td>
+                        <td><%=product %></td>
+                        <td><%=quantity %></td>
+                        <td><%=orderStatus %></td>
+                    </tr>}
+>>>>>>> d176c4adfec3d90ad1d65aff39ac44f687ea1a86
                     <%
                         }
                         }
