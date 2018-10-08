@@ -55,7 +55,15 @@
             </tr>
             
             <%
-                String queryParam = request.getParameter("faculty");
+                String queryParam = "";
+                try {
+                    queryParam = request.getParameter("faculty");
+                }
+                catch (Exception e) {
+                    queryParam = "";
+                }
+                
+                
                 //initialise hardcoded
                 String uri = "mongodb://jarrodwatts16:Testpass123!@ds121343.mlab.com:21343/mongodb_sep";
         
@@ -72,7 +80,7 @@
                   while (cursor.hasNext()) {
                     Document obj = cursor.next();
                     
-<<<<<<< HEAD
+
                          %>
                                 <%
                                     //create one td per attribute
@@ -104,13 +112,10 @@
                                             <td><%=quantity %></td>
                                             <td><%=orderStatus %></td>
                                         </tr>
-=======
-                    //create a row %>
->>>>>>> d176c4adfec3d90ad1d65aff39ac44f687ea1a86
+
                     <%
                         }
-                        }
-
+                            }
                           //BEGIN GRADUATE SCHOOL OF HEALTH
                           if(queryParam.equals("Graduate School of Health")) {
                                     if (obj.get("faculty").equals("Graduate School of Health")) {
@@ -128,7 +133,6 @@
                     <%
                         }
                         }
-
                         //BEGIN FACULTY OF HEALTH
                           if(queryParam.equals("Faculty of Health")) {
                                     if (obj.get("faculty").equals("Faculty of Health")) {
@@ -146,7 +150,6 @@
                     <%
                         }
                         }
-
                         //BEGIN FACULTY OF HEALTH
                           if(queryParam.equals("UTS Business School")) {
                                     if (obj.get("faculty").equals("UTS Business School")) {
@@ -162,9 +165,8 @@
                                             <td><%=orderStatus %></td>
                                         </tr>
                     <%
+                           }
                         }
-                        }
-                        
                         //BEGIN UTS BUSINESS SCHOOL
                           if(queryParam.equals("Faculty of Science")) {
                                     if (obj.get("faculty").equals("Faculty of Science")) {
@@ -182,7 +184,6 @@
                     <%
                         }
                         }
-
                         //BEGIN FACULTY OF LAW
                           if(queryParam.equals("Faculty of Law")) {
                                     if (obj.get("faculty").equals("Faculty of Law")) {
@@ -200,8 +201,6 @@
                     <%
                         }
                         }
-                        
-<<<<<<< HEAD
                         //BEGIN FASS
                           if(queryParam.equals("Faculty of Arts and Social Science")) {
                                     if (obj.get("faculty").equals("Faculty of Arts and Social Science")) {
@@ -219,7 +218,6 @@
                     <%
                         }
                         }
-                        
                         //BEGIN FDAB
                           if(queryParam.equals("Faculty of Design, Architecture and Building")) {
                                     if (obj.get("faculty").equals("Faculty of Design, Architecture and Building")) {
@@ -237,7 +235,6 @@
                     <%
                         }
                         }
-
                         //BEGIN FEIT
                           if(queryParam.equals("Faculty of Engineering and Information Technology")) {
                                     if (obj.get("faculty").equals("Faculty of Engineering and Information Technology")) {
@@ -252,7 +249,6 @@
                                             <td><%=quantity %></td>
                                             <td><%=orderStatus %></td>
                                         </tr>
-=======
                     <tr>
                         <td><%= name%></td>
                         <td><%=ID %></td>
@@ -262,13 +258,10 @@
                         <td><%=product %></td>
                         <td><%=quantity %></td>
                         <td><%=orderStatus %></td>
-                    </tr>}
->>>>>>> d176c4adfec3d90ad1d65aff39ac44f687ea1a86
+                    </tr>
                     <%
-                        }
-                        }
-                          
-                          
+                      }
+                    }   
                   } //end if statement for query not null
                     else { //if no filter has been applied yet
                         %>
@@ -284,7 +277,8 @@
                                         </tr>
                                         <%
                     }
-                  } //end while loop
+                    }
+                    
                 %>
             
         </table>
