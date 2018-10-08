@@ -53,7 +53,7 @@
                   
                   while (cursor.hasNext()) {
                     Document obj = cursor.next();
-                    if ( !obj.get("orderStatus").equals("Complete")){
+                    
                     //create a row %>
                     <%
                         //create one td per attribute
