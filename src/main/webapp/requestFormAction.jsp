@@ -24,14 +24,13 @@
             //Add Getters:
             String staffID = request.getParameter("staffID");
             String dateOfRequest = request.getParameter("dob");
-            String product = request.getParameter("products");
             
             String name = request.getParameter("name");
             String email = request.getParameter("email");
             String role = request.getParameter("role");
             String password = request.getParameter("password");
             String faculty = request.getParameter("faculty");
-            String products = request.getParameter("products");
+            String product = request.getParameter("product");
             String quantity = request.getParameter("quantity");
             String ID = request.getParameter("ID");
             String tos = request.getParameter("tos");

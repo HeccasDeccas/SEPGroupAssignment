@@ -50,12 +50,24 @@
                     <option value="Faculty of Engineering and Information Technology">FEIT</option>
                         </select></td></tr>
                 <tr><td>Date of Request:</td><td><input size="23" type="text" name="dob" value="<%= DDMMYYYYToday %>"</td></tr>       
-                <tr><td>Products: </td><td><select name="products">
-                    <option value="Pencils">Pencils</option>
-                    <option value="Pens">Pens</option>
-                    <option value="Notebooks">Notebooks</option>
+                <tr><td>Products: </td><td><select name="product">
+                    <option value="HB Pencil">HB Pencil</option>
+                    <option value="2B Pencil">2B Pencil</option>
+                    <option value="Black Pen">Black Pen</option>
+                    <option value="Blue Pen">Blue Pen</option>
+                    <option value="Red Pen">Red Pen</option>
+                    <option value="Notebooks">Notebook</option>
+                    <option value="Sticky Notes">Sticky Notes</option>
+                    <option value="Sticky Tape">Sticky Tape</option>
+                    <option value="Rubber">Rubber</option>
+                    <option value="Ruler">Ruler</option>
+                    <option value="Whiteout">Whiteout</option>
+                    <option value="Pencil Case">Pencil Case</option>
+                    <option value="Plastic Sleeve">Plastic Sleeve</option>
+                    <option value="Display Book">Rulers</option>
+                    <option value="Folder">Folder</option>                    
                         </select></td></tr>
-                <tr><td>Quantity:</td><td><input size = "23" type="text" name="quantity" value="<%=(quantityErr != null ? quantityErr : "")%>"></td></tr>
+                <tr><td>Quantity:</td><td><input size = "23" type="number" name="quantity" value="<%=(quantityErr != null ? quantityErr : "")%>"></td></tr>
                 <tr><td><input type="hidden" value="submitted" name="submitted"></td>
                     <td>
                         <input class="button" type="submit" id="submit" value="Submit"> 
@@ -66,8 +78,8 @@
             </table>
         </form>
         <%
-            if (request.getParameter("submitted") != null) {
-                nameErr = idErr = emailErr = null;                
+            if (request.getParameter("Submit") != null) {
+                fieldErr = nameErr = idErr = emailErr = quantityErr = null;                
             }          
             session.invalidate();
         %>
