@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6602267931,
+              "duration": 5708412670,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 906986746,
+              "duration": 410233626,
               "status": "passed"
             },
             "line": 7,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 1188121155,
+              "duration": 1011860761,
               "status": "passed"
             },
             "line": 8,
@@ -64,7 +64,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6357669810,
+              "duration": 4392665203,
               "status": "passed"
             },
             "line": 11,
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 120336395,
+              "duration": 79569328,
               "status": "passed"
             },
             "line": 12,
@@ -88,7 +88,7 @@
           },
           {
             "result": {
-              "duration": 86770842,
+              "duration": 71503055,
               "status": "passed"
             },
             "line": 13,
@@ -100,7 +100,7 @@
           },
           {
             "result": {
-              "duration": 19911,
+              "duration": 17066,
               "status": "passed"
             },
             "line": 14,
@@ -112,7 +112,7 @@
           },
           {
             "result": {
-              "duration": 19342,
+              "duration": 17635,
               "status": "passed"
             },
             "line": 15,
@@ -124,8 +124,8 @@
           },
           {
             "result": {
-              "duration": 92085966,
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"name\",\"selector\":\"staffID\"}\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027DESKTOP-A42EL9S\u0027, ip: \u0027172.19.122.20\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: C:\\Users\\Jarrod\\AppData\\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50629}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}\nSession ID: 2c30a7da248b5262e9080ca943d15400\n*** Element info: {Using\u003dname, value\u003dstaffID}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:284)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat seleniumgluecode.RequestTest.submitting_form(RequestTest.java:64)\r\n\tat ✽.When submitting form(test.feature:16)\r\n",
+              "duration": 70013136,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"name\",\"selector\":\"staffID\"}\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027DESKTOP-N79OS6I\u0027, ip: \u0027192.168.86.168\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: C:\\Users\\decla\\AppData\\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58617}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}\nSession ID: 93720a62b36461fa2907ad257b2643f8\n*** Element info: {Using\u003dname, value\u003dstaffID}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:284)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat seleniumgluecode.RequestTest.submitting_form(RequestTest.java:64)\r\n\tat ✽.When submitting form(test.feature:16)\r\n",
               "status": "failed"
             },
             "line": 16,
@@ -158,7 +158,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5873776747,
+              "duration": 3217303547,
               "status": "passed"
             },
             "line": 20,
@@ -170,7 +170,7 @@
           },
           {
             "result": {
-              "duration": 649236495,
+              "duration": 556766846,
               "status": "passed"
             },
             "line": 21,
@@ -182,7 +182,7 @@
           },
           {
             "result": {
-              "duration": 1056237463,
+              "duration": 928744980,
               "status": "passed"
             },
             "line": 22,
@@ -204,7 +204,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5739962248,
+              "duration": 3684175165,
               "status": "passed"
             },
             "line": 25,
@@ -216,7 +216,7 @@
           },
           {
             "result": {
-              "duration": 913501656,
+              "duration": 510912139,
               "status": "passed"
             },
             "line": 26,
@@ -228,7 +228,7 @@
           },
           {
             "result": {
-              "duration": 11274230,
+              "duration": 173723826,
               "status": "passed"
             },
             "line": 27,
@@ -240,7 +240,7 @@
           },
           {
             "result": {
-              "duration": 915477974,
+              "duration": 829469346,
               "status": "passed"
             },
             "line": 28,
@@ -252,7 +252,7 @@
           },
           {
             "result": {
-              "duration": 47320706,
+              "duration": 31361129,
               "status": "passed"
             },
             "line": 29,
@@ -264,7 +264,7 @@
           },
           {
             "result": {
-              "duration": 134406712,
+              "duration": 109888253,
               "status": "passed"
             },
             "line": 30,
@@ -276,7 +276,7 @@
           },
           {
             "result": {
-              "duration": 901350200,
+              "duration": 702620813,
               "status": "passed"
             },
             "line": 31,

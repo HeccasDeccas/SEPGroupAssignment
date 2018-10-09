@@ -35,12 +35,27 @@
                     <option value="UTS Business School">UTS Business School</option>
                     <option value="Faculty of Law">Faculty of Law</option>
                     <option value="Faculty of Science">Faculty of Science</option>
-                    <option value="Faculty of Arts and Social Science">FASS</option>
-                    <option value="Faculty of Design, Architecture and Building">FDAB</option>
-                    <option value="Faculty of Engineering and Information Technology">FEIT</option>
+                    <option value="FASS">FASS</option>
+                    <option value="FDAB">FDAB</option>
+                    <option value="FEIT">FEIT</option>
+                    <option value="All">All</option>
                         </select>  
-                    <input type="submit" name="button1" value="Apply" class="button"> </input>
-                   </form>
+                    
+                   
+        
+            Filter by Status V0.4:
+            
+            <select name ="status">
+                    <option value="Complete">Complete</option>
+                    <option value="Pending">Pending</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="In Transit">In Transit</option>
+                    <option value="Exclude Complete">Exclude Complete</option>
+                    <option value="Delivered">Delivered</option>
+                    <option value="All">All</option>
+        </select>
+            <input type="submit" name="button1" value="Apply" class="button"> </input>
+        </form>
         
         <table class="viewTable">
             <tr id="tableHeader">
@@ -56,12 +71,15 @@
             
             <%
                 String queryParam = "";
+                String statusParam = "Complete";
                 try {
                     queryParam = request.getParameter("faculty");
+                    statusParam = request.getParameter("status");
                 }
                 catch (Exception e) {
                     queryParam = "";
                 }
+
                 
                 
                 //initialise hardcoded
@@ -97,10 +115,11 @@
                         
                         <%
                             //if the query parameter is not equal null
-                            if (queryParam != null) {
-                                //BEGIN FACULTY OF TRANSDISCIPLANRY INNOVATION
-                                if(queryParam.equals("Faculty of Transdisciplinary Innovation")) {
-                                    if (obj.get("faculty").equals("Faculty of Transdisciplinary Innovation")) {
+                            if (queryParam != null && !(queryParam.equals("All")) ){
+                                               // && !(statusParam.equals("Exclude Complete"))) {
+                                //BEGIN FACULTY OF TRANSDISCIPLANRY INNOVATION && obj.get("orderStatus").equals(statusParam)
+                                
+                                    if (obj.get("faculty").equals(queryParam) && obj.get("orderStatus").equals(statusParam) ) {
                             %>
                                         <tr>
                                             <td><%=name%></td>
@@ -113,156 +132,11 @@
                                             <td><%=orderStatus %></td>
                                         </tr>
 
-                    <%
-                        }
-                            }
-                          //BEGIN GRADUATE SCHOOL OF HEALTH
-                          if(queryParam.equals("Graduate School of Health")) {
-                                    if (obj.get("faculty").equals("Graduate School of Health")) {
-                            %>
-                                        <tr>
-                                            <td><%=name%></td>
-                                            <td><%=ID %></td>
-                                            <td><%=email %></td>
-                                            <td><%=faculty %></td>
-                                            <td><%=dateOfRequest %></td>
-                                            <td><%=product %></td>
-                                            <td><%=quantity %></td>
-                                            <td><%=orderStatus %></td>
-                                        </tr>
-                    <%
-                        }
-                        }
-                        //BEGIN FACULTY OF HEALTH
-                          if(queryParam.equals("Faculty of Health")) {
-                                    if (obj.get("faculty").equals("Faculty of Health")) {
-                            %>
-                                        <tr>
-                                            <td><%=name%></td>
-                                            <td><%=ID %></td>
-                                            <td><%=email %></td>
-                                            <td><%=faculty %></td>
-                                            <td><%=dateOfRequest %></td>
-                                            <td><%=product %></td>
-                                            <td><%=quantity %></td>
-                                            <td><%=orderStatus %></td>
-                                        </tr>
-                    <%
-                        }
-                        }
-                        //BEGIN FACULTY OF HEALTH
-                          if(queryParam.equals("UTS Business School")) {
-                                    if (obj.get("faculty").equals("UTS Business School")) {
-                            %>
-                                        <tr>
-                                            <td><%=name%></td>
-                                            <td><%=ID %></td>
-                                            <td><%=email %></td>
-                                            <td><%=faculty %></td>
-                                            <td><%=dateOfRequest %></td>
-                                            <td><%=product %></td>
-                                            <td><%=quantity %></td>
-                                            <td><%=orderStatus %></td>
-                                        </tr>
-                    <%
-                           }
-                        }
-                        //BEGIN UTS BUSINESS SCHOOL
-                          if(queryParam.equals("Faculty of Science")) {
-                                    if (obj.get("faculty").equals("Faculty of Science")) {
-                            %>
-                                        <tr>
-                                            <td><%=name%></td>
-                                            <td><%=ID %></td>
-                                            <td><%=email %></td>
-                                            <td><%=faculty %></td>
-                                            <td><%=dateOfRequest %></td>
-                                            <td><%=product %></td>
-                                            <td><%=quantity %></td>
-                                            <td><%=orderStatus %></td>
-                                        </tr>
-                    <%
-                        }
-                        }
-                        //BEGIN FACULTY OF LAW
-                          if(queryParam.equals("Faculty of Law")) {
-                                    if (obj.get("faculty").equals("Faculty of Law")) {
-                            %>
-                                        <tr>
-                                            <td><%=name%></td>
-                                            <td><%=ID %></td>
-                                            <td><%=email %></td>
-                                            <td><%=faculty %></td>
-                                            <td><%=dateOfRequest %></td>
-                                            <td><%=product %></td>
-                                            <td><%=quantity %></td>
-                                            <td><%=orderStatus %></td>
-                                        </tr>
-                    <%
-                        }
-                        }
-                        //BEGIN FASS
-                          if(queryParam.equals("Faculty of Arts and Social Science")) {
-                                    if (obj.get("faculty").equals("Faculty of Arts and Social Science")) {
-                            %>
-                                        <tr>
-                                            <td><%=name%></td>
-                                            <td><%=ID %></td>
-                                            <td><%=email %></td>
-                                            <td><%=faculty %></td>
-                                            <td><%=dateOfRequest %></td>
-                                            <td><%=product %></td>
-                                            <td><%=quantity %></td>
-                                            <td><%=orderStatus %></td>
-                                        </tr>
-                    <%
-                        }
-                        }
-                        //BEGIN FDAB
-                          if(queryParam.equals("Faculty of Design, Architecture and Building")) {
-                                    if (obj.get("faculty").equals("Faculty of Design, Architecture and Building")) {
-                            %>
-                                        <tr>
-                                            <td><%=name%></td>
-                                            <td><%=ID %></td>
-                                            <td><%=email %></td>
-                                            <td><%=faculty %></td>
-                                            <td><%=dateOfRequest %></td>
-                                            <td><%=product %></td>
-                                            <td><%=quantity %></td>
-                                            <td><%=orderStatus %></td>
-                                        </tr>
-                    <%
-                        }
-                        }
-                        //BEGIN FEIT
-                          if(queryParam.equals("Faculty of Engineering and Information Technology")) {
-                                    if (obj.get("faculty").equals("Faculty of Engineering and Information Technology")) {
-                            %>
-                                        <tr>
-                                            <td><%=name%></td>
-                                            <td><%=ID %></td>
-                                            <td><%=email %></td>
-                                            <td><%=faculty %></td>
-                                            <td><%=dateOfRequest %></td>
-                                            <td><%=product %></td>
-                                            <td><%=quantity %></td>
-                                            <td><%=orderStatus %></td>
-                                        </tr>
-                    <tr>
-                        <td><%= name%></td>
-                        <td><%=ID %></td>
-                        <td><%=email %></td>
-                        <td><%=faculty %></td>
-                        <td><%=dateOfRequest %></td>
-                        <td><%=product %></td>
-                        <td><%=quantity %></td>
-                        <td><%=orderStatus %></td>
-                    </tr>
+                   
                     <%
                       }
-                    }   
-                  } //end if statement for query not null
+                       
+                      } //end if statement for query not null
                     else { //if no filter has been applied yet
                         %>
                         <tr>
