@@ -61,7 +61,7 @@ public class RequestTest {
     @When("^submitting form$")
     public void submitting_form() throws Throwable {
         driver.findElement(By.name("name")).sendKeys("Test One");
-        driver.findElement(By.name("staffID")).sendKeys("12345678");
+        driver.findElement(By.name("ID")).sendKeys("12345678");
         driver.findElement(By.name("email")).sendKeys("test@test.com");
         driver.findElement(By.name("faculty")).sendKeys("Test");
         driver.findElement(By.name("dob")).sendKeys("03/10/2018");
