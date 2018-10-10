@@ -25,6 +25,12 @@
             String emailErr = (String) session.getAttribute("emailErr");
             String quantityErr = (String) session.getAttribute("quantityErr");
         %>
+        <% 
+            Date today = new Date();
+            SimpleDateFormat DATE_FORMAT = new SimpleDateFormat ("dd/MM/yyyy");
+            String DDMMYYYYToday = DATE_FORMAT.format(today);
+                    
+        %>
         <h2 id="FillIn">Fill in the form to request stationery:</h2> 
         <p id="fieldError"><span class="error"><%=(fieldErr != null ? fieldErr  : "")%></span></p>     
         <form action="requestFormAction.jsp" method="post">
@@ -43,7 +49,7 @@
                     <option value="Faculty of Design, Architecture and Building">FDAB</option>
                     <option value="Faculty of Engineering and Information Technology">FEIT</option>
                         </select></td></tr>
-                <tr><td>Date of Request:</td><td><input size="23" type="date" name="dob" required></td></tr>       
+                <tr><td>Date of Request:</td><td><input id="datePrefil" size="23" type="text" name="dob" required readonly value="<%= DDMMYYYYToday %>"></td></tr>       
                 <tr><td>Products: </td><td><select name="product" required>
                     <option value="HB Pencil">HB Pencil</option>
                     <option value="2B Pencil">2B Pencil</option>

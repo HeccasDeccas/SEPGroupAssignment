@@ -15,21 +15,24 @@
         <title>Request Form Action Page</title>
     </head>
     <body>
-        
+        <% String staffPath = application.getRealPath("WEB-INF/staffs.xml");%>
+        <jsp:useBean id="staffApp" class="uts.wsd.StaffApplication" scope="application">
+            <jsp:setProperty name="staffApp" property="filePath" value="<%=staffPath%>"/>
+        </jsp:useBean>
         <%
             //Added DB Code:
             MongoMain database = new MongoMain();
             //Collect items
 
             //Add Getters:
-            String staffID = request.getParameter("staffID");
-            String dateOfRequest = request.getParameter("dob");
-            
+            Staffs staffs = staffApp.getStaffs();
+            //String staffID = request.getParameter("staffID");
             String name = request.getParameter("name");
             String email = request.getParameter("email");
             String role = request.getParameter("role");
             String password = request.getParameter("password");
             String faculty = request.getParameter("faculty");
+            String dateOfRequest = request.getParameter("dob");
             String product = request.getParameter("product");
             String quantity = request.getParameter("quantity");
             String ID = request.getParameter("ID");
@@ -41,9 +44,12 @@
                 session.setAttribute("nameErr", "Name format is incorrect.");
                 session.setAttribute("fieldErr", "Invalid fields.");
                 response.sendRedirect("requestForm.jsp");
-            }   else if (!v.validateID(ID)) {
+            } else if (!v.validateID(ID)) {
                 session.setAttribute("idErr", "ID format is incorrect.");
                 session.setAttribute("fieldErr", "Invalid fields.");
+                response.sendRedirect("requestForm.jsp");
+            } else if (!staffs.matchStaffNameID(name, ID)){
+                session.setAttribute("fieldErr", "Matching Name and Staff ID do not exist in database.");
                 response.sendRedirect("requestForm.jsp");
             } else if (!v.validateEmail(email)) {
                 session.setAttribute("emailErr", "Email format is incorrect.");

@@ -44,6 +44,10 @@ public class Staff implements Serializable {
         this.password = password;
         this.role = role;
     }
+    
+    public boolean matchName(String name){
+        return this.name.equals(name.trim());
+    }
 
     public boolean matchID(String ID){
         return this.ID.equals(ID.trim());
@@ -52,7 +56,6 @@ public class Staff implements Serializable {
     public boolean matchPassword(String password){
         return this.password.equals(password.trim());
     }
-    
     
     public String getID() {
         return ID;

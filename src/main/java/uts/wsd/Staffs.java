@@ -29,6 +29,15 @@ public class Staffs implements Serializable {
         list.add(staff);
     }
 
+    public boolean matchStaffNameID(String name, String ID) {
+        for (Staff staff : list) {
+            if (staff.matchName(name) && staff.matchID(ID)){
+                return true;
+            }
+        }
+        return false;
+    }
+    
     public Staff getStaff(String ID) {
         for (Staff staff : list) {
             if (staff.matchID(ID)) {

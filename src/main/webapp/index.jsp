@@ -31,9 +31,19 @@
         <p id="fieldError"><span class="error"><%=(exist != null ? exist : "")%></span></p>
 
         <form action="loginAction.jsp" method="post">
-            <table>                
-                <tr><td>Staff ID:</td><td><input class="loginFields" type="text" name="ID" value="<%=(idErr != null ? idErr : "")%>"/></td></tr>
-                <tr><td>Password:</td><td><input class="loginFields" type="password" name="password" value="<%=(passError != null ? passError : "")%>"></td></tr>                
+            <table class="loginTable">                
+                <tr>
+                    <td>Staff ID:</td>
+                    <td><input class="loginFields" type="text" name="ID" value="<%=(idErr != null ? idErr : "")%>"/></td>
+                </tr>
+                <tr>
+                    <td vertical-align="top">Password:</td>
+                    <td>
+                        <input class="loginFields" id="password" type="password" name="password" value="<%=(passError != null ? passError : "")%>">
+                        <br>
+                        <div id="showPassowrd"><input type="checkbox" onchange="document.getElementById('password').type = this.checked ? 'text' : 'password'"> Show password</div>
+                    </td>
+                </tr>                
                 <tr><td><input type="hidden" value="submitted" name="submitted"></td>
                     <td><input class="button" type="submit" id="Login" value="Login"> 
                     </td>

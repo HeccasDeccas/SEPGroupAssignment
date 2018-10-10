@@ -74,6 +74,18 @@ footer {
     padding-bottom: 75px;
 }
 
+.loginTable td {
+    vertical-align: top;
+}
+
+.loginFields {
+    width: 150px;
+}
+
+#showPassowrd {
+    font-size: 15px;
+}
+
 .boxLogoutButton a{
     color: #909090;
     text-decoration: none;
@@ -289,18 +301,14 @@ input[type=text] {
     font-size: 12px;
 }
 
-input[type=date] {
-    font-family: "NB Akademie Std", Arial, sans-serif;
-    font-size: 12px;
+input[readonly] {
+    color: #bcbcbc;
+    
 }
 
 input[type=number] {
     font-family: "NB Akademie Std", Arial, sans-serif;
     font-size: 12px;
-}
-
-.loginFields {
-    width: 80%;
 }
 
 select {
