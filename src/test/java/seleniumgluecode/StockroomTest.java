@@ -63,7 +63,7 @@ public class StockroomTest {
         }
     }
 
-    @When("^try to change the status of an order, the system should provide me with a drop-down menu of options$")
+    /*@When("^try to change the status of an order, the system should provide me with a drop-down menu of options$")
     public void try_to_change_the_status_of_an_order_the_system_should_provide_me_with_a_drop_down_menu_of_options() throws Throwable {
         driver.findElement(By.tagName("select")).click();
     }
@@ -73,7 +73,25 @@ public class StockroomTest {
         WebElement status = driver.findElement(By.tagName("select"));
         /*Select status = new Select(driver.findElement(By.id("selected")));
         status.selectByVisibleText("Pending");
-        driver.findElement(By.id("selected")).selectByVisibleText("Pending");*/
-        driver.quit();
+        driver.findElement(By.id("selected")).selectByVisibleText("Pending");
+        
+    }*/
+
+    @When("^I change the status of an order$")
+    public void i_change_the_status_of_an_order() throws Throwable {
+        driver.findElement(By.tagName("select")).click();
+        driver.findElement(By.id("nonSelectedTwo")).click();
+        driver.findElement(By.className("button")).submit();
+    }
+
+    @Then("^system should present feedback with the message “The order status fields have been updated successfully\\.”$")
+    public void system_should_present_feedback_with_the_message_The_order_status_fields_have_been_updated_successfully() throws Throwable {
+        if (driver.findElement(By.xpath("//*[contains(text(), 'The order status fields have been updated successfully')]")).isDisplayed()) {
+            System.out.println("Feedback message is displayed");
+        }
+        else {
+            System.out.println("Feedback message is not displayed");
+        }
+        //driver.quit();
     }
 }
