@@ -311,6 +311,15 @@ input[type=number] {
     font-size: 12px;
 }
 
+.formTable td {
+    vertical-align: top;
+}
+
+#prefilText {
+    font-size: 10px;
+    color: grey;
+}
+
 select {
     font-size: 12px;
     font-family: "NB Akademie Std", Arial, sans-serif;

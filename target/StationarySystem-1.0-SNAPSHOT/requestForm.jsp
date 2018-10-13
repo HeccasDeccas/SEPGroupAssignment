@@ -34,7 +34,7 @@
         <h2 id="FillIn">Fill in the form to request stationery:</h2> 
         <p id="fieldError"><span class="error"><%=(fieldErr != null ? fieldErr  : "")%></span></p>     
         <form action="requestFormAction.jsp" method="post">
-            <table>
+            <table class='formTable'>
                 <tr><td>Name:</td><td><input size="23" type="text" name="name" value="<%=(nameErr != null ? nameErr : "")%>" required></td></tr>
                 <tr><td>Staff ID:</td><td><input size="23" type="text" name="ID" value="<%=(idErr != null ? idErr : "")%>" required></td></tr>
                 <tr><td>Email:</td><td><input size="23" type="text" name="email" value="<%=(emailErr != null ? emailErr : "")%>" required></td></tr>         
@@ -49,7 +49,14 @@
                     <option value="Faculty of Design, Architecture and Building">FDAB</option>
                     <option value="Faculty of Engineering and Information Technology">FEIT</option>
                         </select></td></tr>
-                <tr><td>Date of Request:</td><td><input id="datePrefil" size="23" type="text" name="dob" required readonly value="<%= DDMMYYYYToday %>"></td></tr>       
+                <tr>
+                    <td>Date of Request:</td>
+                    <td>
+                        <input id="datePrefil" size="23" type="text" name="dob" required readonly value="<%= DDMMYYYYToday %>">
+                        <br>
+                        <div id='prefilText'>*This field has been prefilled to today's date.</div>
+                    </td>
+                </tr>       
                 <tr><td>Products: </td><td><select name="product" required>
                     <option value="HB Pencil">HB Pencil</option>
                     <option value="2B Pencil">2B Pencil</option>
