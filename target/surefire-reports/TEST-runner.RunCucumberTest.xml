@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.RunCucumberTest" time="25.182" tests="24" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.RunCucumberTest" time="27.586" tests="27" errors="2" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib"/>
@@ -61,10 +61,10 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="Given user opens browser" classname="Scenario: User opens Login page" time="0.005"/>
+  <testcase name="Given user opens browser" classname="Scenario: User opens Login page" time="0.001"/>
   <testcase name="When login page is loaded" classname="Scenario: User opens Login page" time="0"/>
   <testcase name="Then login button is active" classname="Scenario: User opens Login page" time="0"/>
-  <testcase name="Scenario: User opens Login page" classname="Scenario: User opens Login page" time="0"/>
+  <testcase name="Scenario: User opens Login page" classname="Scenario: User opens Login page" time="0.001"/>
   <testcase name="Given UTS Staff Member logs in" classname="Scenario: UTS Staff member completes form" time="0"/>
   <testcase name="When completing order form" classname="Scenario: UTS Staff member completes form" time="0"/>
   <testcase name="Then system should have both drop down options and text fields" classname="Scenario: UTS Staff member completes form" time="0"/>
@@ -74,14 +74,45 @@
   <testcase name="Then system should show a successful submission screen" classname="Scenario: UTS Staff member completes form" time="0"/>
   <testcase name="Scenario: UTS Staff member completes form" classname="Scenario: UTS Staff member completes form" time="0"/>
   <testcase name="Given Receptionist fills in login details" classname="Scenario: Receptionist logs in to dashboard" time="0"/>
-  <testcase name="When selects login button" classname="Scenario: Receptionist logs in to dashboard" time="0"/>
+  <testcase name="When selects login button" classname="Scenario: Receptionist logs in to dashboard" time="0.001"/>
   <testcase name="Then system should process login and direct to the dashboard" classname="Scenario: Receptionist logs in to dashboard" time="0"/>
-  <testcase name="Scenario: Receptionist logs in to dashboard" classname="Scenario: Receptionist logs in to dashboard" time="0.001"/>
-  <testcase name="Given Stockroom fills in login details" classname="Scenario: Stockroom logs in to dashboard" time="0.001"/>
-  <testcase name="When Stockroom selects login button" classname="Scenario: Stockroom logs in to dashboard" time="0.001"/>
-  <testcase name="Then system should process login and direct to the stockroom dashboard" classname="Scenario: Stockroom logs in to dashboard" time="0.001"/>
-  <testcase name="When tries to view all the orders placed" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
+  <testcase name="Then dashboard should contain &apos;Request Form&apos; and &apos;View All Stationery Requests&apos; buttons" classname="Scenario: Receptionist logs in to dashboard" time="0.026">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(), &apos;Fuck&apos;)]&quot;}&#10;  (Session info: chrome=69.0.3497.100)&#10;  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;&#10;System info: host: &apos;Ashleighs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1800:237b:c428:b718%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/vb/wntw8slx4yb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60945}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}&#10;Session ID: 34cc62ec99e402d3be8f1ca8a08fcb96&#10;*** Element info: {Using=xpath, value=//*[contains(text(), &apos;Fuck&apos;)]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Fuck')]"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'Ashleighs-MacBook-Pro.local', ip: 'fe80:0:0:0:1800:237b:c428:b718%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/vb/wntw8slx4yb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60945}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 34cc62ec99e402d3be8f1ca8a08fcb96
+*** Element info: {Using=xpath, value=//*[contains(text(), 'Fuck')]}
+</error>
+  </testcase>
+  <testcase name="Scenario: Receptionist logs in to dashboard" classname="Scenario: Receptionist logs in to dashboard" time="0.027">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(), &apos;Fuck&apos;)]&quot;}&#10;  (Session info: chrome=69.0.3497.100)&#10;  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;&#10;System info: host: &apos;Ashleighs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1800:237b:c428:b718%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/vb/wntw8slx4yb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60945}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}&#10;Session ID: 34cc62ec99e402d3be8f1ca8a08fcb96&#10;*** Element info: {Using=xpath, value=//*[contains(text(), &apos;Fuck&apos;)]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Fuck')]"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'Ashleighs-MacBook-Pro.local', ip: 'fe80:0:0:0:1800:237b:c428:b718%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/vb/wntw8slx4yb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60945}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 34cc62ec99e402d3be8f1ca8a08fcb96
+*** Element info: {Using=xpath, value=//*[contains(text(), 'Fuck')]}
+</error>
+  </testcase>
+  <testcase name="Given Stockroom fills in login details" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
+  <testcase name="When Stockroom selects login button" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
+  <testcase name="Then system should process login and direct to the stockroom dashboard" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
+  <testcase name="When tries to view all the orders placed" classname="Scenario: Stockroom logs in to dashboard" time="0.001"/>
   <testcase name="Then the system should show a table of the orders placed on the view orders screen" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
+  <testcase name="When try to change the status of an order, the system should provide me with a drop-down menu of options" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
+  <testcase name="Then These options should include &apos;pending&apos;, ‘in progress’, ‘in transit’ and ‘complete’" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
   <testcase name="When I change the status of an order" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
   <testcase name="Then system should present feedback with the message “The order status fields have been updated successfully.”" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
   <testcase name="Scenario: Stockroom logs in to dashboard" classname="Scenario: Stockroom logs in to dashboard" time="0"/>

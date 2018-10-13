@@ -63,19 +63,24 @@ public class StockroomTest {
         }
     }
 
-    /*@When("^try to change the status of an order, the system should provide me with a drop-down menu of options$")
+    @When("^try to change the status of an order, the system should provide me with a drop-down menu of options$")
     public void try_to_change_the_status_of_an_order_the_system_should_provide_me_with_a_drop_down_menu_of_options() throws Throwable {
         driver.findElement(By.tagName("select")).click();
     }
 
     @Then("^These options should include 'pending', ‘in progress’, ‘in transit’ and ‘complete’$")
     public void these_options_should_include_pending_in_progress_in_transit_and_complete() throws Throwable {
-        WebElement status = driver.findElement(By.tagName("select"));
-        /*Select status = new Select(driver.findElement(By.id("selected")));
-        status.selectByVisibleText("Pending");
-        driver.findElement(By.id("selected")).selectByVisibleText("Pending");
+        if (driver.findElement(By.xpath("//*[contains(text(), 'Pending')]")).isDisplayed() && 
+                driver.findElement(By.xpath("//*[contains(text(), 'In Progress')]")).isDisplayed() &&
+                driver.findElement(By.xpath("//*[contains(text(), 'In Transit')]")).isDisplayed() &&
+                driver.findElement(By.xpath("//*[contains(text(), 'Complete')]")).isDisplayed()) {
+            System.out.println("All options are present");
+        }
+        else {
+            System.out.println("boo it doesn't work");
+        }
         
-    }*/
+    }
 
     @When("^I change the status of an order$")
     public void i_change_the_status_of_an_order() throws Throwable {
@@ -92,6 +97,6 @@ public class StockroomTest {
         else {
             System.out.println("Feedback message is not displayed");
         }
-        //driver.quit();
+        driver.quit();
     }
 }
