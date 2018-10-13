@@ -49,7 +49,7 @@ public class Staffs implements Serializable {
 
     public Staff login(String ID, String password) {        
         for (Staff staff : list) {
-                if (staff.matchID(ID) && staff.matchPassword(password)) {
+            if (staff.matchID(ID) && staff.matchPassword(password)) {
                 return staff; 
             }
         }
