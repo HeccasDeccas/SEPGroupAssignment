@@ -5,7 +5,7 @@
     <staff>
         <ID>123456</ID>
         <email>neuer@uts.com</email>
-        <name>Manuel Nueur</name>
+        <name>Test One</name>
         <password>blahblah123</password>
         <role>staff</role>   
     </staff>
