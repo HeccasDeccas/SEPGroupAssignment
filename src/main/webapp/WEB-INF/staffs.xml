@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://www.uts.edu.au/31284/wsd-staffs staffs.xsd">
     <staff>
         <ID>123456</ID>
-        <email>neuer@uts.com</email>
+        <email>test@uts.com</email>
         <name>Test One</name>
         <password>blahblah123</password>
         <role>staff</role>   

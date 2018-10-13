@@ -34,12 +34,12 @@
             <table class="loginTable">                
                 <tr>
                     <td>Staff ID:</td>
-                    <td><input class="loginFields" type="text" name="ID" value="<%=(idErr != null ? idErr : "")%>"/></td>
+                    <td><input required class="loginFields" type="text" name="ID" value="<%=(idErr != null ? idErr : "")%>"/></td>
                 </tr>
                 <tr>
                     <td vertical-align="top">Password:</td>
                     <td>
-                        <input class="loginFields" id="password" type="password" name="password" value="<%=(passError != null ? passError : "")%>">
+                        <input required class="loginFields" id="password" type="password" name="password" value="<%=(passError != null ? passError : "")%>">
                         <br>
                         <div id="showPassowrd"><input type="checkbox" onchange="document.getElementById('password').type = this.checked ? 'text' : 'password'"> Show password</div>
                     </td>
