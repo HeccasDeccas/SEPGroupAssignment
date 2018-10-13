@@ -52,7 +52,7 @@ public class ReceptionistTest {
     @Then("^dashboard should contain 'Request Form' and 'View All Stationery Requests' buttons$")
     public void dashboard_should_contain_Request_Form_and_View_All_Stationery_Requests_buttons() throws Throwable {
         if (driver.findElement(By.xpath("//*[contains(text(), 'Request Form')]")).isDisplayed() &&
-                driver.findElement(By.xpath("//*[contains(text(), 'View All')]")).isDisplayed()){
+                driver.findElement(By.xpath("//*[contains(text(), 'View All Stationery Requests')]")).isDisplayed()){
             System.out.println("Buttons present on dashboard");
         } else {
             System.out.println("Buttons are not present");
