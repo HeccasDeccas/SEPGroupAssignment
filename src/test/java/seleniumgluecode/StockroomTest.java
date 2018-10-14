@@ -120,8 +120,9 @@ public class StockroomTest {
     @When("^I change the status of an order$")
     public void i_change_the_status_of_an_order() throws Throwable {
         driver.findElement(By.tagName("select")).click();
-        driver.findElement(By.id("nonSelectedTwo")).click();
-        driver.findElement(By.className("button")).submit();
+        driver.findElement(By.id("nonSelectedOne")).click();
+        driver.findElement(By.xpath("//input[@value='Submit']")).click();
+        //driver.findElement(By.className("button")).submit();
     }
 
     @Then("^system should present feedback with the message “The order status fields have been updated successfully\\.”$")
