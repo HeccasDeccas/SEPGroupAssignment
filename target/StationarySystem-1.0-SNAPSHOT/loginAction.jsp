@@ -19,6 +19,10 @@
         <jsp:useBean id="staffApp" class="uts.wsd.StaffApplication" scope="application">
             <jsp:setProperty name="staffApp" property="filePath" value="<%=staffPath%>"/>
         </jsp:useBean>
+        
+        <script>@ApiMethod
+        public Response getUser( HttpServletRequest servletReq) {
+            HttpSession session = servletReq.getSession();
         <%
             Staffs staffs = staffApp.getStaffs();
             String ID = request.getParameter("ID");
@@ -46,5 +50,6 @@
                 response.sendRedirect("index.jsp");
             }
         %>
+        }</script>
     </body>
 </html>

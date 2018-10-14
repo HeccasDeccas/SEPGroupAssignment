@@ -5,7 +5,7 @@
 --%>
 <%@page import="uts.controller.Validator"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page session="true" %>
+<%@page session="true" %>
 <!DOCTYPE html>
 <html>
     <head>
