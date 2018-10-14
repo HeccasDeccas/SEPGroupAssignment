@@ -28,7 +28,7 @@
         <form action="" method="post">
             Filter by faculty:      
         
-                        <select name="faculty">
+                      <select name="faculty">
                     <option value="Faculty of Transdisciplinary Innovation">Faculty of Transdisciplinary Innovation</option>
                     <option value="Graduate School of Health">Graduate School of Health</option>
                     <option value="Faculty of Health">Faculty of Health</option>

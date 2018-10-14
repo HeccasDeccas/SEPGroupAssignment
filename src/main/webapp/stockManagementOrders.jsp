@@ -50,6 +50,17 @@
             </tr>
             
             <%
+                String name = "fail";
+                String ID = "fail";
+                String email = "fail";
+                String faculty = "fail";
+                String dateOfRequest=  "fail";
+                String product = "fail";
+                String quantity = "fail";
+                String orderStatus = "fail";
+                String objectId = "fail";
+                
+               
                 ArrayList<String> listOfChangeIds = new ArrayList<String>();
                 //initialise hardcoded
                 String uri = "mongodb://jarrodwatts16:Testpass123!@ds121343.mlab.com:21343/mongodb_sep";
@@ -68,17 +79,22 @@
                     Document obj = cursor.next();
                     //create a row %>
                     <%
-                        //create one td per attribute
-                        String name = (String) obj.get("name");
-                        String ID = (String) obj.get("ID");
-                        String email = (String) obj.get("email");
-                        String faculty = (String) obj.get("faculty");
-                        String dateOfRequest = (String) obj.get("dateOfRequest");
-                        String product = (String) obj.get("product");
-                        String quantity = (String) obj.get("quantity");
-                        String orderStatus = (String) obj.get("orderStatus");
-                        String id = (String) obj.get("_id").toString();
-                        //String objectId = (String) obj.get("_id.$oid").toString();
+                        try {
+                            //create one td per attribute
+                            name = (String) obj.get("name");
+                            ID = (String) obj.get("ID");
+                            email = (String) obj.get("email");
+                            faculty = (String) obj.get("faculty");
+                            dateOfRequest = (String) obj.get("dateOfRequest");
+                            product = (String) obj.get("product");
+                            quantity = (String) obj.get("quantity");
+                            orderStatus = (String) obj.get("orderStatus").toString();
+                            objectId = (String) obj.get("_id").toString();
+                            //String objectId = (String) obj.get("_id.$oid").toString();
+                        }
+                        catch (Exception e) {
+                            //do nothing lol
+                        }
                     %> 
                         
                     <tr>
@@ -92,44 +108,49 @@
                         <td><%=orderStatus %></td>
                         <td>
                             <% 
-                                String nonSelectedOne = "";
-                                String nonSelectedTwo = "";
-                                String nonSelectedThree = "";
+                                String nonSelectedOne;
+                                String nonSelectedTwo;
+                                String nonSelectedThree;
                                 //get orderstatus for default dropdown selected item
                                  if (orderStatus.equals("Pending")) {   
-                                    nonSelectedOne = "In Progress";
-                                    nonSelectedTwo = "In Transit";
+                                    nonSelectedOne = "Underway";
+                                    nonSelectedTwo = "Shipped";
                                     nonSelectedThree = "Complete";
                                  }
                                  
-                                 if (orderStatus.equals("In Progress")) {   
+                                 else if (orderStatus.equals("Underway")) {   
                                     nonSelectedOne = "Pending";
-                                    nonSelectedTwo = "In Transit";
+                                    nonSelectedTwo = "Shipped";
                                     nonSelectedThree = "Complete";
                                  }
                                  
-                                 if (orderStatus.equals("In Transit")) {   
+                                 else if (orderStatus.equals("Shipped")) {   
                                     nonSelectedOne = "Pending";
-                                    nonSelectedTwo = "In Progress";
+                                    nonSelectedTwo = "Underway";
                                     nonSelectedThree = "Complete";
                                  }
                                  
-                                 if (orderStatus.equals("Complete")) {   
+                                 else if (orderStatus.equals("Complete")) {   
                                     nonSelectedOne = "Pending";
-                                    nonSelectedTwo = "In Progress";
-                                    nonSelectedThree = "In Transit";
+                                    nonSelectedTwo = "Underway";
+                                    nonSelectedThree = "Shipped";
+                                 }
+                                 else {
+                                    nonSelectedOne = "Failed to load";
+                                    nonSelectedTwo = "Failed to load";
+                                    nonSelectedThree = "Failed to load";
                                  }
 
                                  
                                 %>
-                                <select name=<%=id%> onchange=<%
+                                <select name=<%=objectId%> onchange=<%
                                     //onStatusChange
-                                    listOfChangeIds.add(id.toString());
+                                    listOfChangeIds.add(objectId);
                                     
                                     %>
                                         >
                                 <option id="selected" value=<%=orderStatus %>><%=orderStatus %></option>
-                                <option id="noSelectedOne" value=<%=nonSelectedOne %>><%=nonSelectedOne %></option>
+                                <option id="nonSelectedOne" value=<%=nonSelectedOne %>><%=nonSelectedOne %></option>
                                 <option id="nonSelectedTwo" value=<%=nonSelectedTwo %>><%=nonSelectedTwo %></option>
                                 <option id="nonSelectedThree" value=<%=nonSelectedThree %>><%=nonSelectedThree %></option>
                             </select>
@@ -143,7 +164,8 @@
 
         </table>
                 <br>
-                <input class="button" type="submit" value="Update Database"> 
+              
+                <input type="submit" class="button" value="Submit"</input>
                         &nbsp; 
                 </form>           
         </div>
