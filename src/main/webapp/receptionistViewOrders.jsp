@@ -58,7 +58,7 @@
         </form>
         
         <table class="viewTable">
-            <tr id="tableHeader">
+            <tr class="tableHeader">
                 <th class="headerRow">Staff ID</th>
                 <th class="headerRow">Name</th>
                 <th class="headerRow">Email</th>
