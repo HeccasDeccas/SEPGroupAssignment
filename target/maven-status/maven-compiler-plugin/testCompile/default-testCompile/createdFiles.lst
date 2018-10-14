@@ -1,8 +1,8 @@
-runner\RunCucumberTest.class
-seleniumgluecode\ReceptionistTest.class
-seleniumgluecode\RequestTest.class
-seleniumgluecode\LoginTest.class
-JUnit\JUnitTests.class
-seleniumgluecode\StockroomTest.class
-Model\UserTest.class
-JUnit\JUnitRunner.class
+runner/RunCucumberTest.class
+JUnit/JUnitRunner.class
+seleniumgluecode/StockroomTest.class
+seleniumgluecode/RequestTest.class
+Model/UserTest.class
+seleniumgluecode/ReceptionistTest.class
+seleniumgluecode/LoginTest.class
+JUnit/JUnitTests.class

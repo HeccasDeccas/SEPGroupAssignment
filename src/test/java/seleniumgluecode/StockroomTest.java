@@ -49,6 +49,24 @@ public class StockroomTest {
         }
     }
 
+    @When("^click view stationery inventory$")
+    public void click_view_stationery_inventory() throws Throwable {
+        driver.findElement(By.id("viewInventory")).click();
+    }
+
+    @Then("^can see a table with the product 'name', 'price', 'description', and 'quantity'$")
+    public void can_see_a_table_with_the_product_name_price_description_and_quantity() throws Throwable {
+        if (driver.findElement(By.xpath("//*[contains(text(), 'Pending')]")).isDisplayed()
+                && driver.findElement(By.xpath("//*[contains(text(), 'Underway')]")).isDisplayed()
+                && driver.findElement(By.xpath("//*[contains(text(), 'Shipped')]")).isDisplayed()
+                && driver.findElement(By.xpath("//*[contains(text(), 'Complete')]")).isDisplayed()
+                && driver.findElement(By.className("viewTable")).isDisplayed()) {
+            System.out.println("Table is present with headings");
+        } else {
+            System.out.println("Table is not present");
+        }
+    }
+
     @When("^tries to view all the orders placed$")
     public void tries_to_view_all_the_orders_placed() throws Throwable {
         driver.findElement(By.id("viewAll")).click();
@@ -63,6 +81,23 @@ public class StockroomTest {
         }
     }
 
+    @When("^Stockroom selects status filter$")
+    public void stockroom_selects_status_filter() throws Throwable {
+        driver.findElement(By.name("status")).click();
+    }
+
+    @Then("^filter contains the options 'completed' and 'pending' based on the orders status$")
+    public void filter_contains_the_options_completed_and_pending_based_on_the_orders_status() throws Throwable {
+        if (driver.findElement(By.xpath("//*[contains(text(), 'Pending')]")).isDisplayed()
+                && driver.findElement(By.xpath("//*[contains(text(), 'Underway')]")).isDisplayed()
+                && driver.findElement(By.xpath("//*[contains(text(), 'Shipped')]")).isDisplayed()
+                && driver.findElement(By.xpath("//*[contains(text(), 'Complete')]")).isDisplayed()) {
+            System.out.println("All filters are present");
+        } else {
+            System.out.println("Filters are not present");
+        }
+    }
+
     @When("^try to change the status of an order, the system should provide me with a drop-down menu of options$")
     public void try_to_change_the_status_of_an_order_the_system_should_provide_me_with_a_drop_down_menu_of_options() throws Throwable {
         driver.findElement(By.tagName("select")).click();
@@ -70,16 +105,15 @@ public class StockroomTest {
 
     @Then("^These options should include 'pending', 'underway', 'shipped' and 'complete'$")
     public void these_options_should_include_pending_in_progress_in_transit_and_complete() throws Throwable {
-        if (driver.findElement(By.xpath("//*[contains(text(), 'Pending')]")).isDisplayed() && 
-                driver.findElement(By.xpath("//*[contains(text(), 'Underway')]")).isDisplayed() &&
-                driver.findElement(By.xpath("//*[contains(text(), 'Shipped')]")).isDisplayed() &&
-                driver.findElement(By.xpath("//*[contains(text(), 'Complete')]")).isDisplayed()) {
+        if (driver.findElement(By.xpath("//*[contains(text(), 'Pending')]")).isDisplayed()
+                && driver.findElement(By.xpath("//*[contains(text(), 'Underway')]")).isDisplayed()
+                && driver.findElement(By.xpath("//*[contains(text(), 'Shipped')]")).isDisplayed()
+                && driver.findElement(By.xpath("//*[contains(text(), 'Complete')]")).isDisplayed()) {
             System.out.println("All options are present");
-        }
-        else {
+        } else {
             System.out.println("Options are not present");
         }
-        
+
     }
 
     @When("^I change the status of an order$")
@@ -93,8 +127,7 @@ public class StockroomTest {
     public void system_should_present_feedback_with_the_message_The_order_status_fields_have_been_updated_successfully() throws Throwable {
         if (driver.findElement(By.xpath("//*[contains(text(), 'The order status fields have been updated successfully')]")).isDisplayed()) {
             System.out.println("Feedback message is displayed");
-        }
-        else {
+        } else {
             System.out.println("Feedback message is not displayed");
         }
         driver.quit();

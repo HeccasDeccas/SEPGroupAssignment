@@ -34,10 +34,11 @@ Feature: Test open StationarySystemURL
     Given Stockroom fills in login details
     When Stockroom selects login button
     Then system should process login and direct to the stockroom dashboard
+    When click view stationery inventory
+    Then can see a table with the product 'name', 'price', 'description', and 'quantity' 
     When tries to view all the orders placed
     Then the system should show a table of the orders placed on the view orders screen
     When try to change the status of an order, the system should provide me with a drop-down menu of options
     Then These options should include 'pending', 'underway', 'shipped' and 'complete'
-    When I change the status of an order 
+    When I change the status of an order
     Then system should present feedback with the message “The order status fields have been updated successfully.”
-    
