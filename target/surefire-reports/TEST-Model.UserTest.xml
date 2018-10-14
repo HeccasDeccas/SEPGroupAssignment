@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Model.UserTest" time="0.434" tests="6" errors="0" skipped="0" failures="0">
+=======
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Model.UserTest" time="0.569" tests="6" errors="0" skipped="0" failures="0">
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -60,10 +64,17 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
+<<<<<<< HEAD
   <testcase name="testGetPassword" classname="Model.UserTest" time="0.002"/>
   <testcase name="testGetEmail" classname="Model.UserTest" time="0.002"/>
   <testcase name="testGetStaffID" classname="Model.UserTest" time="0.011"/>
   <testcase name="testMongo" classname="Model.UserTest" time="0.348"/>
+=======
+  <testcase name="testGetPassword" classname="Model.UserTest" time="0"/>
+  <testcase name="testGetEmail" classname="Model.UserTest" time="0"/>
+  <testcase name="testGetStaffID" classname="Model.UserTest" time="0"/>
+  <testcase name="testMongo" classname="Model.UserTest" time="0.564"/>
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
   <testcase name="testGetName" classname="Model.UserTest" time="0"/>
-  <testcase name="testGetRole" classname="Model.UserTest" time="0"/>
+  <testcase name="testGetRole" classname="Model.UserTest" time="0.001"/>
 </testsuite>

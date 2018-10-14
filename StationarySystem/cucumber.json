@@ -12,7 +12,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 7594261464,
+=======
+              "duration": 7122297559,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +28,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 234378394,
+=======
+              "duration": 647230198,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
             "line": 7,
@@ -36,7 +44,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 722360388,
+=======
+              "duration": 165747790,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
             "line": 8,
@@ -64,7 +76,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 5229605144,
+=======
+              "duration": 4685219381,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
             "line": 11,
@@ -76,7 +92,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 65163301,
+=======
+              "duration": 331590488,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
             "line": 12,
@@ -88,7 +108,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 52692037,
+=======
+              "duration": 149588718,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
             "line": 13,
@@ -100,7 +124,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 15024,
+=======
+              "duration": 36757,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
             "line": 14,
@@ -112,7 +140,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 10817,
+=======
+              "duration": 27866,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
             "line": 15,
@@ -124,7 +156,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1023967806,
+=======
+              "duration": 1364808211,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
             "line": 16,
@@ -136,7 +172,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 664226558,
+=======
+              "duration": 159704517,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
             "line": 17,
@@ -158,7 +198,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 4099536046,
+=======
+              "duration": 4657029542,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
             "line": 20,
@@ -170,7 +214,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 788799479,
+=======
+              "duration": 946332073,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
             "line": 21,
@@ -182,7 +230,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 12610982,
+=======
+              "duration": 17072235,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
             "line": 22,
@@ -194,7 +246,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 834050102,
+=======
+              "duration": 186203128,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
             "line": 23,
@@ -203,11 +259,35 @@
               "location": "ReceptionistTest.dashboard_should_contain_Request_Form_and_View_All_Stationery_Requests_buttons()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1099949862,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "select \u0027View all stationary requests button\u0027",
+            "match": {
+              "location": "ReceptionistTest.select_View_all_stationary_requests_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 313392256,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "system should show a table of the orders with a status column reading \u0027pending\u0027, \u0027in progress\u0027, \u0027in transit\u0027 and \u0027complete\u0027",
+            "match": {
+              "location": "ReceptionistTest.system_should_show_a_table_of_the_orders_with_a_status_column_reading_pending_in_progress_in_transit_and_complete()"
+            },
+            "keyword": "Then "
           }
         ]
       },
       {
-        "line": 25,
+        "line": 27,
         "name": "Stockroom logs in to dashboard",
         "description": "",
         "id": "test-open-stationarysystemurl;stockroom-logs-in-to-dashboard",
@@ -216,10 +296,14 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 3289922182,
+=======
+              "duration": 4363503820,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
-            "line": 26,
+            "line": 28,
             "name": "Stockroom fills in login details",
             "match": {
               "location": "StockroomTest.stockroom_fills_in_login_details()"
@@ -228,10 +312,14 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 969408056,
+=======
+              "duration": 988370500,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
-            "line": 27,
+            "line": 29,
             "name": "Stockroom selects login button",
             "match": {
               "location": "StockroomTest.stockroom_selects_login_button()"
@@ -240,10 +328,14 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 52944130,
+=======
+              "duration": 6809240,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
-            "line": 28,
+            "line": 30,
             "name": "system should process login and direct to the stockroom dashboard",
             "match": {
               "location": "StockroomTest.system_should_process_login_and_direct_to_the_dashboard()"
@@ -252,10 +344,14 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 7138792013,
+=======
+              "duration": 717450018,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
-            "line": 29,
+            "line": 31,
             "name": "tries to view all the orders placed",
             "match": {
               "location": "StockroomTest.tries_to_view_all_the_orders_placed()"
@@ -264,10 +360,14 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 36724516,
+=======
+              "duration": 76898459,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
-            "line": 30,
+            "line": 32,
             "name": "the system should show a table of the orders placed on the view orders screen",
             "match": {
               "location": "StockroomTest.the_system_should_show_a_table_of_the_orders_placed_on_the_view_orders_screen()"
@@ -276,10 +376,14 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 129725362,
+=======
+              "duration": 211921858,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
-            "line": 31,
+            "line": 33,
             "name": "try to change the status of an order, the system should provide me with a drop-down menu of options",
             "match": {
               "location": "StockroomTest.try_to_change_the_status_of_an_order_the_system_should_provide_me_with_a_drop_down_menu_of_options()"
@@ -288,11 +392,15 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 164933111,
+=======
+              "duration": 293016543,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
-            "line": 32,
-            "name": "These options should include \u0027pending\u0027, ‘in progress’, ‘in transit’ and ‘complete’",
+            "line": 34,
+            "name": "These options should include \u0027pending\u0027, \u0027in progress\u0027, \u0027in transit\u0027 and \u0027complete\u0027",
             "match": {
               "location": "StockroomTest.these_options_should_include_pending_in_progress_in_transit_and_complete()"
             },
@@ -300,10 +408,14 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1437542272,
+=======
+              "duration": 2310339288,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
-            "line": 33,
+            "line": 35,
             "name": "I change the status of an order",
             "match": {
               "location": "StockroomTest.i_change_the_status_of_an_order()"
@@ -312,10 +424,14 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 795735805,
+=======
+              "duration": 226251521,
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
               "status": "passed"
             },
-            "line": 34,
+            "line": 36,
             "name": "system should present feedback with the message “The order status fields have been updated successfully.”",
             "match": {
               "location": "StockroomTest.system_should_present_feedback_with_the_message_The_order_status_fields_have_been_updated_successfully()"
