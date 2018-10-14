@@ -97,7 +97,7 @@ public class UserTest {
     }
     @Test
     public void testMongo() {
-        System.out.println("Mongo Connect");
+        System.out.println("Mongo Connection Test");
                 String uri = "mongodb://jarrodwatts16:Testpass123!@ds121343.mlab.com:21343/mongodb_sep";
         
                 MongoClientURI clientURI = new MongoClientURI(uri);
@@ -109,10 +109,11 @@ public class UserTest {
                {
                    expResult = mongoDatabase;
                    assertEquals(expResult, mongoDatabase);
+                   System.out.println("Connection is Successful!");
                    return;
                }
                assertFail();
-    }
+                 }
 
     private void assertFail() {
         int fail = 1;
