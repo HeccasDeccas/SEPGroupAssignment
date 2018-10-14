@@ -38,32 +38,28 @@
                     <option value="FASS">FASS</option>
                     <option value="FDAB">FDAB</option>
                     <option value="FEIT">FEIT</option>
-                    <option value="All">All</option>
+        
                         </select>  
                     
                    
         
-            Filter by Status V0.4:
+            Filter by Status
             
             <select name ="status">
                     <option value="Complete">Complete</option>
                     <option value="Pending">Pending</option>
-                    <option value="In Progress">In Progress</option>
-                    <option value="In Transit">In Transit</option>
-                    <option value="Exclude Complete">Exclude Complete</option>
-                    <option value="Delivered">Delivered</option>
-                    <option value="All">All</option>
+                    <option value="Shipped">Shipped</option>
+                    <option value="Underway">Underway</option>
         </select>
             <input type="submit" name="button1" value="Apply" class="button"> </input>
         </form>
         
         <table class="viewTable">
-<<<<<<< HEAD
-            <tr class="tableHeader">
-                <th class="headerRow">Staff ID</th>
-=======
+
+
+
             <tr id="tableHeader">
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+
                 <th class="headerRow">Name</th>
                 <th class="headerRow">StaffID</th>
                 <th class="headerRow">Email</th>
