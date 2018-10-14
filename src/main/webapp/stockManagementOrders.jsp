@@ -20,6 +20,7 @@
         <title>View Orders</title>
     </head>
     <body>
+        <% MongoMain database = new MongoMain(); %>
             <div class="databaseContainer">
             <header>
                 <img class="UTSLogoWhite" src="images/UTS_Logo_White.png" alt="UTS_Logo"> 

@@ -1,3 +1,4 @@
+<%@page import="java.util.ArrayList"%>
 <%@page import="com.mongodb.client.MongoCursor"%>
 <%@page import="org.bson.Document"%>
 <%@page import="com.mongodb.client.MongoCollection"%>
@@ -35,33 +36,22 @@
                     <option value="UTS Business School">UTS Business School</option>
                     <option value="Faculty of Law">Faculty of Law</option>
                     <option value="Faculty of Science">Faculty of Science</option>
-                    <option value="FASS">FASS</option>
-                    <option value="FDAB">FDAB</option>
-                    <option value="FEIT">FEIT</option>
+                    <option value="Faculty of Arts and Social Science">FASS</option>
+                    <option value="Faculty of Design, Architecture and Building">FDAB</option>
+                    <option value="Faculty of Engineering and Information Technology">FEIT</option>
         
                         </select>  
                     
-                   
-        
-            Filter by Status
-            
-            <select name ="status">
-                    <option value="Complete">Complete</option>
-                    <option value="Pending">Pending</option>
-                    <option value="Shipped">Shipped</option>
-                    <option value="Underway">Underway</option>
-        </select>
-            <input type="submit" name="button1" value="Apply" class="button"> </input>
+            <input type="submit" name="button1" value="Apply Changes" class="button"> </input>
         </form>
         
+        <br>
+        <% String queryParam = request.getParameter("faculty"); %>
+        <form action="statusChangeAction.jsp" method="post">
         <table class="viewTable">
-
-
-
-            <tr id="tableHeader">
-
+            <tr class="tableHeader">
+                <th class="headerRow">Staff ID</th>
                 <th class="headerRow">Name</th>
-                <th class="headerRow">StaffID</th>
                 <th class="headerRow">Email</th>
                 <th class="headerRow">Faculty</th>
                 <th class="headerRow">Date of Request</th>
@@ -71,18 +61,18 @@
             </tr>
             
             <%
-                String queryParam = "";
-                String statusParam = "Complete";
-                try {
-                    queryParam = request.getParameter("faculty");
-                    statusParam = request.getParameter("status");
-                }
-                catch (Exception e) {
-                    queryParam = "";
-                }
-
+                String name = "fail";
+                String ID = "fail";
+                String email = "fail";
+                String faculty = "fail";
+                String dateOfRequest=  "fail";
+                String product = "fail";
+                String quantity = "fail";
+                String orderStatus = "fail";
+                String objectId = "fail";
                 
-                
+               
+                ArrayList<String> listOfChangeIds = new ArrayList<String>();
                 //initialise hardcoded
                 String uri = "mongodb://jarrodwatts16:Testpass123!@ds121343.mlab.com:21343/mongodb_sep";
         
@@ -98,30 +88,30 @@
                   
                   while (cursor.hasNext()) {
                     Document obj = cursor.next();
-                    
-
-                         %>
-                                <%
-                                    //create one td per attribute
-                                    String name = (String) obj.get("name");
-                                    String ID = (String) obj.get("ID");
-                                    String email = (String) obj.get("email");
-                                    String faculty = (String) obj.get("faculty");
-                                    String dateOfRequest = (String) obj.get("dateOfRequest");
-                                    String product = (String) obj.get("product");
-                                    String quantity = (String) obj.get("quantity");
-                                    String orderStatus = (String) obj.get("orderStatus");
-                                    
-                        %>
-                        
-                        <%
-                            //if the query parameter is not equal null
-                            if (queryParam != null && !(queryParam.equals("All")) ){
-                                               // && !(statusParam.equals("Exclude Complete"))) {
-                                //BEGIN FACULTY OF TRANSDISCIPLANRY INNOVATION && obj.get("orderStatus").equals(statusParam)
-                                
-                                    if (obj.get("faculty").equals(queryParam) && obj.get("orderStatus").equals(statusParam) ) {
-                            %>
+                    //create a row %>
+                    <%
+                        //faculty = (String) obj.get("faculty");
+                        name = (String) obj.get("name");
+                            ID = (String) obj.get("ID");
+                            email = (String) obj.get("email");
+                            faculty = (String) obj.get("faculty");
+                            dateOfRequest = (String) obj.get("dateOfRequest");
+                            product = (String) obj.get("product");
+                            quantity = (String) obj.get("quantity");
+                            orderStatus = (String) obj.get("orderStatus").toString();
+                            objectId = (String) obj.get("_id").toString();                       
+                        //if query param not equal null
+                        if (queryParam != null) {                           
+                            if  (faculty.equals(queryParam)) {
+                                try {
+                            //create one td per attribute
+                            
+                            //String objectId = (String) obj.get("_id.$oid").toString();
+                        }
+                        catch (Exception e) {
+                            //do nothing lol
+                        }
+                                %>
                                         <tr>
                                             <td><%=name%></td>
                                             <td><%=ID %></td>

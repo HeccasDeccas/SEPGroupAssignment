@@ -13,6 +13,7 @@ import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 import org.bson.conversions.Bson;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -75,7 +76,16 @@ public class MongoMain {
                 Bson updatedvalue = new Document("quantity", calculatedNewQuantity);
                 Bson updateoperation = new Document("$set", updatedvalue);
                 collection.updateOne(found,updateoperation);
+                
+                if (quantityIntValue > originalQuantity) {
+                    infoBox("Stock is low for the requested item you selected - please expect an extended wait time of up to 7 days to receive your stationery", "Stock is low");
+                }
+    }
+    
 
+    public static void infoBox(String infoMessage, String titleBar)
+    {
+        JOptionPane.showMessageDialog(null, infoMessage, "InfoBox: " + titleBar, JOptionPane.INFORMATION_MESSAGE);
     }
     
     public void changeStatus(String objectId, String status) {
