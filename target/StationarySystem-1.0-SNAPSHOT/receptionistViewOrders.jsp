@@ -58,9 +58,14 @@
         </form>
         
         <table class="viewTable">
+<<<<<<< HEAD
             <tr class="tableHeader">
                 <th class="headerRow">Staff ID</th>
+=======
+            <tr id="tableHeader">
+>>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
                 <th class="headerRow">Name</th>
+                <th class="headerRow">StaffID</th>
                 <th class="headerRow">Email</th>
                 <th class="headerRow">Faculty</th>
                 <th class="headerRow">Date of Request</th>
