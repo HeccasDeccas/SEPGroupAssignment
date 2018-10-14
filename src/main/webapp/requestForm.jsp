@@ -37,7 +37,7 @@
         <form action="requestFormAction.jsp" method="post">
             <table class='formTable'>
                 <tr><td>Name:</td><td><input size="23" type="text" name="name" value="<%=(nameErr != null ? nameErr : "")%>" required></td></tr>
-                <tr><td>Staff ID:</td><td><input size="23" type="text" name="ID" value="<%=(idErr != null ? idErr : "")%>" required></td></tr>
+                <tr><td>Staff ID:</td><td><input maxlength="10" size="23" type="text" name="ID" value="<%=(idErr != null ? idErr : "")%>" required></td></tr>
                 <tr><td>Email:</td><td><input size="23" type="text" name="email" value="<%=(emailErr != null ? emailErr : "")%>" required></td></tr>         
                 <tr><td>Faculty:</td><td><select name="faculty" required>
                     <option value="Faculty of Transdisciplinary Innovation">Faculty of Transdisciplinary Innovation</option>

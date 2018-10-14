@@ -20,7 +20,8 @@
             String exist = (String) session.getAttribute("existErr");
             String idErr = (String) session.getAttribute("IDErr");
             String passError = (String) session.getAttribute("passErr");
-        %>
+        %>    
+        <table>
             <tr>
                 <td><img class="UTSLogoBlack" src="images/UTS_Logo_Black.png" alt="UTS_Logo"></td>
                 <td id="title">Stationery Management System</td>
@@ -34,7 +35,7 @@
             <table class="loginTable">                
                 <tr>
                     <td>Staff ID:</td>
-                    <td><input required class="loginFields" type="text" name="ID" value="<%=(idErr != null ? idErr : "")%>"/></td>
+                    <td><input required maxlength="10" class="loginFields" type="text" name="ID" value="<%=(idErr != null ? idErr : "")%>"/></td>
                 </tr>
                 <tr>
                     <td vertical-align="top">Password:</td>

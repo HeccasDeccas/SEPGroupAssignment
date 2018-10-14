@@ -32,9 +32,8 @@
                     |
                     <a href="logoutPage.jsp">Logout</a>
                 </div>
-                
         <div class="maincontent">
-        <h2 class="databaseHeading">FEIT Stationery Orders</h2> 
+        <h2 class="databaseHeading">Stationery Orders</h2> 
         
         <form action="" method="post">
             Filter by faculty:      
