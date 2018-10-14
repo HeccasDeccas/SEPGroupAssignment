@@ -51,12 +51,30 @@ public class ReceptionistTest {
 
     @Then("^dashboard should contain 'Request Form' and 'View All Stationery Requests' buttons$")
     public void dashboard_should_contain_Request_Form_and_View_All_Stationery_Requests_buttons() throws Throwable {
-        if (driver.findElement(By.xpath("//*[contains(text(), 'Request Form')]")).isDisplayed() &&
-                driver.findElement(By.xpath("//input[@value='View All Stationery Requests']")).isDisplayed()){
+        if (driver.findElement(By.xpath("//*[contains(text(), 'Request Form')]")).isDisplayed()
+                && driver.findElement(By.xpath("//input[@value='View All Stationery Requests']")).isDisplayed()) {
             System.out.println("Buttons present on dashboard");
         } else {
             System.out.println("Buttons are not present");
         }
+    }
+
+    @When("select 'View all stationary requests button'$")
+    public void select_View_all_stationary_requests_button() throws Throwable {
+        driver.findElement(By.xpath("//input[@value='View All Stationery Requests']")).click();
+    }
+
+    @Then("^system should show a table of the orders with a status column reading 'pending', 'in progress', 'in transit' and 'complete'$")
+    public void system_should_show_a_table_of_the_orders_with_a_status_column_reading_pending_in_progress_in_transit_and_complete() throws Throwable {
+        if (driver.findElement(By.xpath("//*[contains(text(), 'Pending')]")).isDisplayed()
+                && driver.findElement(By.xpath("//*[contains(text(), 'In Progress')]")).isDisplayed()
+                && driver.findElement(By.xpath("//*[contains(text(), 'In Transit')]")).isDisplayed()
+                && driver.findElement(By.xpath("//*[contains(text(), 'Complete')]")).isDisplayed()) {
+            System.out.println("Status' present");
+        } else {
+            System.out.println("Status' not present");
+        }
+
         driver.quit();
     }
 

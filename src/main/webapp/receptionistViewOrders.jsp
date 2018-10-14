@@ -59,8 +59,8 @@
         
         <table class="viewTable">
             <tr id="tableHeader">
-                <th class="headerRow">Staff ID</th>
                 <th class="headerRow">Name</th>
+                <th class="headerRow">StaffID</th>
                 <th class="headerRow">Email</th>
                 <th class="headerRow">Faculty</th>
                 <th class="headerRow">Date of Request</th>
