@@ -57,13 +57,14 @@ public class RequestTest {
     @When("^submitting a form with details not on file$")
     public void submitting_a_form_with_details_not_on_file() throws Throwable {
         driver.findElement(By.name("name")).sendKeys("Test Two");
-        driver.findElement(By.name("ID")).sendKeys("123455");
+        driver.findElement(By.name("ID")).sendKeys("123456");
         driver.findElement(By.name("email")).sendKeys("test@uts.com");
         driver.findElement(By.name("faculty")).click();
         driver.findElement(By.xpath("//*[contains(text(), 'UTS Business School')]")).click();
         driver.findElement(By.name("product")).click();
         driver.findElement(By.xpath("//*[contains(text(), 'Black Pen')]")).click();
         driver.findElement(By.name("quantity")).sendKeys("10");
+        driver.findElement(By.id("submit")).click();
     }
 
     @Then("^system should show an error message$")

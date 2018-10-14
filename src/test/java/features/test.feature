@@ -37,6 +37,8 @@ Feature: Test open StationarySystemURL
     Then dashboard should contain 'Request Form' and 'View All Stationery Requests' buttons
     When select 'View all stationary requests button'
     Then system should show a table of the orders with a status column reading 'pending', 'underway', 'shipped' or 'complete'
+    When selects status filter
+    Then filter contains the options 'complete' and 'pending' based on the orders status
 
   Scenario: Stockroom logs in to dashboard
     Given Stockroom fills in login details
