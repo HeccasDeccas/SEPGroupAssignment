@@ -39,13 +39,13 @@
             while (cursor.hasNext()) {
                 Document obj = cursor.next();
                 //for each item get the current status
-                String thisStatus = obj.get("orderStatus").toString();
+                //String thisStatus = obj.get("orderStatus").toString();
                 
                 //for each item get the current id
                 String objectId = obj.get("_id").toString();
                 
                 // for each ID get get the request parameter for that ID
-                String result = request.getParameter(objectId);
+                String result = request.getParameter(objectId).toString();
 
                 //for each value update the document
                 Bson updatedvalue = new Document("orderStatus",result);

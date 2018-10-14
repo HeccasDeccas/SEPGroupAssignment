@@ -61,7 +61,7 @@
                 session.setAttribute("fieldErr", "Invalid fields.");
                 response.sendRedirect("requestForm.jsp");     
             } else {
-                Staff staff = new Staff(ID,name,email,password,role);
+                //Staff staff = new Staff(ID,name,email,password,role);
                 database.add(name, ID, email, faculty, dateOfRequest, product, quantity);
                 database.subtract(product, quantity);
                 //session.setAttribute("staff", staff);
