@@ -28,7 +28,7 @@ Feature: Test open StationarySystemURL
     Then system should process login and direct to the dashboard
     Then dashboard should contain 'Request Form' and 'View All Stationery Requests' buttons
     When select 'View all stationary requests button'
-    Then system should show a table of the orders with a status column reading 'pending', 'in progress', 'in transit' and 'complete'
+    Then system should show a table of the orders with a status column reading 'pending', 'underway', 'shipped' and 'complete'
 
   Scenario: Stockroom logs in to dashboard
     Given Stockroom fills in login details
@@ -37,7 +37,7 @@ Feature: Test open StationarySystemURL
     When tries to view all the orders placed
     Then the system should show a table of the orders placed on the view orders screen
     When try to change the status of an order, the system should provide me with a drop-down menu of options
-    Then These options should include 'pending', 'in progress', 'in transit' and 'complete'
+    Then These options should include 'pending', 'underway', 'shipped' and 'complete'
     When I change the status of an order 
     Then system should present feedback with the message “The order status fields have been updated successfully.”
     
