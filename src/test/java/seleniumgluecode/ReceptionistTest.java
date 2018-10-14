@@ -74,21 +74,6 @@ public class ReceptionistTest {
         } else {
             System.out.println("Status' not present");
         }
-    }
-
-    @When("^selects status filter$")
-    public void selects_status_filter() throws Throwable {
-        driver.findElement(By.name("status")).click();
-    }
-
-    @Then("^filter contains the options 'complete' and 'pending' based on the orders status$")
-    public void filter_contains_the_options_complete_and_pending_based_on_the_orders_status() throws Throwable {
-        if (driver.findElement(By.xpath("//*[contains(text(), 'Pending')]")).isDisplayed()
-                && driver.findElement(By.xpath("//*[contains(text(), 'Complete')]")).isDisplayed()) {
-            System.out.println("All filters are present");
-        } else {
-            System.out.println("Filters are not present");
-        }
         driver.quit();
     }
 

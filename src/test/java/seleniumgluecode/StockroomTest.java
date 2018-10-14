@@ -87,7 +87,7 @@ public class StockroomTest {
         driver.findElement(By.tagName("select")).click();
     }
 
-    @Then("^These options should include 'pending', 'underway', 'shipped' and 'complete'$")
+    @Then("^these options should include 'pending', 'underway', 'shipped' and 'complete'$")
     public void these_options_should_include_pending_in_progress_in_transit_and_complete() throws Throwable {
         if (driver.findElement(By.xpath("//*[contains(text(), 'Pending')]")).isDisplayed()
                 && driver.findElement(By.xpath("//*[contains(text(), 'Underway')]")).isDisplayed()
