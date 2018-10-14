@@ -12,11 +12,7 @@
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 7594261464,
-=======
-              "duration": 7122297559,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 5851380944,
               "status": "passed"
             },
             "line": 6,
@@ -28,11 +24,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 234378394,
-=======
-              "duration": 647230198,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 915240803,
               "status": "passed"
             },
             "line": 7,
@@ -44,11 +36,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 722360388,
-=======
-              "duration": 165747790,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 171359094,
               "status": "passed"
             },
             "line": 8,
@@ -76,11 +64,7 @@
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 5229605144,
-=======
-              "duration": 4685219381,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 3743864628,
               "status": "passed"
             },
             "line": 11,
@@ -92,46 +76,10 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 65163301,
-=======
-              "duration": 331590488,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 89600259,
               "status": "passed"
             },
             "line": 12,
-            "name": "completing order form",
-            "match": {
-              "location": "RequestTest.completing_order_form()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 52692037,
-=======
-              "duration": 149588718,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "system should have both drop down options and text fields",
-            "match": {
-              "location": "RequestTest.system_should_have_both_drop_down_options_and_text_fields()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 15024,
-=======
-              "duration": 36757,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
-              "status": "passed"
-            },
-            "line": 14,
             "name": "submitting an incomplete form",
             "match": {
               "location": "RequestTest.submitting_an_incomplete_form()"
@@ -140,14 +88,10 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 10817,
-=======
-              "duration": 27866,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 185168048,
               "status": "passed"
             },
-            "line": 15,
+            "line": 13,
             "name": "system should show an error message when incomplete field AND when input is invalid",
             "match": {
               "location": "RequestTest.system_should_show_an_error_message_when_incomplete_field_AND_when_input_is_invalid()"
@@ -156,11 +100,31 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 1023967806,
-=======
-              "duration": 1364808211,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 110986830,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "completing order form",
+            "match": {
+              "location": "RequestTest.completing_order_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80980343,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "system should have both drop down options and text fields",
+            "match": {
+              "location": "RequestTest.system_should_have_both_drop_down_options_and_text_fields()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3172362750,
               "status": "passed"
             },
             "line": 16,
@@ -172,11 +136,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 664226558,
-=======
-              "duration": 159704517,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 97418499,
               "status": "passed"
             },
             "line": 17,
@@ -198,11 +158,7 @@
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 4099536046,
-=======
-              "duration": 4657029542,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 2843750217,
               "status": "passed"
             },
             "line": 20,
@@ -214,11 +170,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 788799479,
-=======
-              "duration": 946332073,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 688683596,
               "status": "passed"
             },
             "line": 21,
@@ -230,11 +182,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 12610982,
-=======
-              "duration": 17072235,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 8694910,
               "status": "passed"
             },
             "line": 22,
@@ -246,11 +194,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 834050102,
-=======
-              "duration": 186203128,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 88866652,
               "status": "passed"
             },
             "line": 23,
@@ -262,7 +206,7 @@
           },
           {
             "result": {
-              "duration": 1099949862,
+              "duration": 634191612,
               "status": "passed"
             },
             "line": 24,
@@ -274,7 +218,7 @@
           },
           {
             "result": {
-              "duration": 313392256,
+              "duration": 223257644,
               "status": "passed"
             },
             "line": 25,
@@ -296,11 +240,7 @@
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 3289922182,
-=======
-              "duration": 4363503820,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 2558269578,
               "status": "passed"
             },
             "line": 28,
@@ -312,11 +252,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 969408056,
-=======
-              "duration": 988370500,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 667336444,
               "status": "passed"
             },
             "line": 29,
@@ -328,11 +264,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 52944130,
-=======
-              "duration": 6809240,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 7401302,
               "status": "passed"
             },
             "line": 30,
@@ -344,11 +276,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 7138792013,
-=======
-              "duration": 717450018,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
+              "duration": 427510931,
               "status": "passed"
             },
             "line": 31,
@@ -360,12 +288,9 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 36724516,
-=======
-              "duration": 76898459,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
-              "status": "passed"
+              "duration": 38407026,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"tag name\",\"selector\":\"table\"}\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform\u003dMac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027Ashleighs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1800:237b:c428:b718%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14\u0027, java.version: \u00271.8.0_161\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/vb/wntw8slx4yb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51255}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}\nSession ID: 44f80209ad0fd2028f4e454539538b83\n*** Element info: {Using\u003dtag name, value\u003dtable}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:392)\n\tat org.openqa.selenium.By$ByTagName.findElement(By.java:320)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat seleniumgluecode.StockroomTest.the_system_should_show_a_table_of_the_orders_placed_on_the_view_orders_screen(StockroomTest.java:59)\n\tat ✽.Then the system should show a table of the orders placed on the view orders screen(test.feature:32)\n",
+              "status": "failed"
             },
             "line": 32,
             "name": "the system should show a table of the orders placed on the view orders screen",
@@ -376,12 +301,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 129725362,
-=======
-              "duration": 211921858,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 33,
             "name": "try to change the status of an order, the system should provide me with a drop-down menu of options",
@@ -392,12 +312,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 164933111,
-=======
-              "duration": 293016543,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 34,
             "name": "These options should include \u0027pending\u0027, \u0027in progress\u0027, \u0027in transit\u0027 and \u0027complete\u0027",
@@ -408,12 +323,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 1437542272,
-=======
-              "duration": 2310339288,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 35,
             "name": "I change the status of an order",
@@ -424,12 +334,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 795735805,
-=======
-              "duration": 226251521,
->>>>>>> 0757efe988f8fd07cf87d48bc05db49d18f3cc7b
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 36,
             "name": "system should present feedback with the message “The order status fields have been updated successfully.”",

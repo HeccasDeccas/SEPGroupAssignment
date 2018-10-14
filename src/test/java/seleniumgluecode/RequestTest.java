@@ -34,9 +34,30 @@ public class RequestTest {
         driver.findElement(By.id("Login")).click();
     }
 
+    @When("^submitting an incomplete form$")
+    public void submitting_an_incomplete_form() throws Throwable {
+        driver.findElement(By.id("submit")).click();
+    }
+
+    @Then("^system should show an error message when incomplete field AND when input is invalid$")
+    public void system_should_show_an_error_message_when_incomplete_field_AND_when_input_is_invalid() throws Throwable {
+        boolean nameRequired = Boolean.parseBoolean(driver.findElement(By.name("name")).getAttribute("required"));
+        boolean idRequired = Boolean.parseBoolean(driver.findElement(By.name("ID")).getAttribute("required"));
+        boolean emailRequired = Boolean.parseBoolean(driver.findElement(By.name("email")).getAttribute("required"));
+        boolean facultyRequired = Boolean.parseBoolean(driver.findElement(By.name("faculty")).getAttribute("required"));
+        boolean productRequired = Boolean.parseBoolean(driver.findElement(By.name("product")).getAttribute("required"));
+        boolean quantityRequired = Boolean.parseBoolean(driver.findElement(By.name("quantity")).getAttribute("required"));
+        if (nameRequired && idRequired && emailRequired && facultyRequired && productRequired && quantityRequired) {
+            System.out.println("Error message present");
+        }
+        else {
+            System.out.println("Error message is not present");
+        }
+    }
+
     @When("^completing order form$")
     public void completing_order_form() throws Throwable {
-        driver.findElement(By.name("name")).sendKeys("Test ing");
+        driver.findElement(By.name("name")).sendKeys("Test One");
 
     }
 
@@ -49,22 +70,15 @@ public class RequestTest {
         }
     }
 
-    @When("^submitting an incomplete form$")
-    public void submitting_an_incomplete_form() throws Throwable {
-    }
-
-    @Then("^system should show an error message when incomplete field AND when input is invalid$")
-    public void system_should_show_an_error_message_when_incomplete_field_AND_when_input_is_invalid() throws Throwable {
-        
-    }
-
     @When("^submitting form$")
     public void submitting_form() throws Throwable {
-        driver.findElement(By.name("name")).sendKeys("Test One");
-        driver.findElement(By.name("ID")).sendKeys("12345678");
-        driver.findElement(By.name("email")).sendKeys("test@test.com");
-        driver.findElement(By.name("faculty")).sendKeys("Test");
-        driver.findElement(By.name("dob")).sendKeys("03/10/2018");
+        //driver.findElement(By.name("name")).sendKeys("Test One");
+        driver.findElement(By.name("ID")).sendKeys("123456");
+        driver.findElement(By.name("email")).sendKeys("test@uts.com");
+        driver.findElement(By.name("faculty")).click();
+        driver.findElement(By.xpath("//*[contains(text(), 'UTS Business School')]")).click();
+        driver.findElement(By.name("product")).click();
+        driver.findElement(By.xpath("//*[contains(text(), 'Black Pen')]")).click();
         driver.findElement(By.name("quantity")).sendKeys("10");
         driver.findElement(By.id("submit")).submit();
     }
