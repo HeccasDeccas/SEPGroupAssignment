@@ -43,7 +43,7 @@
                 session.setAttribute("staffLogin", staff);
                 response.sendRedirect("stockManagementDashboard.jsp");
             } else {
-                session.setAttribute("existErr", "Staff account does not exist!");
+                ((HttpServletRequest) request).getSession().setAttribute("existErr", "Staff account does not exist!");
                 response.sendRedirect("index.jsp");
             }
         %>
