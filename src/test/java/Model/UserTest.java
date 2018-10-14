@@ -8,6 +8,7 @@ import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import java.util.ArrayList;
 import java.util.Date;
 import javax.swing.text.Document;
@@ -15,7 +16,20 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import uts.wsd.Staff;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Assert;
+
+
 
 /**
  *
@@ -114,6 +128,13 @@ public class UserTest {
                }
                assertFail();
                  }
+    @Test
+    public void testChromeDriver() throws Throwable
+    {
+   
+        
+    }
+    
 
     private void assertFail() {
         int fail = 1;

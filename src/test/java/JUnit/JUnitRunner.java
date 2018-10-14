@@ -15,6 +15,9 @@ import org.junit.runner.notification.Failure;
  */
 public class JUnitRunner {
  public static void main(String[]args) {
+     System.out.println("-----------------UNIT TESTING---------------");
+     System.out.println();
+     
      Result result = JUnitCore.runClasses(JUnitTests.class);
      for (Failure failure : result.getFailures())
      {System.out.println(failure.toString());
