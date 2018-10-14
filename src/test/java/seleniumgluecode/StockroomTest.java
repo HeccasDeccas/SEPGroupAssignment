@@ -56,12 +56,13 @@ public class StockroomTest {
 
     @Then("^can see a table with the product 'name', 'price', 'description', and 'quantity'$")
     public void can_see_a_table_with_the_product_name_price_description_and_quantity() throws Throwable {
-        if (driver.findElement(By.xpath("//*[contains(text(), 'Pending')]")).isDisplayed()
-                && driver.findElement(By.xpath("//*[contains(text(), 'Underway')]")).isDisplayed()
-                && driver.findElement(By.xpath("//*[contains(text(), 'Shipped')]")).isDisplayed()
-                && driver.findElement(By.xpath("//*[contains(text(), 'Complete')]")).isDisplayed()
+        if (driver.findElement(By.xpath("//*[contains(text(), 'Name')]")).isDisplayed()
+                && driver.findElement(By.xpath("//*[contains(text(), 'Price')]")).isDisplayed()
+                && driver.findElement(By.xpath("//*[contains(text(), 'Description')]")).isDisplayed()
+                && driver.findElement(By.xpath("//*[contains(text(), 'Quantity')]")).isDisplayed()
                 && driver.findElement(By.className("viewTable")).isDisplayed()) {
             System.out.println("Table is present with headings");
+        driver.findElement(By.linkText("Return to Dashboard")).click();
         } else {
             System.out.println("Table is not present");
         }

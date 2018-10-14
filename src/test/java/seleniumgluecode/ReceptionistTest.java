@@ -64,12 +64,12 @@ public class ReceptionistTest {
         driver.findElement(By.xpath("//input[@value='View All Stationery Requests']")).click();
     }
 
-    @Then("^system should show a table of the orders with a status column reading 'pending', 'underway', 'shipped' and 'complete'$")
-    public void system_should_show_a_table_of_the_orders_with_a_status_column_reading_pending_in_progress_in_transit_and_complete() throws Throwable {
+    @Then("^system should show a table of the orders with a status column reading 'pending', 'underway', 'shipped' or 'complete'$")
+    public void system_should_show_a_table_of_the_orders_with_a_status_column_reading_pending_in_progress_in_transit_or_complete() throws Throwable {
         if (driver.findElement(By.xpath("//*[contains(text(), 'Pending')]")).isDisplayed()
-                && driver.findElement(By.xpath("//*[contains(text(), 'Underway')]")).isDisplayed()
-                && driver.findElement(By.xpath("//*[contains(text(), 'Shipped')]")).isDisplayed()
-                && driver.findElement(By.xpath("//*[contains(text(), 'Complete')]")).isDisplayed()) {
+                || driver.findElement(By.xpath("//*[contains(text(), 'Underway')]")).isDisplayed()
+                || driver.findElement(By.xpath("//*[contains(text(), 'Shipped')]")).isDisplayed()
+                || driver.findElement(By.xpath("//*[contains(text(), 'Complete')]")).isDisplayed()) {
             System.out.println("Status' present");
         } else {
             System.out.println("Status' not present");

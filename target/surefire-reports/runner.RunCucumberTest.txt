@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: runner.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 37, Failures: 0, Errors: 4, Skipped: 7, Time elapsed: 51.913 sec <<< FAILURE! - in runner.RunCucumberTest
-Then system should show a table of the orders with a status column reading 'pending', 'underway', 'shipped' and 'complete'(Scenario: Receptionist logs in to dashboard)  Time elapsed: 0.024 sec  <<< ERROR!
+Tests run: 37, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 68.545 sec <<< FAILURE! - in runner.RunCucumberTest
+Then system should present feedback with the message “The order status fields have been updated successfully.”(Scenario: Stockroom logs in to dashboard)  Time elapsed: 0.014 sec  <<< ERROR!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Shipped')]"}
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'The order status fields have been updated successfully')]"}
   (Session info: chrome=69.0.3497.100)
   (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -12,13 +12,13 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'Ashleighs-MacBook-Pro.local', ip: 'fe80:0:0:0:1800:237b:c428:b718%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/vb/wntw8slx4yb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54765}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 575f3abe930d9d77a72679d8d4bd295c
-*** Element info: {Using=xpath, value=//*[contains(text(), 'Shipped')]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/vb/wntw8slx4yb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55447}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: f13136d83d07596859b9d2955a94596c
+*** Element info: {Using=xpath, value=//*[contains(text(), 'The order status fields have been updated successfully')]}
 
-Scenario: Receptionist logs in to dashboard  Time elapsed: 0.024 sec  <<< ERROR!
+Scenario: Stockroom logs in to dashboard  Time elapsed: 0.015 sec  <<< ERROR!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Shipped')]"}
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'The order status fields have been updated successfully')]"}
   (Session info: chrome=69.0.3497.100)
   (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -26,35 +26,7 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'Ashleighs-MacBook-Pro.local', ip: 'fe80:0:0:0:1800:237b:c428:b718%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/vb/wntw8slx4yb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54765}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 575f3abe930d9d77a72679d8d4bd295c
-*** Element info: {Using=xpath, value=//*[contains(text(), 'Shipped')]}
-
-When click view stationery inventory(Scenario: Stockroom logs in to dashboard)  Time elapsed: 0.003 sec  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"id","selector":"viewInventory"}
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'Ashleighs-MacBook-Pro.local', ip: 'fe80:0:0:0:1800:237b:c428:b718%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/vb/wntw8slx4yb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54780}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 9fa22f44a834de62eeb03a10c0dacca0
-*** Element info: {Using=id, value=viewInventory}
-
-Scenario: Stockroom logs in to dashboard  Time elapsed: 0.005 sec  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"id","selector":"viewInventory"}
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'Ashleighs-MacBook-Pro.local', ip: 'fe80:0:0:0:1800:237b:c428:b718%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/vb/wntw8slx4yb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54780}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 9fa22f44a834de62eeb03a10c0dacca0
-*** Element info: {Using=id, value=viewInventory}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/vb/wntw8slx4yb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55447}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: f13136d83d07596859b9d2955a94596c
+*** Element info: {Using=xpath, value=//*[contains(text(), 'The order status fields have been updated successfully')]}
 
