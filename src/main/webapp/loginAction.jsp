@@ -7,7 +7,7 @@
 <%@page import="uts.controller.*"%>
 <%@page import="uts.wsd.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page session="true" %>
+<%@page session="true" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,9 +20,6 @@
             <jsp:setProperty name="staffApp" property="filePath" value="<%=staffPath%>"/>
         </jsp:useBean>
         
-        <script>@ApiMethod
-        public Response getUser( HttpServletRequest servletReq) {
-            HttpSession session = servletReq.getSession();
         <%
             Staffs staffs = staffApp.getStaffs();
             String ID = request.getParameter("ID");
@@ -50,6 +47,5 @@
                 response.sendRedirect("index.jsp");
             }
         %>
-        }</script>
     </body>
 </html>

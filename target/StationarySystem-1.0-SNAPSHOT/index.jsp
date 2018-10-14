@@ -24,7 +24,7 @@
         <%  
             System.out.print(session.getAttribute("existErr"));
         %>
-        <script>console.log("<%=session.getAttribute("existErr")%>")</script>
+        <script>console.log("<%=((HttpServletRequest) request).getSession().getAttribute("existErr")%>")</script>
         <table>
             <tr>
                 <td><img class="UTSLogoBlack" src="images/UTS_Logo_Black.png" alt="UTS_Logo"></td>
