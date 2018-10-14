@@ -56,7 +56,6 @@
         <% String queryParam = request.getParameter("faculty"); %>
         <form action="statusChangeAction.jsp" method="post">
         <table class="viewTable">
-            
             <tr class="tableHeader">
                 <th class="headerRow">Staff ID</th>
                 <th class="headerRow">Name</th>
