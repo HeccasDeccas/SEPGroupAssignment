@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: runner.RunCucumberTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.017 sec - in runner.RunCucumberTest
+=======
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.768 sec - in runner.RunCucumberTest
+>>>>>>> ec8978cf272190f7a88e46e5207ac120f8435bb1

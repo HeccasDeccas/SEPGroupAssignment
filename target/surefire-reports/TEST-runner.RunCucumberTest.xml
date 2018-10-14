@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.RunCucumberTest" time="42.017" tests="37" errors="0" skipped="0" failures="0">
+=======
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.RunCucumberTest" time="49.768" tests="47" errors="0" skipped="0" failures="0">
+>>>>>>> ec8978cf272190f7a88e46e5207ac120f8435bb1
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -63,8 +67,13 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
+<<<<<<< HEAD
   <testcase name="Given user opens browser" classname="Scenario: User opens Login page" time="0"/>
   <testcase name="When login page is loaded" classname="Scenario: User opens Login page" time="0"/>
+=======
+  <testcase name="Given user opens browser" classname="Scenario: User opens Login page" time="0.002"/>
+  <testcase name="When login page is loaded" classname="Scenario: User opens Login page" time="0.001"/>
+>>>>>>> ec8978cf272190f7a88e46e5207ac120f8435bb1
   <testcase name="Then login button is active" classname="Scenario: User opens Login page" time="0"/>
   <testcase name="When user logs in" classname="Scenario: User opens Login page" time="0"/>
   <testcase name="Then logout button should be present" classname="Scenario: User opens Login page" time="0"/>
@@ -73,21 +82,31 @@
   <testcase name="Scenario: User opens Login page" classname="Scenario: User opens Login page" time="0.001"/>
   <testcase name="Given UTS Staff Member logs in" classname="Scenario: UTS Staff member completes form" time="0"/>
   <testcase name="When submitting an incomplete form" classname="Scenario: UTS Staff member completes form" time="0"/>
-  <testcase name="Then system should show an error message when incomplete field AND when input is invalid" classname="Scenario: UTS Staff member completes form" time="0"/>
+  <testcase name="Then system should show an error message when incomplete field" classname="Scenario: UTS Staff member completes form" time="0"/>
+  <testcase name="When submitting a form with details not on file" classname="Scenario: UTS Staff member completes form" time="0"/>
+  <testcase name="Then system should show an error message" classname="Scenario: UTS Staff member completes form" time="0"/>
+  <testcase name="When submitting a form with incorrect name format" classname="Scenario: UTS Staff member completes form" time="0"/>
+  <testcase name="Then system should show an invalid name message" classname="Scenario: UTS Staff member completes form" time="0"/>
+  <testcase name="When submitting a form with incorrect id format" classname="Scenario: UTS Staff member completes form" time="0"/>
+  <testcase name="Then system should show an invalid id message" classname="Scenario: UTS Staff member completes form" time="0"/>
+  <testcase name="When submitting a form with incorrect email format" classname="Scenario: UTS Staff member completes form" time="0"/>
+  <testcase name="Then system should show an invalid email message" classname="Scenario: UTS Staff member completes form" time="0.001"/>
   <testcase name="When completing order form" classname="Scenario: UTS Staff member completes form" time="0"/>
   <testcase name="Then system should have both drop down options and text fields" classname="Scenario: UTS Staff member completes form" time="0"/>
-  <testcase name="When select product drop down" classname="Scenario: UTS Staff member completes form" time="0"/>
+  <testcase name="When select product drop down" classname="Scenario: UTS Staff member completes form" time="0.001"/>
   <testcase name="Then system should have products including &apos;HB Pencil&apos;, &apos;Sticky Notes&apos;, &apos;Ruler&apos;, &apos;Plastic Sleeve&apos; and &apos;Folder&apos;" classname="Scenario: UTS Staff member completes form" time="0"/>
   <testcase name="When submitting form" classname="Scenario: UTS Staff member completes form" time="0"/>
   <testcase name="Then system should show a successful submission screen" classname="Scenario: UTS Staff member completes form" time="0"/>
   <testcase name="Scenario: UTS Staff member completes form" classname="Scenario: UTS Staff member completes form" time="0"/>
   <testcase name="Given Receptionist fills in login details" classname="Scenario: Receptionist logs in to dashboard" time="0"/>
-  <testcase name="When selects login button" classname="Scenario: Receptionist logs in to dashboard" time="0"/>
+  <testcase name="When selects login button" classname="Scenario: Receptionist logs in to dashboard" time="0.001"/>
   <testcase name="Then system should process login and direct to the dashboard" classname="Scenario: Receptionist logs in to dashboard" time="0"/>
   <testcase name="Then dashboard should contain &apos;Request Form&apos; and &apos;View All Stationery Requests&apos; buttons" classname="Scenario: Receptionist logs in to dashboard" time="0"/>
   <testcase name="When select &apos;View all stationary requests button&apos;" classname="Scenario: Receptionist logs in to dashboard" time="0.001"/>
   <testcase name="Then system should show a table of the orders with a status column reading &apos;pending&apos;, &apos;underway&apos;, &apos;shipped&apos; or &apos;complete&apos;" classname="Scenario: Receptionist logs in to dashboard" time="0"/>
-  <testcase name="Scenario: Receptionist logs in to dashboard" classname="Scenario: Receptionist logs in to dashboard" time="0"/>
+  <testcase name="When selects status filter" classname="Scenario: Receptionist logs in to dashboard" time="0"/>
+  <testcase name="Then filter contains the options &apos;complete&apos; and &apos;pending&apos; based on the orders status" classname="Scenario: Receptionist logs in to dashboard" time="0"/>
+  <testcase name="Scenario: Receptionist logs in to dashboard" classname="Scenario: Receptionist logs in to dashboard" time="0.001"/>
   <testcase name="Given Stockroom fills in login details" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
   <testcase name="When Stockroom selects login button" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
   <testcase name="Then system should process login and direct to the stockroom dashboard" classname="Scenario: Stockroom logs in to dashboard" time="0.001"/>
@@ -99,5 +118,5 @@
   <testcase name="Then These options should include &apos;pending&apos;, &apos;underway&apos;, &apos;shipped&apos; and &apos;complete&apos;" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
   <testcase name="When I change the status of an order" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
   <testcase name="Then system should present feedback with the message “The order status fields have been updated successfully.”" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
-  <testcase name="Scenario: Stockroom logs in to dashboard" classname="Scenario: Stockroom logs in to dashboard" time="0"/>
+  <testcase name="Scenario: Stockroom logs in to dashboard" classname="Scenario: Stockroom logs in to dashboard" time="0.001"/>
 </testsuite>

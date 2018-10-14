@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Model.UserTest" time="0.468" tests="7" errors="0" skipped="0" failures="0">
+=======
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Model.UserTest" time="0.231" tests="7" errors="0" skipped="0" failures="0">
+>>>>>>> ec8978cf272190f7a88e46e5207ac120f8435bb1
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -63,6 +67,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
+<<<<<<< HEAD
   <testcase name="testGetPassword" classname="Model.UserTest" time="0.004"/>
   <testcase name="testGetEmail" classname="Model.UserTest" time="0"/>
   <testcase name="testGetStaffID" classname="Model.UserTest" time="0.001"/>
@@ -70,4 +75,13 @@
   <testcase name="testGetName" classname="Model.UserTest" time="0"/>
   <testcase name="testGetRole" classname="Model.UserTest" time="0"/>
   <testcase name="testChromeDriver" classname="Model.UserTest" time="0.001"/>
+=======
+  <testcase name="testGetPassword" classname="Model.UserTest" time="0"/>
+  <testcase name="testGetEmail" classname="Model.UserTest" time="0"/>
+  <testcase name="testGetStaffID" classname="Model.UserTest" time="0"/>
+  <testcase name="testMongo" classname="Model.UserTest" time="0.229"/>
+  <testcase name="testGetName" classname="Model.UserTest" time="0"/>
+  <testcase name="testGetRole" classname="Model.UserTest" time="0"/>
+  <testcase name="testChromeDriver" classname="Model.UserTest" time="0"/>
+>>>>>>> ec8978cf272190f7a88e46e5207ac120f8435bb1
 </testsuite>

@@ -82,23 +82,6 @@ public class StockroomTest {
         }
     }
 
-    @When("^Stockroom selects status filter$")
-    public void stockroom_selects_status_filter() throws Throwable {
-        driver.findElement(By.name("status")).click();
-    }
-
-    @Then("^filter contains the options 'completed' and 'pending' based on the orders status$")
-    public void filter_contains_the_options_completed_and_pending_based_on_the_orders_status() throws Throwable {
-        if (driver.findElement(By.xpath("//*[contains(text(), 'Pending')]")).isDisplayed()
-                && driver.findElement(By.xpath("//*[contains(text(), 'Underway')]")).isDisplayed()
-                && driver.findElement(By.xpath("//*[contains(text(), 'Shipped')]")).isDisplayed()
-                && driver.findElement(By.xpath("//*[contains(text(), 'Complete')]")).isDisplayed()) {
-            System.out.println("All filters are present");
-        } else {
-            System.out.println("Filters are not present");
-        }
-    }
-
     @When("^try to change the status of an order, the system should provide me with a drop-down menu of options$")
     public void try_to_change_the_status_of_an_order_the_system_should_provide_me_with_a_drop_down_menu_of_options() throws Throwable {
         driver.findElement(By.tagName("select")).click();
@@ -122,7 +105,6 @@ public class StockroomTest {
         driver.findElement(By.tagName("select")).click();
         driver.findElement(By.id("nonSelectedOne")).click();
         driver.findElement(By.xpath("//input[@value='Submit']")).click();
-        //driver.findElement(By.className("button")).submit();
     }
 
     @Then("^system should present feedback with the message “The order status fields have been updated successfully\\.”$")
