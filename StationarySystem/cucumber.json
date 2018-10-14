@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5851380944,
+              "duration": 6241157180,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 915240803,
+              "duration": 664440018,
               "status": "passed"
             },
             "line": 7,
@@ -36,13 +36,61 @@
           },
           {
             "result": {
-              "duration": 171359094,
+              "duration": 616797778,
               "status": "passed"
             },
             "line": 8,
             "name": "login button is active",
             "match": {
               "location": "LoginTest.login_button_is_active()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1354849284,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user logs in",
+            "match": {
+              "location": "LoginTest.user_logs_in()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60313828,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "logout button should be present",
+            "match": {
+              "location": "LoginTest.logout_button_should_be_present()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 464252682,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user logs out",
+            "match": {
+              "location": "LoginTest.user_logs_out()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 178925555,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "logout page should be displayed",
+            "match": {
+              "location": "LoginTest.logout_page_should_be_displayed()"
             },
             "keyword": "Then "
           }
@@ -55,7 +103,7 @@
         ]
       },
       {
-        "line": 10,
+        "line": 14,
         "name": "UTS Staff member completes form",
         "description": "",
         "id": "test-open-stationarysystemurl;uts-staff-member-completes-form",
@@ -64,10 +112,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3743864628,
+              "duration": 4330227118,
               "status": "passed"
             },
-            "line": 11,
+            "line": 15,
             "name": "UTS Staff Member logs in",
             "match": {
               "location": "RequestTest.uts_Staff_Member_logs_in()"
@@ -76,10 +124,10 @@
           },
           {
             "result": {
-              "duration": 89600259,
+              "duration": 180519579,
               "status": "passed"
             },
-            "line": 12,
+            "line": 16,
             "name": "submitting an incomplete form",
             "match": {
               "location": "RequestTest.submitting_an_incomplete_form()"
@@ -88,10 +136,10 @@
           },
           {
             "result": {
-              "duration": 185168048,
+              "duration": 277709429,
               "status": "passed"
             },
-            "line": 13,
+            "line": 17,
             "name": "system should show an error message when incomplete field AND when input is invalid",
             "match": {
               "location": "RequestTest.system_should_show_an_error_message_when_incomplete_field_AND_when_input_is_invalid()"
@@ -100,10 +148,10 @@
           },
           {
             "result": {
-              "duration": 110986830,
+              "duration": 153475593,
               "status": "passed"
             },
-            "line": 14,
+            "line": 18,
             "name": "completing order form",
             "match": {
               "location": "RequestTest.completing_order_form()"
@@ -112,10 +160,10 @@
           },
           {
             "result": {
-              "duration": 80980343,
+              "duration": 126801171,
               "status": "passed"
             },
-            "line": 15,
+            "line": 19,
             "name": "system should have both drop down options and text fields",
             "match": {
               "location": "RequestTest.system_should_have_both_drop_down_options_and_text_fields()"
@@ -124,10 +172,27 @@
           },
           {
             "result": {
-              "duration": 3172362750,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 16,
+            "line": 20,
+            "name": "select product drop down",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "system should have products including \u0027HB Pencil\u0027, \u0027Sticky Notes\u0027, \u0027Ruler\u0027, \u0027Plastic Sleeve\u0027 and \u0027Folder\u0027",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
             "name": "submitting form",
             "match": {
               "location": "RequestTest.submitting_form()"
@@ -136,10 +201,9 @@
           },
           {
             "result": {
-              "duration": 97418499,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 17,
+            "line": 23,
             "name": "system should show a successful submission screen",
             "match": {
               "location": "RequestTest.system_should_show_a_successful_submission_screen()"
@@ -149,7 +213,7 @@
         ]
       },
       {
-        "line": 19,
+        "line": 25,
         "name": "Receptionist logs in to dashboard",
         "description": "",
         "id": "test-open-stationarysystemurl;receptionist-logs-in-to-dashboard",
@@ -158,10 +222,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2843750217,
+              "duration": 4664218030,
               "status": "passed"
             },
-            "line": 20,
+            "line": 26,
             "name": "Receptionist fills in login details",
             "match": {
               "location": "ReceptionistTest.receptionist_fills_in_login_details()"
@@ -170,10 +234,10 @@
           },
           {
             "result": {
-              "duration": 688683596,
+              "duration": 590307444,
               "status": "passed"
             },
-            "line": 21,
+            "line": 27,
             "name": "selects login button",
             "match": {
               "location": "ReceptionistTest.selects_login_button()"
@@ -182,10 +246,10 @@
           },
           {
             "result": {
-              "duration": 8694910,
+              "duration": 241635907,
               "status": "passed"
             },
-            "line": 22,
+            "line": 28,
             "name": "system should process login and direct to the dashboard",
             "match": {
               "location": "ReceptionistTest.system_should_process_login_and_direct_to_the_dashboard()"
@@ -194,10 +258,10 @@
           },
           {
             "result": {
-              "duration": 88866652,
+              "duration": 93051402,
               "status": "passed"
             },
-            "line": 23,
+            "line": 29,
             "name": "dashboard should contain \u0027Request Form\u0027 and \u0027View All Stationery Requests\u0027 buttons",
             "match": {
               "location": "ReceptionistTest.dashboard_should_contain_Request_Form_and_View_All_Stationery_Requests_buttons()"
@@ -206,10 +270,10 @@
           },
           {
             "result": {
-              "duration": 634191612,
+              "duration": 845902804,
               "status": "passed"
             },
-            "line": 24,
+            "line": 30,
             "name": "select \u0027View all stationary requests button\u0027",
             "match": {
               "location": "ReceptionistTest.select_View_all_stationary_requests_button()"
@@ -218,10 +282,10 @@
           },
           {
             "result": {
-              "duration": 223257644,
+              "duration": 337833634,
               "status": "passed"
             },
-            "line": 25,
+            "line": 31,
             "name": "system should show a table of the orders with a status column reading \u0027pending\u0027, \u0027in progress\u0027, \u0027in transit\u0027 and \u0027complete\u0027",
             "match": {
               "location": "ReceptionistTest.system_should_show_a_table_of_the_orders_with_a_status_column_reading_pending_in_progress_in_transit_and_complete()"
@@ -231,7 +295,7 @@
         ]
       },
       {
-        "line": 27,
+        "line": 33,
         "name": "Stockroom logs in to dashboard",
         "description": "",
         "id": "test-open-stationarysystemurl;stockroom-logs-in-to-dashboard",
@@ -240,10 +304,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2558269578,
+              "duration": 4414655219,
               "status": "passed"
             },
-            "line": 28,
+            "line": 34,
             "name": "Stockroom fills in login details",
             "match": {
               "location": "StockroomTest.stockroom_fills_in_login_details()"
@@ -252,10 +316,10 @@
           },
           {
             "result": {
-              "duration": 667336444,
+              "duration": 821644244,
               "status": "passed"
             },
-            "line": 29,
+            "line": 35,
             "name": "Stockroom selects login button",
             "match": {
               "location": "StockroomTest.stockroom_selects_login_button()"
@@ -264,10 +328,10 @@
           },
           {
             "result": {
-              "duration": 7401302,
+              "duration": 14940170,
               "status": "passed"
             },
-            "line": 30,
+            "line": 36,
             "name": "system should process login and direct to the stockroom dashboard",
             "match": {
               "location": "StockroomTest.system_should_process_login_and_direct_to_the_dashboard()"
@@ -276,10 +340,10 @@
           },
           {
             "result": {
-              "duration": 427510931,
+              "duration": 714988331,
               "status": "passed"
             },
-            "line": 31,
+            "line": 37,
             "name": "tries to view all the orders placed",
             "match": {
               "location": "StockroomTest.tries_to_view_all_the_orders_placed()"
@@ -288,11 +352,11 @@
           },
           {
             "result": {
-              "duration": 38407026,
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"tag name\",\"selector\":\"table\"}\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform\u003dMac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027Ashleighs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1800:237b:c428:b718%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14\u0027, java.version: \u00271.8.0_161\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/vb/wntw8slx4yb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51255}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}\nSession ID: 44f80209ad0fd2028f4e454539538b83\n*** Element info: {Using\u003dtag name, value\u003dtable}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:392)\n\tat org.openqa.selenium.By$ByTagName.findElement(By.java:320)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat seleniumgluecode.StockroomTest.the_system_should_show_a_table_of_the_orders_placed_on_the_view_orders_screen(StockroomTest.java:59)\n\tat ✽.Then the system should show a table of the orders placed on the view orders screen(test.feature:32)\n",
+              "duration": 66460264,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"tag name\",\"selector\":\"table\"}\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform\u003dMac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027Ashleighs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1800:237b:c428:b718%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14\u0027, java.version: \u00271.8.0_161\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/vb/wntw8slx4yb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52357}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}\nSession ID: fdba44fd3b349cadb984477b1915228b\n*** Element info: {Using\u003dtag name, value\u003dtable}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:392)\n\tat org.openqa.selenium.By$ByTagName.findElement(By.java:320)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat seleniumgluecode.StockroomTest.the_system_should_show_a_table_of_the_orders_placed_on_the_view_orders_screen(StockroomTest.java:59)\n\tat ✽.Then the system should show a table of the orders placed on the view orders screen(test.feature:38)\n",
               "status": "failed"
             },
-            "line": 32,
+            "line": 38,
             "name": "the system should show a table of the orders placed on the view orders screen",
             "match": {
               "location": "StockroomTest.the_system_should_show_a_table_of_the_orders_placed_on_the_view_orders_screen()"
@@ -303,7 +367,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 33,
+            "line": 39,
             "name": "try to change the status of an order, the system should provide me with a drop-down menu of options",
             "match": {
               "location": "StockroomTest.try_to_change_the_status_of_an_order_the_system_should_provide_me_with_a_drop_down_menu_of_options()"
@@ -314,7 +378,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 34,
+            "line": 40,
             "name": "These options should include \u0027pending\u0027, \u0027in progress\u0027, \u0027in transit\u0027 and \u0027complete\u0027",
             "match": {
               "location": "StockroomTest.these_options_should_include_pending_in_progress_in_transit_and_complete()"
@@ -325,7 +389,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 35,
+            "line": 41,
             "name": "I change the status of an order",
             "match": {
               "location": "StockroomTest.i_change_the_status_of_an_order()"
@@ -336,7 +400,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 36,
+            "line": 42,
             "name": "system should present feedback with the message “The order status fields have been updated successfully.”",
             "match": {
               "location": "StockroomTest.system_should_present_feedback_with_the_message_The_order_status_fields_have_been_updated_successfully()"

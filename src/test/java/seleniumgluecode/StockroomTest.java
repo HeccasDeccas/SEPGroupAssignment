@@ -77,7 +77,7 @@ public class StockroomTest {
             System.out.println("All options are present");
         }
         else {
-            System.out.println("boo it doesn't work");
+            System.out.println("Options are not present");
         }
         
     }

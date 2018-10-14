@@ -50,6 +50,41 @@ public class LoginTest {
         } else {
             System.out.println("Login button disabled");
         }
+
+    }
+
+    @When("^user logs in$")
+    public void user_logs_in() throws Throwable {
+        driver.findElement(By.name("ID")).sendKeys("123456");
+        driver.findElement(By.name("password")).sendKeys("blahblah123");
+        driver.findElement(By.id("Login")).click();
+    }
+
+    @Then("^logout button should be present$")
+    public void logout_button_should_be_present() throws Throwable {
+        String logout = driver.findElement(By.className("navbuttons")).getText();
+        if (logout.equals("Logout")) {
+            System.out.println("Logout button present");
+        }
+        else {
+            System.out.println("Logout button not present");
+        }
+    }
+
+    @When("^user logs out$")
+    public void user_logs_out() throws Throwable {
+        driver.findElement(By.linkText("Logout")).click();
+    }
+
+    @Then("^logout page should be displayed$")
+    public void logout_page_should_be_displayed() throws Throwable {
+        String logoutTxt = driver.findElement(By.tagName("h2")).getText();
+        if (logoutTxt.equals("Logged Out")) {
+            System.out.println("Logout successful");
+        }
+        else {
+            System.out.println("Logout not processed");
+        }
         driver.quit();
     }
 
