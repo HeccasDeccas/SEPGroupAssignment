@@ -14,7 +14,15 @@ Feature: Test open StationarySystemURL
   Scenario: UTS Staff member completes form
     Given UTS Staff Member logs in
     When submitting an incomplete form
-    Then system should show an error message when incomplete field AND when input is invalid
+    Then system should show an error message when incomplete field
+    When submitting a form with details not on file
+    Then system should show an error message
+    When submitting a form with incorrect name format
+    Then system should show an invalid name message
+    When submitting a form with incorrect id format
+    Then system should show an invalid id message
+    When submitting a form with incorrect email format
+    Then system should show an invalid email message
     When completing order form
     Then system should have both drop down options and text fields
     When select product drop down
@@ -35,7 +43,7 @@ Feature: Test open StationarySystemURL
     When Stockroom selects login button
     Then system should process login and direct to the stockroom dashboard
     When click view stationery inventory
-    Then can see a table with the product 'name', 'price', 'description', and 'quantity' 
+    Then can see a table with the product 'name', 'price', 'description', and 'quantity'
     When tries to view all the orders placed
     Then the system should show a table of the orders placed on the view orders screen
     When try to change the status of an order, the system should provide me with a drop-down menu of options

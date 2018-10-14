@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5663218125,
+              "duration": 5947756383,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 1425006576,
+              "duration": 568447417,
               "status": "passed"
             },
             "line": 7,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 425718437,
+              "duration": 53783550,
               "status": "passed"
             },
             "line": 8,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 1602690359,
+              "duration": 1211848917,
               "status": "passed"
             },
             "line": 9,
@@ -60,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 72453993,
+              "duration": 50985096,
               "status": "passed"
             },
             "line": 10,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 665748451,
+              "duration": 451743625,
               "status": "passed"
             },
             "line": 11,
@@ -84,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 160574979,
+              "duration": 492335953,
               "status": "passed"
             },
             "line": 12,
@@ -112,7 +112,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5158869726,
+              "duration": 4223830820,
               "status": "passed"
             },
             "line": 15,
@@ -124,7 +124,7 @@
           },
           {
             "result": {
-              "duration": 130556054,
+              "duration": 88353975,
               "status": "passed"
             },
             "line": 16,
@@ -136,22 +136,118 @@
           },
           {
             "result": {
-              "duration": 261805960,
+              "duration": 147856737,
               "status": "passed"
             },
             "line": 17,
-            "name": "system should show an error message when incomplete field AND when input is invalid",
+            "name": "system should show an error message when incomplete field",
             "match": {
-              "location": "RequestTest.system_should_show_an_error_message_when_incomplete_field_AND_when_input_is_invalid()"
+              "location": "RequestTest.system_should_show_an_error_message_when_incomplete_field()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 206031814,
+              "duration": 2174067089,
               "status": "passed"
             },
             "line": 18,
+            "name": "submitting a form with details not on file",
+            "match": {
+              "location": "RequestTest.submitting_a_form_with_details_not_on_file()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 629923193,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "system should show an error message",
+            "match": {
+              "location": "RequestTest.system_should_show_an_error_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2627729243,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "submitting a form with incorrect name format",
+            "match": {
+              "location": "RequestTest.submitting_a_form_with_incorrect_name_format()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 530873629,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "system should show an invalid name message",
+            "match": {
+              "location": "RequestTest.system_should_show_an_invalid_name_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2893196062,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "submitting a form with incorrect id format",
+            "match": {
+              "location": "RequestTest.submitting_a_form_with_incorrect_id_format()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 694708919,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "system should show an invalid id message",
+            "match": {
+              "location": "RequestTest.system_should_show_an_invalid_id_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2575851441,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "submitting a form with incorrect email format",
+            "match": {
+              "location": "RequestTest.submitting_a_form_with_incorrect_email_format()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 733991618,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "system should show an invalid email message",
+            "match": {
+              "location": "RequestTest.system_should_show_an_invalid_email_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 127392071,
+              "status": "passed"
+            },
+            "line": 26,
             "name": "completing order form",
             "match": {
               "location": "RequestTest.completing_order_form()"
@@ -160,10 +256,10 @@
           },
           {
             "result": {
-              "duration": 158125004,
+              "duration": 65307141,
               "status": "passed"
             },
-            "line": 19,
+            "line": 27,
             "name": "system should have both drop down options and text fields",
             "match": {
               "location": "RequestTest.system_should_have_both_drop_down_options_and_text_fields()"
@@ -172,10 +268,10 @@
           },
           {
             "result": {
-              "duration": 267095818,
+              "duration": 85102541,
               "status": "passed"
             },
-            "line": 20,
+            "line": 28,
             "name": "select product drop down",
             "match": {
               "location": "RequestTest.select_product_drop_down()"
@@ -184,10 +280,10 @@
           },
           {
             "result": {
-              "duration": 297250246,
+              "duration": 141919134,
               "status": "passed"
             },
-            "line": 21,
+            "line": 29,
             "name": "system should have products including \u0027HB Pencil\u0027, \u0027Sticky Notes\u0027, \u0027Ruler\u0027, \u0027Plastic Sleeve\u0027 and \u0027Folder\u0027",
             "match": {
               "location": "RequestTest.system_should_have_products_including_HB_Pencil_Sticky_Notes_Ruler_Plastic_Sleeve_and_Folder()"
@@ -196,10 +292,10 @@
           },
           {
             "result": {
-              "duration": 4057769855,
+              "duration": 3132368447,
               "status": "passed"
             },
-            "line": 22,
+            "line": 30,
             "name": "submitting form",
             "match": {
               "location": "RequestTest.submitting_form()"
@@ -208,10 +304,10 @@
           },
           {
             "result": {
-              "duration": 168075719,
+              "duration": 104439005,
               "status": "passed"
             },
-            "line": 23,
+            "line": 31,
             "name": "system should show a successful submission screen",
             "match": {
               "location": "RequestTest.system_should_show_a_successful_submission_screen()"
@@ -221,7 +317,7 @@
         ]
       },
       {
-        "line": 25,
+        "line": 33,
         "name": "Receptionist logs in to dashboard",
         "description": "",
         "id": "test-open-stationarysystemurl;receptionist-logs-in-to-dashboard",
@@ -230,10 +326,10 @@
         "steps": [
           {
             "result": {
-              "duration": 5532106999,
+              "duration": 3547553054,
               "status": "passed"
             },
-            "line": 26,
+            "line": 34,
             "name": "Receptionist fills in login details",
             "match": {
               "location": "ReceptionistTest.receptionist_fills_in_login_details()"
@@ -242,10 +338,10 @@
           },
           {
             "result": {
-              "duration": 1237910235,
+              "duration": 707103952,
               "status": "passed"
             },
-            "line": 27,
+            "line": 35,
             "name": "selects login button",
             "match": {
               "location": "ReceptionistTest.selects_login_button()"
@@ -254,10 +350,10 @@
           },
           {
             "result": {
-              "duration": 14728842,
+              "duration": 6400711,
               "status": "passed"
             },
-            "line": 28,
+            "line": 36,
             "name": "system should process login and direct to the dashboard",
             "match": {
               "location": "ReceptionistTest.system_should_process_login_and_direct_to_the_dashboard()"
@@ -266,10 +362,10 @@
           },
           {
             "result": {
-              "duration": 139511629,
+              "duration": 74970229,
               "status": "passed"
             },
-            "line": 29,
+            "line": 37,
             "name": "dashboard should contain \u0027Request Form\u0027 and \u0027View All Stationery Requests\u0027 buttons",
             "match": {
               "location": "ReceptionistTest.dashboard_should_contain_Request_Form_and_View_All_Stationery_Requests_buttons()"
@@ -278,10 +374,10 @@
           },
           {
             "result": {
-              "duration": 974684934,
+              "duration": 680075632,
               "status": "passed"
             },
-            "line": 30,
+            "line": 38,
             "name": "select \u0027View all stationary requests button\u0027",
             "match": {
               "location": "ReceptionistTest.select_View_all_stationary_requests_button()"
@@ -290,10 +386,10 @@
           },
           {
             "result": {
-              "duration": 233395173,
+              "duration": 141075095,
               "status": "passed"
             },
-            "line": 31,
+            "line": 39,
             "name": "system should show a table of the orders with a status column reading \u0027pending\u0027, \u0027underway\u0027, \u0027shipped\u0027 or \u0027complete\u0027",
             "match": {
               "location": "ReceptionistTest.system_should_show_a_table_of_the_orders_with_a_status_column_reading_pending_in_progress_in_transit_or_complete()"
@@ -303,7 +399,7 @@
         ]
       },
       {
-        "line": 33,
+        "line": 41,
         "name": "Stockroom logs in to dashboard",
         "description": "",
         "id": "test-open-stationarysystemurl;stockroom-logs-in-to-dashboard",
@@ -312,10 +408,10 @@
         "steps": [
           {
             "result": {
-              "duration": 6841926425,
+              "duration": 3771428674,
               "status": "passed"
             },
-            "line": 34,
+            "line": 42,
             "name": "Stockroom fills in login details",
             "match": {
               "location": "StockroomTest.stockroom_fills_in_login_details()"
@@ -324,10 +420,10 @@
           },
           {
             "result": {
-              "duration": 1295904444,
+              "duration": 1570367428,
               "status": "passed"
             },
-            "line": 35,
+            "line": 43,
             "name": "Stockroom selects login button",
             "match": {
               "location": "StockroomTest.stockroom_selects_login_button()"
@@ -336,10 +432,10 @@
           },
           {
             "result": {
-              "duration": 9107125,
+              "duration": 12426303,
               "status": "passed"
             },
-            "line": 36,
+            "line": 44,
             "name": "system should process login and direct to the stockroom dashboard",
             "match": {
               "location": "StockroomTest.system_should_process_login_and_direct_to_the_dashboard()"
@@ -348,10 +444,10 @@
           },
           {
             "result": {
-              "duration": 622811013,
+              "duration": 788285027,
               "status": "passed"
             },
-            "line": 37,
+            "line": 45,
             "name": "click view stationery inventory",
             "match": {
               "location": "StockroomTest.click_view_stationery_inventory()"
@@ -360,10 +456,10 @@
           },
           {
             "result": {
-              "duration": 633745195,
+              "duration": 854599985,
               "status": "passed"
             },
-            "line": 38,
+            "line": 46,
             "name": "can see a table with the product \u0027name\u0027, \u0027price\u0027, \u0027description\u0027, and \u0027quantity\u0027",
             "match": {
               "location": "StockroomTest.can_see_a_table_with_the_product_name_price_description_and_quantity()"
@@ -372,10 +468,10 @@
           },
           {
             "result": {
-              "duration": 771597715,
+              "duration": 654424100,
               "status": "passed"
             },
-            "line": 39,
+            "line": 47,
             "name": "tries to view all the orders placed",
             "match": {
               "location": "StockroomTest.tries_to_view_all_the_orders_placed()"
@@ -384,10 +480,10 @@
           },
           {
             "result": {
-              "duration": 37550571,
+              "duration": 62829431,
               "status": "passed"
             },
-            "line": 40,
+            "line": 48,
             "name": "the system should show a table of the orders placed on the view orders screen",
             "match": {
               "location": "StockroomTest.the_system_should_show_a_table_of_the_orders_placed_on_the_view_orders_screen()"
@@ -396,10 +492,10 @@
           },
           {
             "result": {
-              "duration": 120498825,
+              "duration": 310511623,
               "status": "passed"
             },
-            "line": 41,
+            "line": 49,
             "name": "try to change the status of an order, the system should provide me with a drop-down menu of options",
             "match": {
               "location": "StockroomTest.try_to_change_the_status_of_an_order_the_system_should_provide_me_with_a_drop_down_menu_of_options()"
@@ -408,10 +504,10 @@
           },
           {
             "result": {
-              "duration": 145606689,
+              "duration": 226936053,
               "status": "passed"
             },
-            "line": 42,
+            "line": 50,
             "name": "These options should include \u0027pending\u0027, \u0027underway\u0027, \u0027shipped\u0027 and \u0027complete\u0027",
             "match": {
               "location": "StockroomTest.these_options_should_include_pending_in_progress_in_transit_and_complete()"
@@ -420,10 +516,10 @@
           },
           {
             "result": {
-              "duration": 1956506025,
+              "duration": 1515176093,
               "status": "passed"
             },
-            "line": 43,
+            "line": 51,
             "name": "I change the status of an order",
             "match": {
               "location": "StockroomTest.i_change_the_status_of_an_order()"
@@ -432,10 +528,10 @@
           },
           {
             "result": {
-              "duration": 185147594,
+              "duration": 134025259,
               "status": "passed"
             },
-            "line": 44,
+            "line": 52,
             "name": "system should present feedback with the message “The order status fields have been updated successfully.”",
             "match": {
               "location": "StockroomTest.system_should_present_feedback_with_the_message_The_order_status_fields_have_been_updated_successfully()"
