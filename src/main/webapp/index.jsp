@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/style.css">
         <title>UTS Stationery Management System</title>
     </head>
-    <body>         
+    <body>      
         <div id="loginboxpadding">
         <div id="loginbox">
         <%
@@ -21,6 +21,10 @@
             String idErr = (String) session.getAttribute("IDErr");
             String passError = (String) session.getAttribute("passErr");
         %>
+        <%  
+            System.out.print(session.getAttribute("existErr"));
+        %>
+        <script>console.log("<%=session.getAttribute("existErr")%>")</script>
         <table>
             <tr>
                 <td><img class="UTSLogoBlack" src="images/UTS_Logo_Black.png" alt="UTS_Logo"></td>
