@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6241157180,
+              "duration": 7176923892,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 664440018,
+              "duration": 752846011,
               "status": "passed"
             },
             "line": 7,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 616797778,
+              "duration": 83152964,
               "status": "passed"
             },
             "line": 8,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 1354849284,
+              "duration": 1982599028,
               "status": "passed"
             },
             "line": 9,
@@ -60,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 60313828,
+              "duration": 48879101,
               "status": "passed"
             },
             "line": 10,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 464252682,
+              "duration": 407275842,
               "status": "passed"
             },
             "line": 11,
@@ -84,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 178925555,
+              "duration": 197037616,
               "status": "passed"
             },
             "line": 12,
@@ -112,7 +112,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4330227118,
+              "duration": 4245794987,
               "status": "passed"
             },
             "line": 15,
@@ -124,7 +124,7 @@
           },
           {
             "result": {
-              "duration": 180519579,
+              "duration": 429800947,
               "status": "passed"
             },
             "line": 16,
@@ -136,7 +136,7 @@
           },
           {
             "result": {
-              "duration": 277709429,
+              "duration": 357615567,
               "status": "passed"
             },
             "line": 17,
@@ -148,7 +148,7 @@
           },
           {
             "result": {
-              "duration": 153475593,
+              "duration": 194387019,
               "status": "passed"
             },
             "line": 18,
@@ -160,7 +160,7 @@
           },
           {
             "result": {
-              "duration": 126801171,
+              "duration": 146484418,
               "status": "passed"
             },
             "line": 19,
@@ -172,25 +172,32 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 267915592,
+              "status": "passed"
             },
             "line": 20,
             "name": "select product drop down",
-            "match": {},
+            "match": {
+              "location": "RequestTest.select_product_drop_down()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 244771915,
+              "status": "passed"
             },
             "line": 21,
             "name": "system should have products including \u0027HB Pencil\u0027, \u0027Sticky Notes\u0027, \u0027Ruler\u0027, \u0027Plastic Sleeve\u0027 and \u0027Folder\u0027",
-            "match": {},
+            "match": {
+              "location": "RequestTest.system_should_have_products_including_HB_Pencil_Sticky_Notes_Ruler_Plastic_Sleeve_and_Folder()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10221740467,
+              "status": "passed"
             },
             "line": 22,
             "name": "submitting form",
@@ -201,7 +208,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 85456017,
+              "status": "passed"
             },
             "line": 23,
             "name": "system should show a successful submission screen",
@@ -222,7 +230,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4664218030,
+              "duration": 2468523823,
               "status": "passed"
             },
             "line": 26,
@@ -234,7 +242,7 @@
           },
           {
             "result": {
-              "duration": 590307444,
+              "duration": 660260102,
               "status": "passed"
             },
             "line": 27,
@@ -246,7 +254,7 @@
           },
           {
             "result": {
-              "duration": 241635907,
+              "duration": 14511798,
               "status": "passed"
             },
             "line": 28,
@@ -258,7 +266,7 @@
           },
           {
             "result": {
-              "duration": 93051402,
+              "duration": 63627824,
               "status": "passed"
             },
             "line": 29,
@@ -270,7 +278,7 @@
           },
           {
             "result": {
-              "duration": 845902804,
+              "duration": 664509383,
               "status": "passed"
             },
             "line": 30,
@@ -282,7 +290,7 @@
           },
           {
             "result": {
-              "duration": 337833634,
+              "duration": 196651736,
               "status": "passed"
             },
             "line": 31,
@@ -304,7 +312,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4414655219,
+              "duration": 2564639802,
               "status": "passed"
             },
             "line": 34,
@@ -316,7 +324,7 @@
           },
           {
             "result": {
-              "duration": 821644244,
+              "duration": 688685959,
               "status": "passed"
             },
             "line": 35,
@@ -328,7 +336,7 @@
           },
           {
             "result": {
-              "duration": 14940170,
+              "duration": 20252871,
               "status": "passed"
             },
             "line": 36,
@@ -340,7 +348,7 @@
           },
           {
             "result": {
-              "duration": 714988331,
+              "duration": 770866572,
               "status": "passed"
             },
             "line": 37,
@@ -352,9 +360,8 @@
           },
           {
             "result": {
-              "duration": 66460264,
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"tag name\",\"selector\":\"table\"}\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform\u003dMac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027Ashleighs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1800:237b:c428:b718%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14\u0027, java.version: \u00271.8.0_161\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: /var/folders/vb/wntw8slx4yb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52357}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}\nSession ID: fdba44fd3b349cadb984477b1915228b\n*** Element info: {Using\u003dtag name, value\u003dtable}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:392)\n\tat org.openqa.selenium.By$ByTagName.findElement(By.java:320)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat seleniumgluecode.StockroomTest.the_system_should_show_a_table_of_the_orders_placed_on_the_view_orders_screen(StockroomTest.java:59)\n\tat ✽.Then the system should show a table of the orders placed on the view orders screen(test.feature:38)\n",
-              "status": "failed"
+              "duration": 43624410,
+              "status": "passed"
             },
             "line": 38,
             "name": "the system should show a table of the orders placed on the view orders screen",
@@ -365,7 +372,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 393626598,
+              "status": "passed"
             },
             "line": 39,
             "name": "try to change the status of an order, the system should provide me with a drop-down menu of options",
@@ -376,7 +384,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 120354322,
+              "status": "passed"
             },
             "line": 40,
             "name": "These options should include \u0027pending\u0027, \u0027in progress\u0027, \u0027in transit\u0027 and \u0027complete\u0027",
@@ -387,7 +396,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1587264175,
+              "status": "passed"
             },
             "line": 41,
             "name": "I change the status of an order",
@@ -398,7 +408,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 109407764,
+              "status": "passed"
             },
             "line": 42,
             "name": "system should present feedback with the message “The order status fields have been updated successfully.”",

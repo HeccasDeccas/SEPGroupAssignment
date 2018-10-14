@@ -49,8 +49,7 @@ public class RequestTest {
         boolean quantityRequired = Boolean.parseBoolean(driver.findElement(By.name("quantity")).getAttribute("required"));
         if (nameRequired && idRequired && emailRequired && facultyRequired && productRequired && quantityRequired) {
             System.out.println("Error message present");
-        }
-        else {
+        } else {
             System.out.println("Error message is not present");
         }
     }
@@ -67,6 +66,25 @@ public class RequestTest {
             System.out.println("Both fields present");
         } else {
             System.out.println("One or more of the fields is not present");
+        }
+    }
+
+    @When("^select product drop down$")
+    public void select_product_drop_down() throws Throwable {
+        driver.findElement(By.name("product")).click();
+    }
+
+    @Then("^system should have products including 'HB Pencil', 'Sticky Notes', 'Ruler', 'Plastic Sleeve' and 'Folder'$")
+    public void system_should_have_products_including_HB_Pencil_Sticky_Notes_Ruler_Plastic_Sleeve_and_Folder() throws Throwable {
+        if (driver.findElement(By.xpath("//*[contains(text(), 'HB Pencil')]")).isDisplayed() && 
+                driver.findElement(By.xpath("//*[contains(text(), 'Sticky Notes')]")).isDisplayed() &&
+                driver.findElement(By.xpath("//*[contains(text(), 'Ruler')]")).isDisplayed() &&
+                driver.findElement(By.xpath("//*[contains(text(), 'Plastic Sleeve')]")).isDisplayed() &&
+                driver.findElement(By.xpath("//*[contains(text(), 'Folder')]")).isDisplayed()) {
+            System.out.println("Products are available");
+        }
+        else {
+            System.out.println("Products are not present");
         }
     }
 
