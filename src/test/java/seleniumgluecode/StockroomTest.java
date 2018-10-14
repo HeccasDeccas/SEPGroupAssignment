@@ -105,7 +105,6 @@ public class StockroomTest {
         driver.findElement(By.tagName("select")).click();
         driver.findElement(By.id("nonSelectedOne")).click();
         driver.findElement(By.xpath("//input[@value='Submit']")).click();
-        //driver.findElement(By.className("button")).submit();
     }
 
     @Then("^system should present feedback with the message “The order status fields have been updated successfully\\.”$")
