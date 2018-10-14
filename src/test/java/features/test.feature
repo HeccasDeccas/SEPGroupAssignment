@@ -6,13 +6,19 @@ Feature: Test open StationarySystemURL
     Given user opens browser
     When login page is loaded
     Then login button is active
+    When user logs in
+    Then logout button should be present
+    When user logs out
+    Then logout page should be displayed
 
   Scenario: UTS Staff member completes form
     Given UTS Staff Member logs in
-    When completing order form
-    Then system should have both drop down options and text fields
     When submitting an incomplete form
     Then system should show an error message when incomplete field AND when input is invalid
+    When completing order form
+    Then system should have both drop down options and text fields
+    When select product drop down
+    Then system should have products including 'HB Pencil', 'Sticky Notes', 'Ruler', 'Plastic Sleeve' and 'Folder'
     When submitting form
     Then system should show a successful submission screen
 

@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Model.UserTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.27 sec - in Model.UserTest
+=======
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 sec - in Model.UserTest
+>>>>>>> 17f46a9d11ea6ac460a3d0cad3d91d8e3f10368c
