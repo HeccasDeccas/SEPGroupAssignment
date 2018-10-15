@@ -1,3 +1,4 @@
+<%@page import="java.util.TimeZone"%>
 <%@page import="java.util.Date" %>
 <%@page import="java.text.SimpleDateFormat" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
@@ -29,6 +30,7 @@
         <% 
             Date today = new Date();
             SimpleDateFormat DATE_FORMAT = new SimpleDateFormat ("dd/MM/yyyy");
+            DATE_FORMAT.setTimeZone(TimeZone.getTimeZone("Australia/Sydney"));
             String DDMMYYYYToday = DATE_FORMAT.format(today);
                     
         %>
